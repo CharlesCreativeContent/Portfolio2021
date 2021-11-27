@@ -261,42 +261,79 @@
 
 })(jQuery);
 
-var falling = true;
 
-TweenLite.set("#container",{perspective:600})
-TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
-
-var total = 100;
-var container = document.getElementById("container"),	w = window.outerWidth , h = window.outerHeight;
- 
- function animm(elm){   
+    const getSeason = d => Math.floor((d.getMonth() / 12 * 4)) % 4
+    console.log('Northern hemisphere (Winter as Dec/Jan/Feb etc...):')
+    const currentSeason = ['Winter', 'Spring', 'Summer', 'Autumn'][getSeason(new Date())]
+    var falling = true;
+    TweenLite.set("#container",{perspective:600})
+    function R(min,max) {return min+Math.random()*(max-min)};
+    var container = document.getElementById("container"),	w = window.outerWidth , h = window.outerHeight;
+    function animm(elm){   
    TweenMax.to(elm,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
    TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
    TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
  };
+    let total, pageContent
+    //This Loads the seasons to make the right environment
+    switch(currentSeason){
+        case "Winter" : (()=>{
+TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+total = 100;
+        })(); break;
+        case "Summer" : snowStorm.toggleSnow(); break;
+        case "Autumn" : (()=>{
+total = 50;
+pageContent = document.getElementById("wrapper")
+        })(); break;
+ case "Spring" : snowStorm.toggleSnow();
+    }
+    
+let leaves = {
+    fall : ()=>{
+        
 
-function R(min,max) {return min+Math.random()*(max-min)};
-
-
-
+ function LeavesAnimm(elm){   
+   TweenMax.to(elm,R(5,40),{y:h*3,ease:Linear.easeNone,repeat:-1,delay:-15});
+   TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+   TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+ };
+ for (i=0; i<total; i++){ 
+   var Div = document.createElement('div');
+   TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-200,0),z:R(-200,200)});
+   container.insertBefore(Div,pageContent);
+   LeavesAnimm(Div);
+ }
+    },
+    stop : ()=>{
+	document.querySelectorAll(".dot").forEach(x=>x.parentElement.removeChild(x))
+    },
+}
 
 
 let change = ()=> {
+    console.log(currentSeason)
 	if(document.querySelector("body.change")){
-        
- 
- for (i=0; i<total; i++){ 
-   var Div = document.createElement('div');
-   TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-200,-150),z:R(-200,200)});
-   container.appendChild(Div);
-   animm(Div);
- }
+	    switch(currentSeason){
+        case "Winter" : snowStorm.toggleSnow(); break;
+        case "Summer" : snowStorm.toggleSnow(); break;
+        case "Autumn" : leaves.stop(); break;
+        case "Spring" : snowStorm.toggleSnow(); break;
+    }
+	    leaves.stop()
 	    document.querySelector("[onclick='change()']").classList = "icon fa-moon"
 	    document.querySelector('[href="index2.html"]').href="index.html"
 	    if(document.querySelector('[href="aboutme2.html"]')){
 	    document.querySelector('[href="aboutme2.html"]').href="aboutme.html"
 	    }
 	}else{
+	    switch(currentSeason){
+        case "Winter" : snowStorm.toggleSnow(); break;
+        case "Summer" : snowStorm.toggleSnow(); break;
+        case "Autumn" : leaves.fall(); break;
+        case "Spring" : snowStorm.toggleSnow(); break;
+    }
+	    
 	    document.querySelector("[onclick='change()']").classList = "icon fa-sun"
 	    document.querySelector('[href="index.html"]').href="index2.html"
 	    if(document.querySelector('[href="aboutme.html"]')){
@@ -314,7 +351,6 @@ let change = ()=> {
 	document.querySelectorAll("h6").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("b").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("strong").forEach(x=>x.classList.toggle("change"))
-	//snowStorm.toggleSnow()
     
  
 }
