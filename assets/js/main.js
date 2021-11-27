@@ -321,7 +321,7 @@ let change = ()=> {
         case "Spring" : snowStorm.toggleSnow(); break;
     }
 	    leaves.stop()
-	    document.querySelector("[onclick='change()']").classList = "icon fa-moon"
+	    document.querySelector("[onclick='change()']").classList = "icon fa-moon change"
 	    document.querySelector('[href="index2.html"]').href="index.html"
 	    if(document.querySelector('[href="aboutme2.html"]')){
 	    document.querySelector('[href="aboutme2.html"]').href="aboutme.html"
@@ -351,10 +351,9 @@ let change = ()=> {
 	document.querySelectorAll("h6").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("b").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("strong").forEach(x=>x.classList.toggle("change"))
-    
+	document.querySelectorAll("ul.icons li .icon").forEach(x=>x.classList.toggle("change"))
+	document.querySelectorAll("ul.contact a").forEach(x=>x.classList.toggle("change"))
+	document.querySelectorAll("a.button").forEach(x=>x.classList.toggle("change"))
+	document.querySelectorAll("p.copyright em").forEach(x=>x.classList.toggle("change"))
  
 }
-
-
-
-
