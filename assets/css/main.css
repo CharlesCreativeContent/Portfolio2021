@@ -2304,3 +2304,17 @@ body.change {
   opacity: 1;
   transition: opacity 750ms ease-in-out;
 }
+
+ul.icons li .icon.change{
+    color: white;
+}
+ul.contact a.change {
+    color: white;
+}
+p.copyright em.change {
+    color: white;
+}
+a.button.change {
+    color: white !important;
+    
+}
