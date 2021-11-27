@@ -2293,3 +2293,14 @@ h1.change, h2.change, h3.change, h4.change, h5.change, h6.change, strong.change,
 body.change {
      background: #090909;
 }
+
+
+.dot{
+  width: 35px;
+  height: 35px;
+  position:absolute;
+  background: url(../../images/leaf.png);
+  background-size: 100% 100%;
+  opacity: 1;
+  transition: opacity 750ms ease-in-out;
+}
