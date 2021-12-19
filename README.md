@@ -4,7 +4,7 @@ HTML5, CSS3, Sass, Javascript - Portfolio Site including links to my projects an
 
 **Link to site:** https://www.shawncharles.com
 <img source="/CharlesCreativeContent/CharlesCreativeContent/blob/main/images/gif4.gif?raw=true"></img>
-<img src="images/gif4.gif" width="100%" alt="Portfolio"/>
+<img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif4.gif" width="100%" alt="Portfolio"/>
 
 ## How It's Made:
 
