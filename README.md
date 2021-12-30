@@ -1,16 +1,18 @@
-# Portfolio-2020
+# Portfolio-2021 : <a target="_blank" href="https://www.shawncharles.com">Visit Here</a>
 
-HTML5, CSS3, Sass, Javascript - Portfolio Site including links to my projects and ways to get in contact with me.
+### Portfolio Site including links to my projects and ways to get in contact with me.
 
-**Link to site:** https://www.shawncharles.com
+**Link to site:** 
+<a target="_blank" href="https://www.shawncharles.com">
 <img source="/CharlesCreativeContent/CharlesCreativeContent/blob/main/images/gif4.gif?raw=true"></img>
 <img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif4.gif" width="100%" alt="Portfolio"/>
+</a>
 
 ## How It's Made:
 
 **Tech used:** HTML5, CSS3, Sass, JavaScript
 
-My learning was focused on the changing of the source of an image element, and techniques to make a standard size for non-standard images. Workd very well for desktop, but the mobile version still needs some media qeuries
+My learning was focused on the changing of the source of an image element, and techniques to make a standard size for non-standard images. Worked very well for desktop, but the mobile version still needs some media qeuries
 
 ## Optimizations
 
