@@ -2,7 +2,6 @@
 
 ### Portfolio Site including links to my projects and ways to get in contact with me.
 
-**Link to site:** 
 <a target="_blank" href="https://www.shawncharles.com">
 <img source="/CharlesCreativeContent/CharlesCreativeContent/blob/main/images/gif4.gif?raw=true"></img>
 <img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif4.gif" width="100%" alt="Portfolio"/>
