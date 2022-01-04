@@ -285,10 +285,8 @@ total = 100;
         case "Autumn" : (()=>{
 total = 50;
 pageContent = document.getElementById("wrapper")
-        })(); break;
- case "Spring" : snowStorm.toggleSnow();
-    }
-    
+		
+		
 let leaves = {
     fall : ()=>{
         
@@ -309,6 +307,10 @@ let leaves = {
 	document.querySelectorAll(".dot").forEach(x=>x.parentElement.removeChild(x))
     },
 }
+        })(); break;
+ case "Spring" : snowStorm.toggleSnow();
+    }
+    
 
 
 let change = ()=> {
