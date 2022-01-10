@@ -290,8 +290,7 @@ total = 50;
 pageContent = document.getElementById("wrapper")
 		
 
-		leaves = {
-    fall : ()=>{
+leaves["fall"] = ()=>{
         
 
  function LeavesAnimm(elm){   
@@ -305,11 +304,12 @@ pageContent = document.getElementById("wrapper")
    container.insertBefore(Div,pageContent);
    LeavesAnimm(Div);
  }
-    },
-    stop : ()=>{
+    }
+
+   
+leaves["stop"] =  ()=>{
 	document.querySelectorAll(".dot").forEach(x=>x.parentElement.removeChild(x))
-    },
-}
+    }
         })(); break;
  case "Spring" : snowStorm.toggleSnow();
     }
