@@ -261,6 +261,9 @@
 
 })(jQuery);
 
+	
+let leaves;
+
 
     const getSeason = d => Math.floor((d.getMonth() / 12 * 4)) % 4
     console.log('Northern hemisphere (Winter as Dec/Jan/Feb etc...):')
@@ -286,8 +289,8 @@ total = 100;
 total = 50;
 pageContent = document.getElementById("wrapper")
 		
-		
-let leaves = {
+
+		leaves = {
     fall : ()=>{
         
 
