@@ -325,7 +325,7 @@ let change = ()=> {
         case "Autumn" : leaves.stop(); break;
         case "Spring" : snowStorm.toggleSnow(); break;
     }
-	    leaves.stop()
+		
 	    document.querySelector("[onclick='change()']").classList = "icon fa-moon change"
 	    document.querySelector('[href="index2.html"]').href="index.html"
 	    if(document.querySelector('[href="aboutme2.html"]')){
