@@ -10,7 +10,7 @@
       "id": "61c682fb-3209-490d-a4a8-e6c01d0b10ae",
       "comment": "",
       "command": "executeScript",
-      "target": "return [\"SoftwareEngineerRecruiter\", \"SoftwareDeveloperRecruiter\", \"DataScientistRecruiter\", \"SeniorSoftwareEngineerRecruiter\"]",
+      "target": "return [\"SoftwareEngineer\", \"SoftwareEngineerManager\", \"EngineerManager\", \"SoftwareDeveloper\", \"DataScientist\", \"SeniorSoftwareEngineer\", \"LeadSoftwareEngineer\", \"StaffSoftwareEngineer\", \"SoftwareEngineer\", \"UXDeveloper\", \"UIDeveloper\", \"UXDeveloperManager\", \"UIDeveloperManager\", \"SoftwareDeveloperManager\",\"SoftwareDeveloper\"]",
       "targets": [],
       "value": "hashtags"
     }, {
@@ -353,7 +353,7 @@
       "id": "dc43f93d-6d96-4fd9-b99b-76654c1d7130",
       "comment": "",
       "command": "executeScript",
-      "target": "return [\"AWS\", \"BlackTechPipeline\", \"devops\",\"ui\",\"ux\", \"devjobs\", \"techjobs\", \"software\", \"api\", \"Typescript\", \"programmingjoke\", \"php\", \"linux\",  \"SQL\",\"programminghumor\",\"TechJobs\", \"TechIsHiring\", \"ai\", \"ml\", \"bigdata\", \"javascript\", \"python\",\"css\", \"html\", \"webdev\",\"coding\",\"WomenInTech\",\"DataScience\",\"techtwitter\",\"100DaysOfCode\", \"100Devs\", \"BlackTechTwitter\", \"CodeNewbie\", \"GirlsWhoCode\", \"DevRel\", \"SoftwareDev\", \"SoftwareEngineer\", \"TechRecruiter\",\"SoftwareRecruiter\",\"TechSourcer\", \"WomenWhoCode\"]",
+      "target": "return [ \"CICD\", \"information\", \"internet\", \"ComputerScience\",\"automation\", \"finTech\", \"computing\", \"CloudComputing\",\"Typescript\", \"Laravel\", \"AR\", \"VR\", \"DailyUI\", \"DigitalMarketing\", \"UXResearch\", \"UXDesign\",\"AWS\", \"BlackTechPipeline\", \"datascience\", \"data\", \"devops\", \"iot\",\"ui\",\"ux\", \"devjobs\", \"techjobs\", \"software\", \"api\", \"Typescript\", \"programmingjoke\", \"php\", \"linux\",  \"SQL\",\"programminghumor\",\"TechJobs\", \"TechIsHiring\", \"ai\", \"ml\", \"bigdata\", \"javascript\", \"python\",\"css\", \"html\", \"webdev\",\"coding\",\"WomenInTech\",\"DataScience\",\"techtwitter\",\"100DaysOfCode\", \"100Devs\", \"cloud\", \"BlackTechTwitter\", \"CodeNewbie\", \"GirlsWhoCode\", \"DevRel\", \"SoftwareDev\", \"SoftwareEngineer\", \"TechRecruiter\",\"TechnicalRecruiter\",\"SoftwareRecruiter\",\"TechSourcer\", \"WomenWhoCode\"].sort(()=>0.5 - Math.random())",
       "targets": [],
       "value": "hashtags"
     }, {
@@ -364,19 +364,33 @@
       "targets": [],
       "value": "tag"
     }, {
+      "id": "62d2a9e4-b359-4ffa-9f4f-07f4240be83f",
+      "comment": "",
+      "command": "echo",
+      "target": "${hashtags}",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "30166696-3b35-4a27-a447-4d17ebf7fb48",
       "comment": "",
       "command": "executeScript",
-      "target": "return 3000",
+      "target": "return 5000",
       "targets": [],
       "value": "maxFollowers"
     }, {
-      "id": "0506f65c-b300-4ec1-8e85-10b4c111ec17",
+      "id": "535abacc-022b-4d9d-90a4-c92d8335f61a",
       "comment": "",
       "command": "forEach",
       "target": "hashtags",
       "targets": [],
       "value": "hashtag"
+    }, {
+      "id": "0506f65c-b300-4ec1-8e85-10b4c111ec17",
+      "comment": "",
+      "command": "echo",
+      "target": "hashtag : ${hashtag}",
+      "targets": [],
+      "value": ""
     }, {
       "id": "8df41db2-d734-4470-8020-3f57539762f2",
       "comment": "",
@@ -483,10 +497,66 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "dd781316-ecf0-4f16-a49f-adcabf93a43c",
+      "id": "027832e2-4290-4c4a-b71d-5931b1c327c0",
       "comment": "",
       "command": "runScript",
       "target": "window.scrollTo(0,32311)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab3a84bc-89de-423b-82d8-6f6fc11cb65c",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a8592de-ff0e-4080-9933-8783c79cc1c5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,36311)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07acb4f6-dac4-4db1-b445-b9167f7fb2cc",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62ee3616-176b-4871-94e0-ff66946f4813",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,40311)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bf2d879-b795-4008-9ef5-ccdecb19deb3",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7ce50f9-da51-4fce-83dd-df496cd68c28",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,44311)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06bdface-f4b9-4469-85c5-3664f7c8a891",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd781316-ecf0-4f16-a49f-adcabf93a43c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,48311)",
       "targets": [],
       "value": ""
     }, {
@@ -529,10 +599,29 @@
       ],
       "value": "following"
     }, {
+      "id": "2992a886-a042-4e76-8cf6-2097fb7bafab",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[2]/span",
+      "targets": [
+        ["css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n:nth-child(2) > .css-901oao:nth-child(2) > .css-901oao", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Follows you')]", "xpath:innerText"]
+      ],
+      "value": "followsYou"
+    }, {
+      "id": "255e4b6a-ef9a-491a-8151-d316e0c0aa8f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${followsYou} !== \"Follows you\"",
+      "targets": [],
+      "value": "doesntFollowYou"
+    }, {
       "id": "039cdae7-bb47-4c0d-bcab-43f3a5a8b4f4",
       "comment": "",
       "command": "if",
-      "target": "${following}===\"Follow\"",
+      "target": "${following}===\"Follow\" && ${doesntFollowYou}",
       "targets": [],
       "value": ""
     }, {
@@ -2461,7 +2550,7 @@
       "id": "acd7fd64-8d16-4975-91eb-cbf1cd82cdae",
       "comment": "",
       "command": "executeScript",
-      "target": "return 30",
+      "target": "return 107",
       "targets": [],
       "value": "followCount"
     }, {
@@ -2579,7 +2668,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["b3050f03-4b68-4ffb-b4a4-e49ed4299f0a", "84d11acf-1875-4d55-838f-543771537cfe", "37ba231e-40a4-433d-9121-6c49e14d4e12", "ce6acfe5-5f86-45ef-b921-fa0e328e1e70"]
+    "tests": ["b3050f03-4b68-4ffb-b4a4-e49ed4299f0a", "84d11acf-1875-4d55-838f-543771537cfe", "ce6acfe5-5f86-45ef-b921-fa0e328e1e70"]
   }, {
     "id": "b0bbdc4a-d6bd-426e-8d0c-b8594416fbea",
     "name": "Twitter",
