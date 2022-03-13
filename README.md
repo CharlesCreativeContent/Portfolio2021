@@ -24,9 +24,30 @@ Seperation of Concerns. Realized how much easier it is to add css animations tha
 
 
 ## Other Projects
-<a target="_blank" href="https://github.com/CharlesCreativeContent/Portfolio2021">Portfolio</a>
 
+<table bordercolor="#66b2b2">
+  
+  <tr>
+    <td width="33.3%"  style="align:center;" valign="top">
 <a target="_blank" href="https://github.com/CharlesCreativeContent/lucid">Travelara.org</a>
-
+        <br />
+      <a target="_blank" href="https://github.com/CharlesCreativeContent/lucid">
+            <img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif1.gif" width="100%"  alt="Travelara.org"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
 <a target="_blank" href="https://github.com/CharlesCreativeContent/Rigley2-FlappyBug">Rigley2-"FlappyBug"</a>
-
+      <br />
+        <a target="_blank" href="https://github.com/CharlesCreativeContent/matching-card-game">
+          <img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif3.gif" width="100%" alt="Rigley2-'FlappyBug'"/>
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+<a target="_blank" href="https://github.com/CharlesCreativeContent/Portfolio2021">Portfolio</a>
+        <br />
+        <a target="_blank" href="https://github.com/CharlesCreativeContent/Portfolio2021/">
+          <img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif4.gif" width="100%" alt="Portfolio"/>
+        </a>
+    </td>
+  </tr>
+</table>
