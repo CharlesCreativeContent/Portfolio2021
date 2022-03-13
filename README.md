@@ -23,7 +23,7 @@ Seperation of Concerns. Realized how much easier it is to add css animations tha
 
 
 
-## Other Projects
+## More Projects
 
 <table bordercolor="#66b2b2">
   
