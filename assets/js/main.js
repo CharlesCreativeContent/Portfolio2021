@@ -284,7 +284,10 @@ let leaves;
 TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
 total = 100;
         })(); break;
-        case "Summer" : snowStorm.toggleSnow(); break;
+        case "Summer" : (()=>{
+TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+total = 100;
+        })(); break;
         case "Autumn" : (()=>{
 total = 50;
 pageContent = document.getElementById("wrapper")
@@ -311,7 +314,10 @@ leaves["stop"] =  ()=>{
 	document.querySelectorAll(".dot").forEach(x=>x.parentElement.removeChild(x))
     }
         })(); break;
- case "Spring" : snowStorm.toggleSnow();
+ case "Spring" : (()=>{
+TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+total = 100;
+        })(); break;
     }
     
 
