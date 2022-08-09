@@ -14,11 +14,11 @@ My learning was focused on making a simple UI and a smooth UX, and have a season
 
 ## Optimizations
 
-When I improve this project, I would start by updating the spring and summer amimation of rain and fireflies. Currrently have fall and winter finished just need to add the other too into the Date checker. Would also like to add some javascript to add gifs to front page.
+When I improve this project, I would start by updating the spring and summer animation of rain and fireflies. Currently have fall and winter finished just need to add the other too into the Date checker. Would also like to add some javascript to add gifs to front page.
 
 ## Lessons Learned:
 
-Seperation of Concerns. Realized how much easier it is to add css animations than to add custom javascript to change hover interactions
+Separation of Concerns. Realized how much easier it is to add css animations than to add custom javascript to change hover interactions
 
 
 
