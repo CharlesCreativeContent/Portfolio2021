@@ -262,7 +262,7 @@
 })(jQuery);
 
 	
-let leaves;
+let leaves = {};
 
 
     const getSeason = d => Math.floor((d.getMonth() / 12 * 4)) % 4
