@@ -2,7 +2,7 @@
   "id": "36431783-fd42-4635-91c5-ba60d1b713bf",
   "version": "2.0",
   "name": "SeleniumScripts",
-  "url": "https://bot-basquiat.herokuapp.com",
+  "url": "https://dream.ai",
   "tests": [{
     "id": "84d11acf-1875-4d55-838f-543771537cfe",
     "name": "LinkedIn",
@@ -2661,6 +2661,946 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "593114df-e13f-4589-97e9-4bbccb38bbcd",
+    "name": "AI Animals",
+    "commands": [{
+      "id": "417864b8-3d93-42c3-8e6f-bc571ac59ab8",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42f56af0-e7f1-485a-9eb0-59fed116861f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Dog\",\"Cat\",\"Monkey\",\"Lion\",\"Sharks\",\"Birds\",\"Bears\",\"Horse\",\"Fish\",\"Chicken\",\"Bison\",\"Dolphin\",\"Eagle\",\"Pony\",\"Ape\",\"Lobster\",\"Cow\",\"Deer\",\"Duck\",\"Rabbit\",\"Wolf\",\"Turkey\",\"Pig\",\"Snake\",\"Orca\",\"Toucan\",\"Llama\",\"Rhinoceros\",\"Elephant\",\"Panda\",\"Shiba Inu\",\"Dolphin\",\"Hedgehog\",\"Fox\",\"Mountain Lion\",\"Bull\",\"Tiger\",\"Buffalo\",\"Groundhog\",\"Jaguar\",\"White dog\"].sort((a,b)=>Math.random()-1)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "8f009a68-e64b-4ee1-82a2-6a7efb5c5873",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "59db0f9c-fedc-4b40-aff0-84e5ba38cef3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3afaedba-124d-4bc3-952a-a8150464b4d9",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "137de49c-23a0-4b9d-b647-622a832fbb69",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "3b97780f-11b3-4dae-bf54-db8dd7be6751",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b70ddd2c-a8fa-481e-b1be-ebb7b2af5ef2",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt}"
+    }, {
+      "id": "b1be1edc-28ec-44a6-9c89-42770c07eb7e",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "8f1fc7af-60e5-4f99-8434-992eaa87c0bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "360c8d15-cc44-46b6-934d-fd3d02a57142",
+      "comment": "",
+      "command": "pause",
+      "target": "20000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0965f0e7-b82c-4282-b0e6-f85229a0452f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "1472f0bf-b7e6-4bde-9ef8-43f868d43b21",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "92a80378-6133-4b65-9374-8a86f7176ab8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "5f9df7a9-1ce5-4409-8fb6-7622d1fa6fc1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "cbaaa11b-c89a-4b15-b13f-788ff0d1c769",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c331395-eb18-4913-af48-17c47580a177",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b16bd7f3-587f-45d2-b4f9-1f789ebb5574",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6dcc7d4-dd08-4c44-9d3b-b77ea2a5c19b",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23518b32-f38b-4fd5-9ff3-8ba41ba1ae3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0f11c8a-d294-4308-b8db-0c964471d0b5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2aa7b584-9949-44e1-a6d0-108716428d32",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dca1351d-087e-4993-9e95-9406f8bd0bfc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "20a2714a-0a98-4823-9670-65a16703fd1c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87d4a1b5-e676-4c21-9fd0-5a8618c3a353",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "432310f2-db39-49e1-b219-b33fc1046426",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dea12b6-806b-4ad2-8e2b-83e68e7e4ccd",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb58ccf3-c495-4221-9f00-c1d86e6e0d04",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df5dbdbb-e670-4622-b664-fc531ff18100",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c5db76d-c77e-4384-b47c-651f49709cb6",
+    "name": "AI Celebrities",
+    "commands": [{
+      "id": "42c7320f-97dc-454f-ab0f-106d51e071f7",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "855fe5b8-5773-41a1-86d0-b81a976ff9cb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Rihanna\",\"Ariana Grande\",\"Serena Williams\",\"Ellen Degeneres\",\"Oprah\",\"Kim Kardashian\",\"Kylie Jenner\",\"Britney Spears\",\"Justin Bieber\",\"Miley Cyrus\",\"Paris Hilton\",\"Mariah Carey\",\"Sarah Palin\",\"Michelle Obama\",\"Sandra Bullock\",\"Ciara\",\"Hillary Clinton\",\"Betty White\",\"Vanessa Hudgens\"].sort((a,b)=>Math.random()-1)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "219db21b-a74e-4c5c-b2d7-a540a144f0c3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "5b7bb1a6-013d-44b6-ad7c-5387aa92eaa9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "188d8767-4e97-4659-8eee-cae865a070a1",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b07a244e-9e31-4f29-8160-e7a14b1fe7ad",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "3a752cac-1edc-4a96-a377-489523b74af7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48c8b443-6d06-48e4-b9d4-9ddc783dbdc8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} wearing a suit and tie with a rainbow background, Portrait Masterpiece, HD"
+    }, {
+      "id": "4ab6ff73-4cb9-423f-9210-55a6c9e25de1",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "4840a792-e2ff-4feb-9652-293e425d8b24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "027d503d-fa28-4cfc-b1fd-13840708e8d2",
+      "comment": "",
+      "command": "pause",
+      "target": "20000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e61349bc-756e-40df-9bb6-2175d7afb4f8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "cc285543-fd0d-4425-8396-59e59de3bafd",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "fc6b0f24-3f22-4942-9c2c-47c9fb6a5b4a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "803b6168-efe8-4731-8610-d8527ed5cee4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "601940fc-cfb5-43b3-a6d2-1a660f6aa945",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8fd2271-c0d7-4cee-89f5-2bd8638d3876",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "18166f11-f40d-48d4-ae2c-3ea71b5dfc98",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92b96f16-4ff2-4fb4-bb84-eee8d6fc0a2a",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90bc5a7f-cdf6-4761-9550-a19d17161fbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f34da4a9-9f11-456b-8032-41c3d2a3863d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0ea3c29-3d2a-4d14-aea9-58ff12e3e05f",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0066e169-d7ff-4a26-9f64-5740a2833e54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f700947-5762-4764-b591-cb967a8dfccc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "145e01c4-0ad3-4c61-85c0-86bb76a88278",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2d30571-f1c9-4923-932b-2e1e7cc5cbd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8f57ac2-05e3-41b9-9c60-ac4cce0a585a",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f56f3023-d3c4-424c-9533-8e50234c6fe2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88168a58-e7a0-45e8-b013-4463c7e0e07c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fa0efdef-f7b0-4f50-a111-f1a319a68e6d",
+    "name": "AI Celebrities (M)",
+    "commands": [{
+      "id": "a00b317d-b50a-4e5a-9362-e5b1898fa45d",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2526b077-6910-4ae0-9006-1bef36a3665a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Chris Hemsworth\",\"DJ Khaled\",\"Jackie Chan\",\"Kevin Hart\",\"Drake\",\"Will Smith\",\"Stephen Curry\",\"Gordon Ramsey\", \"Ryan Reynolds\",\"Kanye West\",\"Christiano Ronaldo\",\"Lionel Messi\",\"Tyler Perry\",\"Lebron James\",\"Dwayne Johnson\"].sort((a,b)=>Math.random()-1)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "4ced917b-087a-40ee-a248-9f00fb439ba8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "7c38cf2e-69c8-458b-b55c-009a72d6ec79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b588960a-20ec-4d6a-9698-c750fcdc9f3d",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2158c4e-bb52-49e0-8e39-32442e41165a",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "900ab06e-0e1e-4ae0-ae97-22ad1a96acf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5de096d-021f-4217-971d-0d8e9a28838c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} wearing a suit and tie with a rainbow background, Portrait Masterpiece, HD"
+    }, {
+      "id": "3cd317bd-e481-4785-95b2-2cf0d2254ab0",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "7f35c800-3949-43d5-9808-574bd2ae711e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fd1f80e-404b-4914-b569-326676d45a23",
+      "comment": "",
+      "command": "pause",
+      "target": "20000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6539a20e-afb9-499e-8098-aa0c146ec266",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "f80f76fc-e4c5-462b-9962-c152b29c7c12",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "c824be03-e3d8-4e69-841c-339d95a8ca8f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "d9a95995-f3d4-42ae-acf0-b88a72a39350",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "23d3230f-4e8a-49e9-90b8-29889e5f1851",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e8e7d76-e67e-4151-b57c-b0763ae5128c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c10f95ab-bf69-49e0-b1c6-93f08326e910",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "987c6ba2-9307-48c4-9f7a-6f1f9575ef1d",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cb4173c-e04f-425f-8059-17e8236e9d56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f0a120a-ef59-439c-82de-a46a7992336f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29e06f44-fa81-4d93-b886-325f9c1237b6",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24b8d58d-5f20-42d6-9c79-390fc420b8e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "773e015e-1c5e-40a0-91f0-a514cb36d5dd",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4289bf36-7c4f-48ee-8d21-4eb90ddbf35d",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7297f264-60ff-429d-b416-973b9891029b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "862f6080-6c3c-4364-a4a9-26b361ee716f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b86d9d8-42f6-403d-8ab3-1b91887507f3",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a25da846-347c-4684-a32c-8e21a877a532",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "351a15a0-c277-418c-b59a-cf10f7533527",
+    "name": "AI Animals (Suit)",
+    "commands": [{
+      "id": "aa3d52aa-0cad-4824-a1c7-8580a98c6a50",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2499483-700c-4e3a-a7c9-7664e3e943ad",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Dog\",\"Cat\",\"Monkey\",\"Lion\",\"Sharks\",\"Birds\",\"Bears\",\"Horse\",\"Fish\",\"Chicken\",\"Bison\",\"Dolphin\",\"Eagle\",\"Pony\",\"Ape\",\"Lobster\",\"Cow\",\"Deer\",\"Duck\",\"Rabbit\",\"Wolf\",\"Turkey\",\"Pig\",\"Snake\",\"Orca\",\"Toucan\",\"Llama\",\"Rhinoceros\",\"Elephant\",\"Panda\",\"Shiba Inu\",\"Dolphin\",\"Hedgehog\",\"Fox\",\"Mountain Lion\",\"Bull\",\"Tiger\",\"Buffalo\",\"Groundhog\",\"Jaguar\",\"White dog\"].sort((a,b)=>Math.random()-1)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "5367de54-9b09-40c1-a29e-828084a02b93",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "f6b50d85-fd60-45aa-92cd-0907ded70dd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02e7fda4-6c94-427f-bd98-b4d0a95831fa",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56cefa84-82e1-47a4-8b44-2ef21452e607",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "e73dc962-e7a2-4bb8-b71e-f5926b9cbc44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f4600d8-e4e3-40fb-b65b-56360a91d315",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} wearing a suit and tie with a rainbow background, Portrait Masterpiece, HD"
+    }, {
+      "id": "a66f2d33-621a-4767-90be-89a1bf1d6176",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "9052b014-7f1d-4a06-9f2d-f51d5ab745cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9bd47d5-ceb9-42f5-b1c5-77517c3bc3d7",
+      "comment": "",
+      "command": "pause",
+      "target": "20000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12b00f14-1197-4532-88b3-c8e85ecf3c9c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "265d8d5d-6367-4ff8-aa33-219eb5386854",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "959a4a64-0814-4d78-a317-600b14cec41d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "b7553f01-3f3c-4028-9fb7-8d1ab8d1ebe0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "1bd587c7-24d8-4fac-8dc3-d5ef970c6a1c",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb2fc8af-33d4-408b-846c-ea4ffd60c6ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dae6332c-0fcd-4561-8cf7-989dd249699c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e30a6740-0f16-4289-a439-9fb9c942d5f9",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7fea24d-b245-4e9a-ac44-1e1ba8556326",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "332ed200-638b-455e-be64-e3e7a1fa60ba",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cc5a28f-69da-4a34-a1fd-630deaf0d681",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78540fef-46a6-4df5-9e4c-42f42267d788",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e30d9e7b-2b17-4d73-8047-8241ee06af4e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac4d4dbd-a4bd-42b1-a4ee-b59be53f3ac0",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90f54abc-fe79-46ab-b2ff-dee823016fd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b9ee438-ce33-417a-b263-40047109594c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "998d5aca-0369-4ca6-a671-ffeccb9e58bb",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9fef944-cbc3-4002-ae42-c783f4fde6fd",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "efd6a700-84b1-4911-be00-0952d8fbb225",
@@ -2676,7 +3616,14 @@
     "parallel": false,
     "timeout": 300,
     "tests": ["b3050f03-4b68-4ffb-b4a4-e49ed4299f0a", "84d11acf-1875-4d55-838f-543771537cfe"]
+  }, {
+    "id": "ff1ae017-f2a1-4c1b-acd2-4ca1b2d04ad3",
+    "name": "Images",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["351a15a0-c277-418c-b59a-cf10f7533527", "4c5db76d-c77e-4384-b47c-651f49709cb6", "fa0efdef-f7b0-4f50-a111-f1a319a68e6d", "593114df-e13f-4589-97e9-4bbccb38bbcd"]
   }],
-  "urls": ["https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103644278%22%2C%2290000007%22%2C%22101098412%22%5D&keywords=software%20engineer&network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&sid=rLE", "https://twitter.com/search?q=%23100DaysOfCode&src=typed_query&f=live", "https://bot-basquiat.herokuapp.com/"],
+  "urls": ["https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103644278%22%2C%2290000007%22%2C%22101098412%22%5D&keywords=software%20engineer&network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&sid=rLE", "https://twitter.com/search?q=%23100DaysOfCode&src=typed_query&f=live", "https://bot-basquiat.herokuapp.com/", "https://dream.ai/"],
   "plugins": []
 }
