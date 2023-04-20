@@ -2662,711 +2662,6 @@
       "value": ""
     }]
   }, {
-    "id": "593114df-e13f-4589-97e9-4bbccb38bbcd",
-    "name": "AI Animals",
-    "commands": [{
-      "id": "417864b8-3d93-42c3-8e6f-bc571ac59ab8",
-      "comment": "",
-      "command": "open",
-      "target": "/create",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "42f56af0-e7f1-485a-9eb0-59fed116861f",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return [\"Dog\",\"Cat\",\"Monkey\",\"Lion\",\"Sharks\",\"Birds\",\"Bears\",\"Horse\",\"Fish\",\"Chicken\",\"Bison\",\"Dolphin\",\"Eagle\",\"Pony\",\"Ape\",\"Lobster\",\"Cow\",\"Deer\",\"Duck\",\"Rabbit\",\"Wolf\",\"Turkey\",\"Pig\",\"Snake\",\"Orca\",\"Toucan\",\"Llama\",\"Rhinoceros\",\"Elephant\",\"Panda\",\"Shiba Inu\",\"Dolphin\",\"Hedgehog\",\"Fox\",\"Mountain Lion\",\"Bull\",\"Tiger\",\"Buffalo\",\"Groundhog\",\"Jaguar\",\"White dog\"].sort((a,b)=>Math.random()-1)",
-      "targets": [],
-      "value": "prompts"
-    }, {
-      "id": "8f009a68-e64b-4ee1-82a2-6a7efb5c5873",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
-      "targets": [],
-      "value": "cycles"
-    }, {
-      "id": "59db0f9c-fedc-4b40-aff0-84e5ba38cef3",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
-      "targets": [
-        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
-        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
-        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "3afaedba-124d-4bc3-952a-a8150464b4d9",
-      "comment": "",
-      "command": "debugger",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "137de49c-23a0-4b9d-b647-622a832fbb69",
-      "comment": "",
-      "command": "forEach",
-      "target": "prompts",
-      "targets": [],
-      "value": "prompt"
-    }, {
-      "id": "3b97780f-11b3-4dae-bf54-db8dd7be6751",
-      "comment": "",
-      "command": "click",
-      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
-      "targets": [
-        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "b70ddd2c-a8fa-481e-b1be-ebb7b2af5ef2",
-      "comment": "",
-      "command": "type",
-      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
-      "targets": [
-        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
-        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "${prompt}"
-    }, {
-      "id": "b1be1edc-28ec-44a6-9c89-42770c07eb7e",
-      "comment": "",
-      "command": "forEach",
-      "target": "cycles",
-      "targets": [],
-      "value": "cycle"
-    }, {
-      "id": "8f1fc7af-60e5-4f99-8434-992eaa87c0bf",
-      "comment": "",
-      "command": "click",
-      "target": "css=.iMLenh",
-      "targets": [
-        ["css=.iMLenh", "css:finder"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "360c8d15-cc44-46b6-934d-fd3d02a57142",
-      "comment": "",
-      "command": "pause",
-      "target": "20000",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0965f0e7-b82c-4282-b0e6-f85229a0452f",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "firstImage"
-    }, {
-      "id": "1472f0bf-b7e6-4bde-9ef8-43f868d43b21",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "secondImage"
-    }, {
-      "id": "92a80378-6133-4b65-9374-8a86f7176ab8",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "thirdImage"
-    }, {
-      "id": "5f9df7a9-1ce5-4409-8fb6-7622d1fa6fc1",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "fourthImage"
-    }, {
-      "id": "cbaaa11b-c89a-4b15-b13f-788ff0d1c769",
-      "comment": "",
-      "command": "if",
-      "target": "${firstImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4c331395-eb18-4913-af48-17c47580a177",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "b16bd7f3-587f-45d2-b4f9-1f789ebb5574",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e6dcc7d4-dd08-4c44-9d3b-b77ea2a5c19b",
-      "comment": "",
-      "command": "if",
-      "target": "${secondImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "23518b32-f38b-4fd5-9ff3-8ba41ba1ae3a",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "f0f11c8a-d294-4308-b8db-0c964471d0b5",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "2aa7b584-9949-44e1-a6d0-108716428d32",
-      "comment": "",
-      "command": "if",
-      "target": "${thirdImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "dca1351d-087e-4993-9e95-9406f8bd0bfc",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "20a2714a-0a98-4823-9670-65a16703fd1c",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "87d4a1b5-e676-4c21-9fd0-5a8618c3a353",
-      "comment": "",
-      "command": "if",
-      "target": "${fourthImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "432310f2-db39-49e1-b219-b33fc1046426",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "0dea12b6-806b-4ad2-8e2b-83e68e7e4ccd",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "bb58ccf3-c495-4221-9f00-c1d86e6e0d04",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "df5dbdbb-e670-4622-b664-fc531ff18100",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "4c5db76d-c77e-4384-b47c-651f49709cb6",
-    "name": "AI Celebrities",
-    "commands": [{
-      "id": "42c7320f-97dc-454f-ab0f-106d51e071f7",
-      "comment": "",
-      "command": "open",
-      "target": "/create",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "855fe5b8-5773-41a1-86d0-b81a976ff9cb",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return [\"Rihanna\",\"Ariana Grande\",\"Serena Williams\",\"Ellen Degeneres\",\"Oprah\",\"Kim Kardashian\",\"Kylie Jenner\",\"Britney Spears\",\"Justin Bieber\",\"Miley Cyrus\",\"Paris Hilton\",\"Mariah Carey\",\"Sarah Palin\",\"Michelle Obama\",\"Sandra Bullock\",\"Ciara\",\"Hillary Clinton\",\"Betty White\",\"Vanessa Hudgens\"].sort((a,b)=>Math.random()-1)",
-      "targets": [],
-      "value": "prompts"
-    }, {
-      "id": "219db21b-a74e-4c5c-b2d7-a540a144f0c3",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
-      "targets": [],
-      "value": "cycles"
-    }, {
-      "id": "5b7bb1a6-013d-44b6-ad7c-5387aa92eaa9",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
-      "targets": [
-        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
-        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
-        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "188d8767-4e97-4659-8eee-cae865a070a1",
-      "comment": "",
-      "command": "debugger",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b07a244e-9e31-4f29-8160-e7a14b1fe7ad",
-      "comment": "",
-      "command": "forEach",
-      "target": "prompts",
-      "targets": [],
-      "value": "prompt"
-    }, {
-      "id": "3a752cac-1edc-4a96-a377-489523b74af7",
-      "comment": "",
-      "command": "click",
-      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
-      "targets": [
-        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "48c8b443-6d06-48e4-b9d4-9ddc783dbdc8",
-      "comment": "",
-      "command": "type",
-      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
-      "targets": [
-        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
-        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "${prompt} wearing a suit and tie with a rainbow background, Portrait Masterpiece, HD"
-    }, {
-      "id": "4ab6ff73-4cb9-423f-9210-55a6c9e25de1",
-      "comment": "",
-      "command": "forEach",
-      "target": "cycles",
-      "targets": [],
-      "value": "cycle"
-    }, {
-      "id": "4840a792-e2ff-4feb-9652-293e425d8b24",
-      "comment": "",
-      "command": "click",
-      "target": "css=.iMLenh",
-      "targets": [
-        ["css=.iMLenh", "css:finder"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "027d503d-fa28-4cfc-b1fd-13840708e8d2",
-      "comment": "",
-      "command": "pause",
-      "target": "20000",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e61349bc-756e-40df-9bb6-2175d7afb4f8",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "firstImage"
-    }, {
-      "id": "cc285543-fd0d-4425-8396-59e59de3bafd",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "secondImage"
-    }, {
-      "id": "fc6b0f24-3f22-4942-9c2c-47c9fb6a5b4a",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "thirdImage"
-    }, {
-      "id": "803b6168-efe8-4731-8610-d8527ed5cee4",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "fourthImage"
-    }, {
-      "id": "601940fc-cfb5-43b3-a6d2-1a660f6aa945",
-      "comment": "",
-      "command": "if",
-      "target": "${firstImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d8fd2271-c0d7-4cee-89f5-2bd8638d3876",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "18166f11-f40d-48d4-ae2c-3ea71b5dfc98",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "92b96f16-4ff2-4fb4-bb84-eee8d6fc0a2a",
-      "comment": "",
-      "command": "if",
-      "target": "${secondImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "90bc5a7f-cdf6-4761-9550-a19d17161fbc",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "f34da4a9-9f11-456b-8032-41c3d2a3863d",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f0ea3c29-3d2a-4d14-aea9-58ff12e3e05f",
-      "comment": "",
-      "command": "if",
-      "target": "${thirdImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0066e169-d7ff-4a26-9f64-5740a2833e54",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "7f700947-5762-4764-b591-cb967a8dfccc",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "145e01c4-0ad3-4c61-85c0-86bb76a88278",
-      "comment": "",
-      "command": "if",
-      "target": "${fourthImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f2d30571-f1c9-4923-932b-2e1e7cc5cbd6",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "c8f57ac2-05e3-41b9-9c60-ac4cce0a585a",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f56f3023-d3c4-424c-9533-8e50234c6fe2",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "88168a58-e7a0-45e8-b013-4463c7e0e07c",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "fa0efdef-f7b0-4f50-a111-f1a319a68e6d",
-    "name": "AI Celebrities (M)",
-    "commands": [{
-      "id": "a00b317d-b50a-4e5a-9362-e5b1898fa45d",
-      "comment": "",
-      "command": "open",
-      "target": "/create",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "2526b077-6910-4ae0-9006-1bef36a3665a",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return [\"Chris Hemsworth\",\"DJ Khaled\",\"Jackie Chan\",\"Kevin Hart\",\"Drake\",\"Will Smith\",\"Stephen Curry\",\"Gordon Ramsey\", \"Ryan Reynolds\",\"Kanye West\",\"Christiano Ronaldo\",\"Lionel Messi\",\"Tyler Perry\",\"Lebron James\",\"Dwayne Johnson\"].sort((a,b)=>Math.random()-1)",
-      "targets": [],
-      "value": "prompts"
-    }, {
-      "id": "4ced917b-087a-40ee-a248-9f00fb439ba8",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
-      "targets": [],
-      "value": "cycles"
-    }, {
-      "id": "7c38cf2e-69c8-458b-b55c-009a72d6ec79",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
-      "targets": [
-        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
-        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
-        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "b588960a-20ec-4d6a-9698-c750fcdc9f3d",
-      "comment": "",
-      "command": "debugger",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c2158c4e-bb52-49e0-8e39-32442e41165a",
-      "comment": "",
-      "command": "forEach",
-      "target": "prompts",
-      "targets": [],
-      "value": "prompt"
-    }, {
-      "id": "900ab06e-0e1e-4ae0-ae97-22ad1a96acf9",
-      "comment": "",
-      "command": "click",
-      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
-      "targets": [
-        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
-        ["xpath=//input[@value='']", "xpath:attributes"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "d5de096d-021f-4217-971d-0d8e9a28838c",
-      "comment": "",
-      "command": "type",
-      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
-      "targets": [
-        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
-        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": "${prompt} wearing a suit and tie with a rainbow background, Portrait Masterpiece, HD"
-    }, {
-      "id": "3cd317bd-e481-4785-95b2-2cf0d2254ab0",
-      "comment": "",
-      "command": "forEach",
-      "target": "cycles",
-      "targets": [],
-      "value": "cycle"
-    }, {
-      "id": "7f35c800-3949-43d5-9808-574bd2ae711e",
-      "comment": "",
-      "command": "click",
-      "target": "css=.iMLenh",
-      "targets": [
-        ["css=.iMLenh", "css:finder"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
-        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
-        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5fd1f80e-404b-4914-b569-326676d45a23",
-      "comment": "",
-      "command": "pause",
-      "target": "20000",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "6539a20e-afb9-499e-8098-aa0c146ec266",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "firstImage"
-    }, {
-      "id": "f80f76fc-e4c5-462b-9962-c152b29c7c12",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "secondImage"
-    }, {
-      "id": "c824be03-e3d8-4e69-841c-339d95a8ca8f",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "thirdImage"
-    }, {
-      "id": "d9a95995-f3d4-42ae-acf0-b88a72a39350",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
-      "targets": [],
-      "value": "fourthImage"
-    }, {
-      "id": "23d3230f-4e8a-49e9-90b8-29889e5f1851",
-      "comment": "",
-      "command": "if",
-      "target": "${firstImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "9e8e7d76-e67e-4151-b57c-b0763ae5128c",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "c10f95ab-bf69-49e0-b1c6-93f08326e910",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "987c6ba2-9307-48c4-9f7a-6f1f9575ef1d",
-      "comment": "",
-      "command": "if",
-      "target": "${secondImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "9cb4173c-e04f-425f-8059-17e8236e9d56",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "7f0a120a-ef59-439c-82de-a46a7992336f",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "29e06f44-fa81-4d93-b886-325f9c1237b6",
-      "comment": "",
-      "command": "if",
-      "target": "${thirdImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "24b8d58d-5f20-42d6-9c79-390fc420b8e5",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "773e015e-1c5e-40a0-91f0-a514cb36d5dd",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4289bf36-7c4f-48ee-8d21-4eb90ddbf35d",
-      "comment": "",
-      "command": "if",
-      "target": "${fourthImage}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7297f264-60ff-429d-b416-973b9891029b",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
-      "targets": [
-        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
-      ],
-      "value": ""
-    }, {
-      "id": "862f6080-6c3c-4364-a4a9-26b361ee716f",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5b86d9d8-42f6-403d-8ab3-1b91887507f3",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a25da846-347c-4684-a32c-8e21a877a532",
-      "comment": "",
-      "command": "end",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "351a15a0-c277-418c-b59a-cf10f7533527",
     "name": "AI Animals (Suit)",
     "commands": [{
@@ -3380,34 +2675,34 @@
       "id": "a2499483-700c-4e3a-a7c9-7664e3e943ad",
       "comment": "",
       "command": "executeScript",
-      "target": "return [\"Dog\",\"Cat\",\"Monkey\",\"Lion\",\"Sharks\",\"Birds\",\"Bears\",\"Horse\",\"Fish\",\"Chicken\",\"Bison\",\"Dolphin\",\"Eagle\",\"Pony\",\"Ape\",\"Lobster\",\"Cow\",\"Deer\",\"Duck\",\"Rabbit\",\"Wolf\",\"Turkey\",\"Pig\",\"Snake\",\"Orca\",\"Toucan\",\"Llama\",\"Rhinoceros\",\"Elephant\",\"Panda\",\"Shiba Inu\",\"Dolphin\",\"Hedgehog\",\"Fox\",\"Mountain Lion\",\"Bull\",\"Tiger\",\"Buffalo\",\"Groundhog\",\"Jaguar\",\"White dog\"].sort((a,b)=>Math.random()-1)",
+      "target": "return [\"Dog\",\"Cat\",\"Monkey\",\"Lion\",\"Sharks\",\"Birds\",\"Bears\",\"Horse\",\"Fish\",\"Chicken\",\"Bison\",\"Dolphin\",\"Eagle\",\"Pony\",\"Ape\",\"Lobster\",\"Cow\",\"Deer\",\"Duck\",\"Rabbit\",\"Wolf\",\"Turkey\",\"Pig\",\"Snake\",\"Orca\",\"Toucan\",\"Llama\",\"Rhinoceros\",\"Elephant\",\"Panda\",\"Shiba Inu\",\"Dolphin\",\"Hedgehog\",\"Fox\",\"Mountain Lion\",\"Bull\",\"Tiger\",\"Buffalo\",\"Groundhog\",\"Jaguar\",\"White dog\",\"Dragon\",\"Pheonix\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
       "targets": [],
       "value": "prompts"
     }, {
-      "id": "5367de54-9b09-40c1-a29e-828084a02b93",
+      "id": "98775500-2fde-465b-9634-a2229fbdad34",
       "comment": "",
       "command": "executeScript",
-      "target": "return [\"1\",\"2\",\"3\",\"4\",\"5\",\"1\",\"2\",\"3\",\"4\",\"5\"]",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
       "targets": [],
       "value": "cycles"
-    }, {
-      "id": "f6b50d85-fd60-45aa-92cd-0907ded70dd6",
-      "comment": "",
-      "command": "click",
-      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(32) img",
-      "targets": [
-        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
-        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
-        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
-        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
-      ],
-      "value": ""
     }, {
       "id": "02e7fda4-6c94-427f-bd98-b4d0a95831fa",
       "comment": "",
       "command": "debugger",
       "target": "",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "f6b50d85-fd60-45aa-92cd-0907ded70dd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(5) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
       "value": ""
     }, {
       "id": "56cefa84-82e1-47a4-8b44-2ef21452e607",
@@ -3439,14 +2734,21 @@
         ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "${prompt} wearing a suit and tie with a rainbow background, Portrait Masterpiece, HD"
+      "value": "Anime ${prompt} with afro and symmetrical eyes and face, wearing a suit and tie, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
     }, {
-      "id": "a66f2d33-621a-4767-90be-89a1bf1d6176",
+      "id": "a24db2b3-3420-45b4-9e87-78cd2dd418bc",
       "comment": "",
       "command": "forEach",
       "target": "cycles",
       "targets": [],
       "value": "cycle"
+    }, {
+      "id": "fb2c757f-e397-4d5e-9615-725fe630bfd1",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }, {
       "id": "9052b014-7f1d-4a06-9f2d-f51d5ab745cf",
       "comment": "",
@@ -3463,7 +2765,7 @@
       "id": "f9bd47d5-ceb9-42f5-b1c5-77517c3bc3d7",
       "comment": "",
       "command": "pause",
-      "target": "20000",
+      "target": "30000",
       "targets": [],
       "value": ""
     }, {
@@ -3587,14 +2889,2177 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "998d5aca-0369-4ca6-a671-ffeccb9e58bb",
+      "id": "7024ccca-8360-4fdd-949b-a6e903b6e2af",
       "comment": "",
       "command": "end",
       "target": "",
       "targets": [],
       "value": ""
     }, {
-      "id": "e9fef944-cbc3-4002-ae42-c783f4fde6fd",
+      "id": "998d5aca-0369-4ca6-a671-ffeccb9e58bb",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d94f402e-dc85-496d-89b3-c5fe672573b2",
+    "name": "AI Anime",
+    "commands": [{
+      "id": "836bbce7-9c4b-4900-a52c-d4b0bd89a29c",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88415c3e-144b-422f-9f07-746bf10e26c8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Yhwach of Bleach\", \"Mikasa Ackerman of Attack on Titan\", \"Meliodas of Seven Deadly Sins\", \"Asta of Black Clover\", \"Eren Yeager of Attack on Titan\", \"Kakashi Hatake of Naruto\", \"Tōshirō Hitsugaya of Bleach\", \"Nico Robin of One Piece\", \"Master Roshi of Dragon Ball\", \"Vegeta of Dragon Ball\", \"Goku of Dragon Ball\", \"Ulquiorra Cifer of Bleach\", \"Light Yagami of Death Note\", \"Alucard of Castlevania\", \"Gon Freecss of Hunter x Hunter\", \"Misty of Pokémon\", \"Inosuke Hashibara of Demon Slayer\", \"Yūji Itadori of Jujutsu Kaisen\", \"Sōsuke Aizen\", \"Krillin of Dragon Ball\", \"Piccolo of Dragon Ball\", \"Erza Scarlet of Fairy Tail\", \"Byakuya Kuchiki of Bleach\", \"Nezuko Kamado of Demon Slayer\", \"Conan Edogawa of Detective Conan\", \"Rukia Kuchiki of Bleach\", \"Edward Elric of Fullmetal Alchemist\", \"Rei Ayanami of Neon Genesis Evangelion\", \"Sasuke Uchiha of Naruto\", \"Naruto\", \"Sakura Haruno of Naruto\", \"Nami of One Piece\", \"Motoko Kusanagi of Ghost in the Shell\", \"Sailor Moon\", \"Izuku Midoriya of My Hero Academia\", \"Satoru Gojō of Jujutsu Kaisen\", \"Saitama of One Punch Man\", \"Ichigo Kurosaki of Bleach\", \"Tanjiro Kamado of Demon Slayer\", \"Monkey D. Luffy of One Piece\", \"Ash Ketchum\", \"Son Goku of Dragon Ball\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "511f6f08-862e-44e0-8250-21848a639dc7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "feca36df-89fe-4303-8f25-cc1f77fcae6c",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62d40b52-01ca-4aff-8b16-c6aa04de6e5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(3) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "286c8ab5-ef40-4e2d-8235-c3acc958cdc2",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "836eb7ca-f61e-4bba-93e1-7f3c5cd023c4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ec2de9-81ab-4d09-9dd8-247a6cca805b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} with afro and symmetrical eyes and face, wearing a suit and tie, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "3644db93-ef17-414b-81f2-333dcb141d49",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "68f28b58-a86a-4d19-9bbb-3582b6520f10",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4cecffa2-0fe8-48e6-b454-0b6e45d919e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddd30857-1f70-4618-9e2d-989e1dfce014",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05dda239-02bb-44d9-b286-d90d5b0c0bd8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "0c1a89d8-8ccb-490f-9331-b54895a6bd60",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "1944b974-96e3-4b20-8cc6-74a65d6fb9ad",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "8151523d-68d3-4aab-b0a1-440bbcf13c28",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "24f9c413-a075-45f8-9e59-124126a079c3",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c4cbbc3-6891-4538-8e78-e68ad885cfe0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1be7f81a-9f4f-4707-8956-4468c06bc84f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2221d0c7-103f-44fe-ba0f-5ecaae7303bc",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa1eff84-7727-4069-93b7-d63955d5235d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "10fa0d7d-f2df-42f0-8127-3872dd764f10",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3da0e3f-c4f4-4f7c-8e78-d588245dfd63",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf5b122-3a1b-48be-8b75-604fc25d0f87",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4af6aee-2517-4888-b50b-58288552213a",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94de981e-1b39-4f96-b251-34a4f4a0d9bb",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7269c117-b928-4c67-b28d-25772e25abb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "87ffa93d-90ac-43a2-8a55-ad30eda7bf3c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b57abca6-a82a-4c95-8648-20fb77bd73b4",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "938d6c4d-e175-4d7e-a761-b8512295bbce",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a7da51a9-9696-4d2f-b800-4b1d5866c896",
+    "name": "AI Celebrity",
+    "commands": [{
+      "id": "08036713-3ed6-432a-ac6e-0d0965216aa4",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36678dac-57a4-4618-9dcd-26a0aa010f7a",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Rihanna\",\"Ariana Grande\",\"Serena Williams\",\"Ellen Degeneres\",\"Oprah\",\"Kim Kardashian\",\"Kylie Jenner\",\"Britney Spears\",\"Justin Bieber\",\"Miley Cyrus\",\"Paris Hilton\",\"Mariah Carey\",\"Sarah Palin\",\"Michelle Obama\",\"Sandra Bullock\",\"Ciara\",\"Hillary Clinton\",\"Betty White\",\"Vanessa Hudgens\",\"Halle Berry\", \"Jennifer Aniston\", \"Jennifer Lopez\", \"Angelina Jolie\", \"Beyoncé\", \"Rihanna\", \"Catherine Zeta-Jones\", \"Diana Ross\", \"Marilyn Monroe\", \"Tina Turner\", \"Linda Ronstadt\", \"Sasha Grey\", \"Elizabeth Taylor\", \"Kerry Washington\", \"Gabrielle Union\", \"Aja Naomi King\", \"Lupita Nyong’o\", \"Tyra Banks\", \"Naomi Campbell\", \"Ciara\", \"Janelle Monáe\", \"Alicia Keys\", \"Keke Palmer\", \"Zendaya\", \"Halle Bailey\", \"Taraji P. Henson\", \"Meagan Good\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "eb44b0f1-d53f-4df1-a9de-31643142aa62",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "4eb923c8-3337-4972-ad50-a6dbcf6997c4",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a53e4340-8813-42be-93bc-fc4c3be0f329",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(3) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22864cd9-a3a0-45e5-83c6-f835cd40f919",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "edcc20f4-07eb-4a00-b8c3-489a84f3887f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d59dca-6722-45e4-8c57-a60940433f15",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sailor Moon ${prompt} with afro and symmetrical eyes and face, wearing a suit and tie, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "57ce185e-82e5-48ba-a229-b8f3fc476e1a",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "2d35a7a9-5b4f-414c-95d6-451efd985b1f",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "661fde8e-2c15-4508-a308-3df9d3d2e68f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a022d3a2-4d7c-4c4c-bdb3-6a3d58e3af9d",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dedf588-899e-4b9d-b3e5-ac0988de748e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "0d05de44-712e-47d4-93c1-aa7bdc31c730",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "5ceb2d81-c4b5-4db4-8a9d-c942476af92d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "debe0250-6d73-4c3f-8105-5e41359843eb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "ba7830a0-ffbb-49e1-9920-43a99bb90dc1",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "460a6bda-dd75-4657-9d27-4a8cdabef96f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "baf89a0f-f6d0-44c2-adeb-0ff549188012",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f472b4f8-428c-4316-b25e-40b643fd51e7",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33d48fd3-37d2-4d95-9d03-f4797434985b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "95520fbc-5bdb-4776-a256-62c1d9c02e28",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a987fc83-c0e7-4a8b-9a2a-ff3829fed8c1",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c104d195-a4d4-4a49-9eb2-e91f9570c899",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aa2f81e-c9c1-4340-999d-82e679fb7c38",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2163d0a8-63bd-49e7-a6e3-e49e4b3e90a6",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a50be72-e63a-43f4-929b-07e54a2aae2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "67964ca9-6e16-4a7a-abe4-96f637b15daa",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "942903cb-c562-468a-976e-ad7d983e0e56",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f26b28a-f0c7-4465-ab29-ef273da73eea",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f68ed1bb-2079-4e33-9a87-4c2f4f198c98",
+    "name": "AI Celebrity (M)",
+    "commands": [{
+      "id": "f4d8ce91-8749-481f-a25c-373ecf78c876",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9248c154-cae4-498d-a9ba-dc41e52d7379",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Chris Brown\",\"Chris Hemsworth\",\"DJ Khaled\",\"Jackie Chan\",\"Kevin Hart\",\"Drake\",\"Will Smith\",\"Stephen Curry\",\"Gordon Ramsey\", \"Ryan Reynolds\",\"Kanye West\",\"Christiano Ronaldo\",\"Lionel Messi\",\"Tyler Perry\",\"Lebron James\",\"Dwayne Johnson\"].map(value => ({ value, dsort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "3ca1515d-ff9e-4eaf-937d-c552c2778818",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "1b40ec41-ede9-496f-b274-81d2476b7d87",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e290ff9c-489f-4a9d-910c-dda9dc50febc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(3) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cbb2b8f-67ad-4749-9013-b2055a963af7",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "a1cadfe5-b447-4ac5-bb82-4d8c4eae8ab7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df01e8fd-9b2c-4d77-a0a8-3f60f7c8eaaf",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} with afro and symmetrical eyes and face, wearing a suit and tie, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "030d42cf-6da7-47b9-90df-59e63e0863db",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "53e67fe7-3278-4403-8420-7b95983a39b8",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b96bf781-a0a5-427e-aa4a-b514709b3fab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba55e78-97da-4df3-b5d3-400117844a65",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa9b9f4-ee35-45cf-867e-456a47222cdc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "e9ef680f-99f8-40a6-95c3-d5433eef7cd8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "674c78ad-b9e6-4493-9529-b50200248eaa",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "e978ddf4-1b16-4bf1-82d9-014c68eb53e9",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "293b76d0-7365-483d-b18c-ec0912c612ce",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31eba703-5c43-4a3c-9f5b-fcb6b0a3d111",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba95f0ac-3e85-4984-ac9b-2d43eb319bf2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b2dfd0d-a618-4bea-b01a-404b75623110",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3842909-5267-4f07-a70a-7f3af3d2a056",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1374862-3835-4fb1-a4f2-078cbeaf0282",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97fb126f-fada-4981-a7dd-5024deb2f983",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33a784d6-4410-4ce6-8cde-9caf041a6f3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f61027-8ed8-4ff4-ab19-5a5c4d5345e5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f646b43-ece1-4360-bb50-d714b6c3bf59",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "020af0ef-d700-435d-9d6e-cc3570057656",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "33bd5e9b-b5d4-4a0f-9ac8-ee93820a9827",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c997361-b1a4-41c6-8117-00bfbf191c5c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f578210-969a-4b8f-8cdd-ef6971a2aecc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "51e4865d-03d9-4e3b-a134-725daad2d0ce",
+    "name": "AI Heros",
+    "commands": [{
+      "id": "acafb76d-e677-4cb5-8f1f-ecf8e7f6c4bd",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51825661-c8e6-44e0-a7a7-d6df40c854cd",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Hobbit Bilbo Baggins\", \"Harry Potter\", \"Tyrion Lannister\", \"Gandalf\", \"Hermione Granger\", \"Aang\", \"Korra\", \"Princess Mononoke\", \"Daenerys Targaryen\", \"Arya Stark\", \"Xena\", \"Hellboy\", \"Dani Moonstar\", \"Captain Planet\", \"Spawn\", \"Aquaman\", \"Dr. Strange\", \"Green Lantern\", \"Dr. Manhattan\", \"Hulk\", \"Catwoman\", \"ElastiGirl\", \"Blossom from Powerpuff Girls\", \"Bubbles from Powerpuff Girls\", \"Buttercup from Powerpuff Girls\", \"Black Lightning\", \"Captain Marvel\", \"Human Torch\", \"Wolverine\", \"The Flash\", \"Iron Man\", \"Goku\", \"Storm\", \"Captain America\", \"Black Panther\", \"Batman\", \"Spiderman\", \"Wonder Woman\", \"Superman\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "9a4f62d9-306d-4cfc-b378-5099e71cea7b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "52a39b46-a6f1-4eca-8191-fd1a020dc0bb",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13842138-10d7-41e1-bbe8-a129ffc31e62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(3) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0413cd0e-0861-46ad-884a-259875593811",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "a8b7efd5-a324-454f-9421-e435b28d481c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8079158b-f727-4c51-9641-c2b57906663d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} with afro and symmetrical eyes and face, wearing a suit and tie, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "b3792dd0-fe78-491b-ae7c-283c7d5b8c02",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "b29ce59a-cc29-42b1-811a-a23dc8072fb8",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54c73fdb-e8f1-4387-8f90-a4b8363ea1ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe8c0fd7-4694-4bf0-8fd8-d047b1bd6ff3",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "864a7989-fc59-431a-95a4-902412b9b820",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "059fb8f5-5a98-441a-9a45-1afdd954e0dd",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "3ed4869c-ffc3-4d71-ad60-182e94a1d17d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "0c6cc918-0083-4a69-9895-546447d5b63f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "befe1ce8-9b76-4b33-b9e0-7ff67a00f777",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f5ee76d-1dc9-478c-b600-c42d5753e496",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "05cc7e79-a3b5-40e6-8704-95f31c8b98bf",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "688b2bd4-2463-453a-844a-922caffa4e88",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57dc8550-e2ed-429d-aaea-c66c1b96c71c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1407cd01-9773-4d67-b789-47072e3f2b4e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7c55769-9864-4436-8440-d19b5597daba",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c924ef67-c680-4bda-b4e3-a3bd6dc947d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fcd87be-3721-4c0f-9c51-821b5531a16b",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d222fd32-3629-45a0-9130-b4daf21fd4ca",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2da6986-6229-4830-8f33-fb4e8b889e62",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "26e4f2e3-b0da-4f26-a327-7806e243d522",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e861c8e-d302-40a3-9b13-01d2ca9795e2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a8effdb-ad20-4535-a4db-d3faf9e2233f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "476a3676-0783-4514-aa6a-103f01103ef8",
+    "name": "AI Optimal Images",
+    "commands": [{
+      "id": "407f9f89-6627-495b-b3fa-2c96fb3445b0",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05e39baa-d02b-4182-a2b7-74287cc44ece",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Rihanna\",\"Superman\",\"Daenerys Targaryen\",\"Ciara\",\"Betty White\",\"Vanessa Hudgens\",\"Halle Berry\", \"Jennifer Lopez\", \"Angelina Jolie\", \"Beyoncé\", \"Catherine Zeta-Jones\", \"Diana Ross\", \"Marilyn Monroe\", \"Tina Turner\", \"Linda Ronstadt\", \"Sasha Grey\", \"Elizabeth Taylor\", \"Kerry Washington\", \"Gabrielle Union\", \"Aja Naomi King\", \"Lupita Nyong’o\", \"Tyra Banks\", \"Naomi Campbell\", \"Ciara\", \"Janelle Monáe\", \"Alicia Keys\", \"Keke Palmer\", \"Zendaya\", \"Halle Bailey\", \"Taraji P. Henson\", \"Meagan Good\",\"Kim Kardashian\",\"Kylie Jenner\",\"Ariana Grande\",\"Mariah Carey\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "4f26b743-72ee-4440-ba4a-a17b263e0a8c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "37e6fafd-ccda-4270-9e16-d8bce3b185ca",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d325f827-c271-4441-a025-4df35146e30d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(3) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc4a9b1c-9303-4a8d-a597-0ea4fd7af787",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "baac2228-15f7-4eb2-ac93-9856019cab4e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f081df5-7e9e-45ae-81fb-3e96ec3fbd6f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sailor Moon ${prompt} with afro and symmetric eyes and face, wearing an intricate suit and tie, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "7a3e9896-eced-4394-a882-315b84c283f3",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "bd057cc8-5da0-4a7a-afd5-d3dc472e3160",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2aba325d-d6b6-405f-8bb2-c4c2aa002e0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31b8bbd7-4b2d-4925-b81d-6b150dc2f665",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "750ec477-1b40-46e5-b77e-4460ea405601",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "3e55236d-f399-4835-ab25-87561a8d02ad",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "15dea7d6-f3ed-40de-86d4-5efd35b24a41",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "3e714f92-9cf0-47af-85de-c2e18f9f1ea4",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "333c56e6-3336-48b0-9af2-9fc634b65273",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a391c242-bd5d-4d91-8383-0f15beb7236c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6eef1b1-482e-4b3a-a931-e27594158ad2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7b640ff-32e3-4e1f-ad86-782d5fe7a42c",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf4f9229-52be-462e-a47c-f288dbb44fd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e149d0f-9584-49a9-b4b4-102dfe5fb343",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3412b266-243a-4a81-99c7-d124758adc2c",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5565cb8a-db86-47a1-b688-152c470afe4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "74a18d6e-8b11-423c-a977-96bfce7535a3",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea3c1b17-ea7f-4d43-aa68-f79c29459136",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb733595-3275-43ce-b527-6fc77f898c35",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cf2b48e-6c9e-4dc5-a3e5-7b07ad85e2b2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94ada872-4af2-456f-96f5-b8cb0d7a6fd4",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3192c249-e1b8-4010-b5b3-8d6f6feaec53",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e88fd856-3794-46e4-b81a-52dd3a98861a",
+    "name": "AI Single Image",
+    "commands": [{
+      "id": "64198a7b-65e3-4267-a95d-2b2133a2a6df",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1848f533-c336-4707-a537-80da9963cffd",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Lion roaring\",\"Lion roaring\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "9c2cda6d-f001-4dc8-a1b2-b568770e433c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "26a3bf7a-248a-4f76-b08d-3c7faded393a",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c8c2161-5b97-4561-a3a6-09cffe6c3a59",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(3) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f646e628-0736-4a2d-8a96-54abb69a8b68",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "23fa4d50-2d2c-4418-a181-89a2386ad454",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc58a35-548d-47aa-bfa4-d83df3dc0390",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sailor Moon ${prompt} with afro and symmetric eyes and face, wearing an intricate suit and tie, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "5b2d2d38-b987-4257-b970-6b8eaa844240",
+      "comment": "",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "ea8b3289-f656-465a-a40c-02036c0c67a2",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3883366-702d-4440-8e0f-e674434cfec3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30fa010d-5052-4084-9d2b-2f6f0a26e8a9",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61b029a5-01c5-4cc8-b76a-8372e3de3ed0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "7c80f19b-fb5e-424b-9b9a-9fd518eb30bf",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "149c6df5-151d-4535-9254-fc1392ab1918",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "5b32f4a8-2764-4294-8f45-1a5707c51523",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "293a4950-63ae-4c26-b82a-bcdd3aaa34d3",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "045daa7b-87ca-4b6a-bd51-a155340da72d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c603060c-539a-4e66-baf4-9d9179e59eb8",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d352c1d7-7db0-450f-883b-801f58ffcccd",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9453aeb2-cb95-4649-9a79-605eb828d694",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "16f83462-3bab-4232-91cd-e11b48c111f5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c42b6f75-c4b4-4a58-bbe5-9d6d714754f3",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62429bd2-9087-4032-a3ea-2fe78cc58edf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "764542c4-2d39-4048-b200-6ce2f0bffc7b",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b2e70ea-df77-420b-b63c-e78da82ffd9e",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3c31106-06e6-40cc-8112-a5dea20cf5a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed235658-ccc2-4e40-870d-ff397cd4a49c",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf59155c-2a76-4c73-942a-cebdface3344",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de83eef3-2fcf-4970-9009-c5a544a8843f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "71a0416d-ce96-45bb-b68f-1043c47368ba",
+    "name": "AI Rihanna",
+    "commands": [{
+      "id": "112799cd-8318-4bce-8887-f1e5e5511c15",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "624b6e4a-ec42-4a99-a6ec-6c86e62fc4b5",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Kawaii\",\"Iridescent\",\"Cosmic\",\"Fairy Princess\",\"Sailor Moon\",\"Ninja Samurai\",\"Cleopatra\", \"Bollywood\",\"Laser Eyes\",\"Furry\",\"Super Saiyan\",\"Cyber-Punk\",\"Halo\",\"Demon\",\"Goddess\",\"Queen\"]",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "f9df80a0-3e35-4de6-902f-654395a9edb1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return \"Rihanna\"",
+      "targets": [],
+      "value": "subject"
+    }, {
+      "id": "a6ad6f56-9678-4b16-9137-6e8239650526",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec8d1acb-968d-4b89-b19b-86bf6833c1bc",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.querySelector('[src=\"https://d3j730xi5ph1dq.cloudfront.net/dream/style_thumbnail/animev2.jpg\"]').click()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ddbd2496-c6ba-456e-83fb-1330e5d2d87e",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "c39f8dd5-134c-4bc4-a163-141a4f926174",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4fa8694-f829-48de-aa16-a39d9325e90e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} ${subject} with jewel afro, with symmetrical eyes and face, wearing an intricate jewel suit and tie, Red and Green, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, max detail"
+    }, {
+      "id": "455dcdce-7695-437d-abb1-70336d4f53bd",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aebc883b-6e4a-42c0-8d0d-3d86b8a588ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "deb12e0b-735a-478b-b2b9-d9ee49c58359",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41b4e4ef-8fdf-40ef-bb7d-42f5e19de0f3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "556c8c2c-01ba-4077-a6ca-adbabc29df97",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "1edf30ca-edfb-4b81-9f3b-0f310157c3d2",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "d17355e9-b971-40ce-bb53-4ba743eaa56d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "17af3382-f761-448f-acda-43b1b968b785",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2f8d6e5-00a4-4dbd-94f2-339200e44e93",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "427ac022-1a28-44e8-8b61-5fa33175636e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0783add6-0f1b-4513-b332-378dc8937300",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4968f2e7-3b92-45ce-8d40-fe192b166eeb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dae3c37e-7028-46a4-b9de-98d4f863fe82",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06436feb-778a-4c82-9292-133ebc1d2bd7",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d709dd2b-d27a-452b-b66d-bcab11db910e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "99e7f30e-779d-44ae-80f3-dd181d4a2e3e",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2960134d-2f2d-43c1-b38e-a52a3f85b52d",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e266c443-4d36-4307-92c4-2e5a52ccaae6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3734f70b-3ee3-4825-8d52-3b7ec95c9088",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5752221a-ef1d-4b36-bdec-a22cba34aee4",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bdafeeb0-9207-4ee5-8a3a-a515b5a0ad12",
+    "name": "AI Best",
+    "commands": [{
+      "id": "77266ae8-d755-4661-a626-c8d813eb11e6",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e30cc7e9-67e6-4837-92aa-414a2bf40291",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Kawaii\",\"Iridescent\",\"Cosmic\",\"Fairy Princess\",\"Sailor Moon\",\"Ninja Samurai\",\"Cleopatra\", \"Bollywood\",\"Laser Eyes\",\"Furry\",\"Super Saiyan\",\"Cyber-Punk\",\"Halo\",\"Demon\",\"Queen\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value).slice(5)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "cc298702-fd2b-4cef-9412-a77127dd8f95",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Rihanna\",\"Daenerys Targaryen\" ,\"Lupita Nyong’o\" ,\"Kim Kardashian\",\"Kylie Jenner\",\"Ariana Grande\",\"Mariah Carey\",\"Ciara\",\"Vanessa Hudgens\",\"Halle Berry\", \"Jennifer Lopez\", \"Angelina Jolie\", \"Beyoncé\", \"Catherine Zeta-Jones\", \"Marilyn Monroe\", \"Linda Ronstadt\", \"Sasha Grey\", \"Elizabeth Taylor\", \"Kerry Washington\", \"Gabrielle Union\", \"Aja Naomi King\",\"Tyra Banks\", \"Naomi Campbell\", \"Ciara\", \"Janelle Monáe\", \"Alicia Keys\", \"Keke Palmer\", \"Zendaya\", \"Halle Bailey\", \"Taraji P. Henson\", \"Meagan Good\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value).slice(5)",
+      "targets": [],
+      "value": "subjects"
+    }, {
+      "id": "c7eb9098-cb13-49a5-b1de-58c31372ea37",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d0b8be6-9f71-4bb4-9099-5ed33fe06a30",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.querySelector('[src=\"https://d3j730xi5ph1dq.cloudfront.net/dream/style_thumbnail/animev2.jpg\"]').click()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0b609cf-8a44-4e8c-a088-b193ae28861a",
+      "comment": "",
+      "command": "forEach",
+      "target": "subjects",
+      "targets": [],
+      "value": "subject"
+    }, {
+      "id": "098de03e-713d-4277-8676-9af554ec99e4",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "2d16db42-4ddd-454a-b0ff-a413e6fe49d1",
+      "comment": "",
+      "command": "executeScript",
+      "target": "let rando = Math.floor(Math.random()*7); return [\"Red and Green\",\"Orange and Teal\",\"Purple and Yellow\",\"Black\",\"White\",\"Gold\",\"Silver\"][rando]",
+      "targets": [],
+      "value": "color"
+    }, {
+      "id": "34ca7638-731f-4aa4-add5-a009b1f8ccbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d445c3a6-a6bb-4f7f-bdda-a51877f9e793",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} ${subject} with jewel afro, with symmetrical eyes and face, wearing an intricate jewel suit and tie, ${color}, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, max detail"
+    }, {
+      "id": "74710b47-348b-457c-9962-bf837dbf980b",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a695687c-392b-4d87-a14c-fd20b296188c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e241746-7c0c-4370-8221-7a85c5f7cfdd",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd27f521-e304-4d17-a8a9-70b72472a55d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "092af25c-ad14-4404-bb6b-5efdc445a083",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "f29a3278-4ba5-445a-bdd9-6358163b524d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "82eb39ae-ff8b-41a7-ba60-7e7104467b05",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "2d0ab15b-7faa-49b8-a9c1-6b79985a842c",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6271471-e519-423f-8393-452d194bea3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "43fae56f-9039-49e6-a120-bd87e6aaedc2",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ca4e582-7489-4efb-8588-4862a2588611",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fb1e8da-59c3-4376-a61a-26040491c526",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb025b0c-b6f9-4a21-9fef-44a5bccbf132",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "819c9ea7-bb5f-4e28-9838-965d48e68703",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "760a736e-b88f-4800-a300-f8e4742d851d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "31d1d364-140c-4320-8625-1c3136705c67",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd81f6ff-648e-45a4-962b-4d066b76c702",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00e26ef1-d2e3-44d8-bbb0-611aa971ddad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8048b75-6935-4750-aeb2-0452bc9410db",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "036e409e-70af-427a-b08a-89de60e106b0",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee2d3d23-774b-42ac-a8d3-9f4d3ae55856",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "585d108e-7792-4fe0-86a5-f7963e0aa7be",
+    "name": "AI Retry",
+    "commands": [{
+      "id": "8f92a7a9-0ed6-454d-b927-b4e6a630bbdc",
+      "comment": "",
+      "command": "open",
+      "target": "/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed91b9d1-a985-499d-bb96-6c1f76cb90ea",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Kawaii\",\"Iridescent\",\"Cosmic\",\"Fairy Princess\",\"Sailor Moon\",\"Ninja Samurai\",\"Cleopatra\", \"Bollywood\",\"Laser Eyes\",\"Furry\",\"Super Saiyan\",\"Cyber-Punk\",\"Halo\",\"Demon\",\"Queen\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value).slice(5)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "df3688b5-c6cd-4b57-b452-19fd3431af40",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return [\"Rihanna\",\"Daenerys Targaryen\" ,\"Lupita Nyong’o\" ,\"Kim Kardashian\",\"Kylie Jenner\",\"Ariana Grande\",\"Mariah Carey\",\"Ciara\",\"Vanessa Hudgens\",\"Halle Berry\", \"Jennifer Lopez\", \"Angelina Jolie\", \"Beyoncé\", \"Catherine Zeta-Jones\", \"Marilyn Monroe\", \"Linda Ronstadt\", \"Sasha Grey\", \"Elizabeth Taylor\", \"Kerry Washington\", \"Gabrielle Union\", \"Aja Naomi King\",\"Tyra Banks\", \"Naomi Campbell\", \"Ciara\", \"Janelle Monáe\", \"Alicia Keys\", \"Keke Palmer\", \"Zendaya\", \"Halle Bailey\", \"Taraji P. Henson\", \"Meagan Good\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value).slice(5)",
+      "targets": [],
+      "value": "subjects"
+    }, {
+      "id": "94f2558b-16e0-46db-b716-567bbe15af7a",
+      "comment": "",
+      "command": "debugger",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a72d0134-c80c-4119-861e-90eddf91fbfe",
+      "comment": "",
+      "command": "executeScript",
+      "target": "document.querySelector('[src=\"https://d3j730xi5ph1dq.cloudfront.net/dream/style_thumbnail/animev2.jpg\"]').click()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a8cf319-56fe-4c4f-b729-4a8ce1b4439c",
+      "comment": "",
+      "command": "forEach",
+      "target": "subjects",
+      "targets": [],
+      "value": "subject"
+    }, {
+      "id": "0505ab18-79de-4597-b212-2405e83e6780",
+      "comment": "",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "12775d51-6b9c-4988-bc8a-80d0e2716c12",
+      "comment": "",
+      "command": "executeScript",
+      "target": "let rando = Math.floor(Math.random()*7); return [\"Red and Green\",\"Orange and Teal\",\"Purple and Yellow\",\"Black\",\"White\",\"Gold\",\"Silver\"][rando]",
+      "targets": [],
+      "value": "color"
+    }, {
+      "id": "2552266c-2ed3-4c87-b12a-fed949afa6ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8719bbb-c28c-4bea-8d38-e66de9ebd676",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} ${subject} with jewel afro, with symmetrical eyes and face, wearing an intricate jewel suit and tie, ${color}, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, max detail"
+    }, {
+      "id": "b3ac186a-f248-4c8e-8db5-8d5d2f505711",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "220a9bab-6238-4824-aba7-3bdb30b410df",
+      "comment": "",
+      "command": "click",
+      "target": "css=.iMLenh",
+      "targets": [
+        ["css=.iMLenh", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ba36bf3-8fe7-4b1f-a383-3b26b23c237c",
+      "comment": "",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f77a9a04-379a-4868-8270-e72b301ea1c3",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "60b8745f-0ab3-4648-8ca3-82e67a6f55a6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "secondImage"
+    }, {
+      "id": "a72fa3a9-63ba-47f2-9478-b188ea354790",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "thirdImage"
+    }, {
+      "id": "2669f48f-3dc0-4ab4-b421-e9a5121b0533",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "fourthImage"
+    }, {
+      "id": "98af54de-5c59-4b63-bc58-8efc27ff9e08",
+      "comment": "",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6816cac-290b-4f4d-8fd8-eff38141b043",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0224e2af-d0ee-4119-8ab2-d391a55a0bc9",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87fc371b-a6b3-4f48-b553-3228afaeab8b",
+      "comment": "",
+      "command": "if",
+      "target": "${secondImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea649030-cdcc-4ca5-a156-7c1de2ba50dd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(2) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f5ee81c-71d6-4fb0-9445-d56c2e9ed7c8",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b6e1ca0-ae36-470d-b0bc-800875e3f006",
+      "comment": "",
+      "command": "if",
+      "target": "${thirdImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53ac1fd4-2370-4257-bf32-e633a74c7a5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(3) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "20f1f0d9-3fa6-455e-b8e7-09cbcabe5af0",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3186cc17-dbc8-4f33-b086-d5e5c59e61f0",
+      "comment": "",
+      "command": "if",
+      "target": "${fourthImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f11d8d0e-ebf6-484d-9e9f-eee4ecd59dc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(4) .SelectableItem__DownloadButton-sc-6c0djm-6", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1157bb7d-3b44-47d1-8a72-b8361fa1244a",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4a6ad20-fe51-48d2-9464-9ed896acd356",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5567d797-a067-4412-b7ba-b956229e705e",
       "comment": "",
       "command": "end",
       "target": "",
@@ -3622,7 +5087,14 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["351a15a0-c277-418c-b59a-cf10f7533527", "4c5db76d-c77e-4384-b47c-651f49709cb6", "fa0efdef-f7b0-4f50-a111-f1a319a68e6d", "593114df-e13f-4589-97e9-4bbccb38bbcd"]
+    "tests": ["bdafeeb0-9207-4ee5-8a3a-a515b5a0ad12", "71a0416d-ce96-45bb-b68f-1043c47368ba", "476a3676-0783-4514-aa6a-103f01103ef8", "351a15a0-c277-418c-b59a-cf10f7533527", "a7da51a9-9696-4d2f-b800-4b1d5866c896", "51e4865d-03d9-4e3b-a134-725daad2d0ce", "d94f402e-dc85-496d-89b3-c5fe672573b2", "f68ed1bb-2079-4e33-9a87-4c2f4f198c98", "e88fd856-3794-46e4-b81a-52dd3a98861a"]
+  }, {
+    "id": "52e1ff5b-cbc7-401f-bb51-b9ff0a5da8d7",
+    "name": "Retry",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bdafeeb0-9207-4ee5-8a3a-a515b5a0ad12", "585d108e-7792-4fe0-86a5-f7963e0aa7be"]
   }],
   "urls": ["https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103644278%22%2C%2290000007%22%2C%22101098412%22%5D&keywords=software%20engineer&network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&sid=rLE", "https://twitter.com/search?q=%23100DaysOfCode&src=typed_query&f=live", "https://bot-basquiat.herokuapp.com/", "https://dream.ai/"],
   "plugins": []
