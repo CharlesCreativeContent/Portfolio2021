@@ -319,11 +319,16 @@ TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
 total = 100;
         })(); break;
     }
+
+//Local Storage state changes
+let setLocalChange = ()=> localStorage.setItem("CharlesChange","true");
+let readLocalChange = ()=> localStorage.getItem("CharlesChange");
+let removeLocalChange = ()=> localStorage.removeItem("CharlesChange");
     
 
 
 let change = ()=> {
-    console.log(currentSeason)
+   // console.log(currentSeason)
 	if(document.querySelector("body.change")){
 	    switch(currentSeason){
         case "Winter" : snowStorm.toggleSnow(); break;
@@ -333,10 +338,8 @@ let change = ()=> {
     }
 		
 	    document.querySelector("[onclick='change()']").classList = "icon fa-moon change"
-	    document.querySelector('[href="index2.html"]').href="index.html"
-	    if(document.querySelector('[href="aboutme2.html"]')){
-	    document.querySelector('[href="aboutme2.html"]').href="aboutme.html"
-	    }
+
+
 	}else{
 	    switch(currentSeason){
         case "Winter" : snowStorm.toggleSnow(); break;
@@ -346,10 +349,8 @@ let change = ()=> {
     }
 	    
 	    document.querySelector("[onclick='change()']").classList = "icon fa-sun"
-	    document.querySelector('[href="index.html"]').href="index2.html"
-	    if(document.querySelector('[href="aboutme.html"]')){
-	    document.querySelector('[href="aboutme.html"]').href="aboutme2.html"
-	    }
+
+
 	}
 	document.querySelector("#sidebar").classList.toggle("change")
 	document.querySelector("#search.alt").classList.toggle("change")
@@ -366,5 +367,11 @@ let change = ()=> {
 	document.querySelectorAll("ul.contact a").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("a.button").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("p.copyright em").forEach(x=>x.classList.toggle("change"))
+	
+	if(readLocal()){
+	removeLocalChange()
+	}else{
+	setLocalChange()
+	}
  
 }
