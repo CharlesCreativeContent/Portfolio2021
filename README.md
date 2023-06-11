@@ -1,8 +1,7 @@
 # Portfolio-2021 : <a target="_blank" href="https://www.shawncharles.com">Visit Here</a>
 
 <a target="_blank" href="https://www.shawncharles.com">
-<img source="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif4.gif?raw=true"></img>
-<img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/raw/main/images/gif4.gif?raw=true" width="100%" alt="Portfolio"/>
+<img src="https://github.com/CharlesCreativeContent/CharlesCreativeContent/blob/main/images/gif4.gif?raw=true" width="100%" alt="Portfolio"/>
 </a>
 
 ### Portfolio Site including links to my projects and ways to get in contact with me.
