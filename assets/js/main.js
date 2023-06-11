@@ -368,7 +368,7 @@ let change = ()=> {
 	document.querySelectorAll("a.button").forEach(x=>x.classList.toggle("change"))
 	document.querySelectorAll("p.copyright em").forEach(x=>x.classList.toggle("change"))
 	
-	if(readLocal()){
+	if(readLocalChange()){
 	removeLocalChange()
 	}else{
 	setLocalChange()
