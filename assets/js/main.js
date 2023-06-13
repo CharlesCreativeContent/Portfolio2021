@@ -375,3 +375,36 @@ let change = ()=> {
 	}
  
 }
+
+function secretLinks(){
+
+let cheatSheet = {
+    "CoffeeChat":"https://ShawnCharles.com/Meet",
+    "Email":"shawncharles@protonmail.com",
+    "Connect":"https://ShawnCharles.com/Connect",
+    "Linkedin":"https://ShawnCharles.com/Linkedin",
+    "Twitter":"https://ShawnCharles.com/Twitter",
+    "Github":"https://ShawnCharles.com/Github",
+    "Medium":"https://ShawnCharles.com/Medium",
+    "Music":"https://ShawnCharles.com/Music",
+    "Free Value":"https://ShawnCharles.com/Value",
+}
+const success = [
+ 'background: green',
+ 'color: white',
+ 'display: block',
+ 'text-align: center'
+].join(';');
+
+const warn = [
+ 'background: gold',
+ 'color: white',
+ 'display: block',
+ 'text-align: center'
+].join(';');
+
+console.clear()
+console.warn("%c...you are probably not supposed to be here...",warn)
+console.group("%c...but heres the secret links!",success)
+console.table(cheatSheet)
+}
