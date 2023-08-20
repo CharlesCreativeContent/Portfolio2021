@@ -160,25 +160,28 @@
 									<header class="major">
 										<h2>The Hunt Radio Signup</h2>
 									</header>
-
 												<form netlify  name="Volunteer" method="post" action="#">
 													<div class="row gtr-uniform">
 														<div class="col-6 col-12-xsmall">
-															<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+															<label for="demo-name">Full Name</label>
+															<input type="text" name="demo-name" id="demo-name" value="" placeholder="First and Last Name" />
 														</div>
 														<div class="col-6 col-12-xsmall">
+															<label for="demo-email">Email</label>
 															<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
 														</div>
 														<div class="col-6 col-12-xsmall">
+															<label for="demo-link">Professional Link</label>
 															<input type="url" name="demo-link" id="demo-link" value="" placeholder="Portfolio, Linkedin, Twitter, etc" />
 														</div>
 														<div class="col-6 col-12-xsmall">
-															<input type="url" name="demo-link" id="demo-link" value="" placeholder="Twitter Space Url: https://twitter.com/i/spaces/1lPKqmmpWqeKb?s=20" />
+															<label for="demo-link2">Twitter Space Link</label>
+															<input type="url" name="demo-link2" id="demo-link2" value="" placeholder="Twitter Space Url: https://twitter.com/i/spaces/1lPKqmmpWqeKb?s=20" />
 														</div>
 														<!-- Break -->
 														<div class="col-12">
+															<label for="demo-category">Day of the Week</label>
 															<select name="demo-category" id="demo-category">
-																<option value="">- Day of the Week -</option>
 																<option value="Monday">Monday</option>
 																<option value="Tuesday">Tuesday</option>
 																<option value="Wednesday">Wednesday</option>
@@ -188,25 +191,28 @@
 																<option value="Sunday">Sunday</option>
 															</select>
 														</div>
+
 														<!-- Break -->
+														<br/>
 														<div class="col-6 col-12-small">
-															<input type="checkbox" id="demo-1" name="demo-1">
+															<input type="checkbox" id="demo-1" name="demo-1"/>
 															<label for="demo-1">3AM Eastern Standard Time</label>
 														</div>
 														<div class="col-6 col-12-small">
-															<input type="checkbox" id="demo-2" name="demo-2" checked>
+															<input type="checkbox" id="demo-2" name="demo-2" checked/>
 															<label for="demo-2">9AM Eastern Standard Time</label>
 														</div>
 														<div class="col-6 col-12-small">
-															<input type="checkbox" id="demo-3" name="demo-3">
+															<input type="checkbox" id="demo-3" name="demo-3"/>
 															<label for="demo-3">3PM Eastern Standard Time</label>
 														</div>
 														<div class="col-6 col-12-small">
-															<input type="checkbox" id="demo-4" name="demo-4" checked>
+															<input type="checkbox" id="demo-4" name="demo-4" checked/>
 															<label for="demo-4">9PM Eastern Standard Time</label>
 														</div>
 														<!-- Break -->
 														<div class="col-12">
+															<label for="demo-message">How can I help you?</label>
 															<textarea name="demo-message" id="demo-message" placeholder="Anything else you would like to say?" rows="3"></textarea>
 														</div>
 														<!-- Break -->
@@ -287,7 +293,6 @@
 	<style>
 		#form{
 			margin-left: 6em;
-			text-align: center;
 		}
 	</style>
 	<!--Editorial by HTML5 UP-->
