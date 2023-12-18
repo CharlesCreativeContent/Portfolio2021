@@ -1,0 +1,853 @@
+{
+  "id": "36431783-fd42-4635-91c5-ba60d1b713bf",
+  "version": "2.0",
+  "name": "SalesforceScripts",
+  "url": "https://chat.openai.com",
+  "tests": [{
+    "id": "84d11acf-1875-4d55-838f-543771537cfe",
+    "name": "Send LinkedIn Notifications",
+    "commands": [{
+      "id": "61c682fb-3209-490d-a4a8-e6c01d0b10ae",
+      "comment": "Input list of job roles",
+      "command": "executeScript",
+      "target": "return [\"SalesforceDeveloperRelations\",\"SalesforceDeveloperAdvocate\"]",
+      "targets": [],
+      "value": "hashtags"
+    }, {
+      "id": "e9c55e22-21ce-4dc4-9ba0-a0c1d647063b",
+      "comment": "Instantiate empty users array",
+      "command": "executeScript",
+      "target": "return []",
+      "targets": [],
+      "value": "users"
+    }, {
+      "id": "da94c6cc-e775-44ed-960a-6d08209f6ddf",
+      "comment": "loop through job roles",
+      "command": "forEach",
+      "target": "hashtags",
+      "targets": [],
+      "value": "hashtag"
+    }, {
+      "id": "86b17ee3-5038-4c90-9390-1a332a6ec408",
+      "comment": "open linkedin search results for job roles",
+      "command": "open",
+      "target": "https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103644278%22%2C%2290000007%22%2C%22101098412%22%5D&keywords=${hashtag}&network=%5B%22S%22%5D&origin=FACETED_SEARCH&sid=kP2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6546c111-5789-4ce2-9412-73ed431240d7",
+      "comment": "Input amount of loops",
+      "command": "executeScript",
+      "target": "return new Array(10).fill()",
+      "targets": [],
+      "value": "pageNumbers"
+    }, {
+      "id": "8307b504-5350-4af0-af5c-31a497a9f633",
+      "comment": "Start loop",
+      "command": "forEach",
+      "target": "pageNumbers",
+      "targets": [],
+      "value": "pageNumber"
+    }, {
+      "id": "ec9a2ce4-fd0d-4ea0-94c1-bd01b7c99dc2",
+      "comment": "wait",
+      "command": "pause",
+      "target": "1500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ba4f4f3-d803-4537-89d5-59a784480e07",
+      "comment": "scroll down page",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43267a50-bbc0-4d90-ab45-4d63b85e7ac1",
+      "comment": "wait for buttons to load",
+      "command": "waitForElementPresent",
+      "target": "css=button[aria-current='true'] span",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "bbecfcda-c800-4cdd-bf11-066f700662f2",
+      "comment": "Fill array with on page users profile links",
+      "command": "executeScript",
+      "target": "let userArray = new Array(10).fill(); return ${users}.concat(userArray.map((_,index)=>document.querySelector(`.reusable-search__result-container:nth-child(${index + 1}) a`).href))",
+      "targets": [],
+      "value": "users"
+    }, {
+      "id": "5a418225-a70a-4b6b-8d95-a482b2db57df",
+      "comment": "wait",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebd93193-6879-470a-8e7d-fb830c491935",
+      "comment": "click on the next button",
+      "command": "executeScript",
+      "target": "let nextButton = +document.querySelector(\"button[aria-current='true'] span\").innerHTML + 1 ; document.querySelector(`[aria-label=\"Page ${nextButton}\"]`).click()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23cf8d48-3c12-4947-8250-c900df291c9d",
+      "comment": "end this search loop",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efc9e0b8-7f21-46fc-ab48-65da9533700f",
+      "comment": "stop searching",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51c09610-4bac-4436-bde8-c034f67e11f3",
+      "comment": "Fill array with only unique links",
+      "command": "executeScript",
+      "target": "return [...new Set(${users})]",
+      "targets": [],
+      "value": "UniqueUsers"
+    }, {
+      "id": "4156d357-ccb6-429f-a33e-64962d36c286",
+      "comment": "loop through unique user links",
+      "command": "forEach",
+      "target": "UniqueUsers",
+      "targets": [],
+      "value": "user"
+    }, {
+      "id": "6c68df26-c62d-4a3b-bdd9-80b409ffd85e",
+      "comment": "Go to user profile",
+      "command": "open",
+      "target": "${user}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "958df935-3c73-457e-aa3b-5d6deb2b9727",
+      "comment": "wait",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bcfa030-8bd3-42f9-b36c-a6a7ca74b6fc",
+      "comment": "finish script",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "37ba231e-40a4-433d-9121-6c49e14d4e12",
+    "name": "Follow and Star Github Repos",
+    "commands": [{
+      "id": "0c9a6d77-65d8-466f-bea9-fc00b04d86f3",
+      "comment": "open github.com",
+      "command": "open",
+      "target": "https://www.github.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "782c2ec5-2c94-485a-a05a-f36dc63b07bc",
+      "comment": "wait",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c41a2a98-b293-4f6a-b9cc-0a3efe78e9b9",
+      "comment": "start loop",
+      "command": "do",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80a9e56f-69ff-4646-8e7d-ef8c5a92f721",
+      "comment": "click next button if visible",
+      "command": "executeScript",
+      "target": "let buttonFound = document.querySelector(\".ajax-pagination-btn\"); if(buttonFound){buttonFound.click()}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbd5b860-0a04-4693-96d9-0ca9c75f71cc",
+      "comment": "wait",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92289986-f92a-4c0d-8bb4-24041aafb4a5",
+      "comment": "Verify if there are more buttons to be pressed",
+      "command": "executeScript",
+      "target": "if(document.querySelector(\".ajax-pagination-btn\")){return \"More\"} else {return \"No\"}",
+      "targets": [],
+      "value": "found"
+    }, {
+      "id": "31893497-1cbc-42bb-9433-91831d4e98cd",
+      "comment": "repeat if there are more buttons",
+      "command": "repeatIf",
+      "target": " ${found}==\"More\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d4913b0-f0b3-4b2e-a0e9-b1ca39bf5e42",
+      "comment": "click on all the stars",
+      "command": "executeScript",
+      "target": "document.querySelectorAll('[data-ga-click=\"News feed, event click, Event click type:WatchEvent target:star\"]').forEach((x,i)=>setTimeout(x.click(),3000+(i*1000)))",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65416d3f-e64b-478a-a165-57500a3574cf",
+      "comment": "wait",
+      "command": "pause",
+      "target": "50000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d0dd613-de73-4590-8869-99d8d593ce10",
+      "comment": "click on all the follow buttons",
+      "command": "executeScript",
+      "target": "document.querySelectorAll('[data-ga-click=\"News feed, event click, Event click type:FollowEvent target:follow\"]').forEach((x,i)=>setTimeout(x.click(),3000+(i*1000)))",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "562a9b2c-219a-4b12-bfc7-00b76eeb4b5a",
+      "comment": "wait",
+      "command": "pause",
+      "target": "50000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3e6d266f-fa51-41d2-aec4-0a5b33097719",
+    "name": "Generate Blog Ideas",
+    "commands": [{
+      "id": "58c3392c-2c9f-4d28-800c-179978ece23b",
+      "comment": "input list of topics",
+      "command": "executeScript",
+      "target": "return [   \"Salesforce\" ]",
+      "targets": [],
+      "value": "applications"
+    }, {
+      "id": "0e7fafdb-0eca-4cc7-a97c-fe273b88d0fe",
+      "comment": "loop through prompt topics",
+      "command": "forEach",
+      "target": "applications",
+      "targets": [],
+      "value": "topic"
+    }, {
+      "id": "1fa8a88d-b6e4-4f60-b573-84c4b4d15d78",
+      "comment": "open chatgpt plugin page",
+      "command": "open",
+      "target": "/?model=gpt-4-plugins",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2da51707-2145-4ea9-9a60-110057bcff57",
+      "comment": "wait for page to load",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b32f2df2-bb8d-4b6c-b684-dafa68bcab74",
+      "comment": "focus on input section",
+      "command": "click",
+      "target": "css=.m-0",
+      "targets": [
+        ["css=.m-0", "css:finder"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/main/div[3]/form/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44562eb9-ab97-454c-babf-3e67994ba24c",
+      "comment": "type prompt into input",
+      "command": "type",
+      "target": "css=.m-0",
+      "targets": [
+        ["css=.m-0", "css:finder"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/main/div[3]/form/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "You are an amazing Blogger, named BloggerGPT. Your blog posts are SEO optimized, easily understandable, and readable. You come up with catchy, trendy, click-bait titles, and you write in the style of \"The Worlds Greatest Blogger\".\\n\\nLet's take this step by step to make sure the answer is correct!\\n\\nHere's the 3 steps. Don't Output anything until step 3 :\\n1. Search youtube videos for \"${topic}\". Only output list of links\\n2. Use correct videoids to search the content of the videos. Output Nothing\\n3. Make 3 memes about the company or product\\n4. Write SEO optimized blog post about company in the style of \"The Worlds Greatest Blogger\" that is easily understandable, and readable, using information above. and includes 3 interesting links."
+    }, {
+      "id": "45cfc2ae-18f0-45b1-8746-7d87de3f2517",
+      "comment": "short wait",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a650dce-b680-460d-9252-defd339f3d35",
+      "comment": "click on start generation",
+      "command": "click",
+      "target": "css=.md\\3A bottom-3",
+      "targets": [
+        ["css=.md\\3A bottom-3", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div[2]/div/main/div/div[2]/form/div/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e12c40f-1916-4df4-a49f-1c16e7db430d",
+      "comment": "long wait",
+      "command": "pause",
+      "target": "60000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d91bfd5-c52e-46d8-893a-b31c62c12f75",
+      "comment": "long wait",
+      "command": "pause",
+      "target": "60000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2aba47c-2b9a-424a-8245-c054d5186a92",
+      "comment": "long wait",
+      "command": "pause",
+      "target": "60000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f70ce3e-68a8-4ceb-b12b-e013baa85fe6",
+      "comment": "end prompt loop",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6188b7f1-3c3f-4907-ae4b-4ed72bc924b9",
+    "name": "Engage With a Twitter User's Following ",
+    "commands": [{
+      "id": "8e957c67-50ce-4aaf-bae8-ba68218bca61",
+      "comment": "Paste user account link here",
+      "command": "executeScript",
+      "target": "return \"https://twitter.com/muenzpraeger\"",
+      "targets": [],
+      "value": "user"
+    }, {
+      "id": "d77e7108-7b18-40d4-b69b-3e5b0ba09011",
+      "comment": "Paste number of people they are following here",
+      "command": "executeScript",
+      "target": "return 160",
+      "targets": [],
+      "value": "followers"
+    }, {
+      "id": "c076d396-195a-48ab-b672-a7c1a3928c95",
+      "comment": "Math to figure out how far to scroll",
+      "command": "executeScript",
+      "target": "return Math.ceil(${followers}/50)",
+      "targets": [],
+      "value": "pages"
+    }, {
+      "id": "c06a2a15-6f75-4b37-8335-48c0f9949e20",
+      "comment": "Opens following pages",
+      "command": "open",
+      "target": "${user}/following",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88b89e82-77ec-4567-a2f4-09e0cd1ef672",
+      "comment": "Stores current page number",
+      "command": "executeScript",
+      "target": "return 0",
+      "targets": [],
+      "value": "current"
+    }, {
+      "id": "6dd69150-d2f6-4566-aeed-1634e1292496",
+      "comment": "Stores Urls of following",
+      "command": "executeScript",
+      "target": "return [...new Set([...document.querySelectorAll('div[class=\"css-18t94o4 css-1dbjc4n r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg\"] a')].map(node=>node.href))]",
+      "targets": [],
+      "value": "urls"
+    }, {
+      "id": "86a13f1d-7137-4261-a3f7-268bfdc812e1",
+      "comment": "Starts Loop that scrolls and grabs urls",
+      "command": "while",
+      "target": "${current} < ${pages}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79f20069-b88b-4f77-8e1d-87851cb0e954",
+      "comment": "Scrolls down the page",
+      "command": "runScript",
+      "target": "window.scrollTo(0,4000*${current})",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca6b0aed-6742-4a3c-a2ad-b5b800d46220",
+      "comment": "Wait for page to load: 3secs",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "044036d5-33fe-4bc1-b7db-9245382e6d1d",
+      "comment": "Add 1 to current page",
+      "command": "executeScript",
+      "target": "return ${current} +1",
+      "targets": [],
+      "value": "current"
+    }, {
+      "id": "7f896eee-50dc-4b2b-b447-017b76c5fa95",
+      "comment": "Adds new urls to list",
+      "command": "executeScript",
+      "target": "return [...new Set([...document.querySelectorAll('div[class=\"css-18t94o4 css-1dbjc4n r-1ny4l3l r-ymttw5 r-1f1sjgu r-o7ynqc r-6416eg\"] a')].map(node=>node.href).concat(${urls}))]",
+      "targets": [],
+      "value": "urls"
+    }, {
+      "id": "686332f2-483d-4f82-a647-734cd189158c",
+      "comment": "grabs current count of urls",
+      "command": "executeScript",
+      "target": "return ${urls}.length",
+      "targets": [],
+      "value": "length"
+    }, {
+      "id": "dadab15b-b425-4d2e-a6f1-70cefc08c781",
+      "comment": "Echos current count of Urls",
+      "command": "echo",
+      "target": "Amount of URLs: ${length}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97d1b1bb-cd0f-4d2f-bae7-7ba44aa00751",
+      "comment": "End of Scrolling Loop",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b6f93ee-1d30-4d34-afea-7f9e789a9124",
+      "comment": "Starts Looping through URLs",
+      "command": "forEach",
+      "target": "urls",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "d55cb31c-3fc0-4cda-9ed2-3eb4fcbad612",
+      "comment": "Opens the current URL",
+      "command": "open",
+      "target": "${url}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5003fc6c-570b-48a0-949a-aa1d2ca3145b",
+      "comment": "stores something",
+      "command": "storeText",
+      "target": "css=.css-1dbjc4n:nth-child(1) > .css-18t94o4 > .css-901oao > .css-901oao > .css-901oao",
+      "targets": [],
+      "value": "follow"
+    }, {
+      "id": "8c57a71f-59b6-45ec-9b28-833ebb8da5bb",
+      "comment": "stores follow you text",
+      "command": "storeText",
+      "target": "xpath=//div[2]/span",
+      "targets": [
+        ["css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n > .css-1dbjc4n > .css-1dbjc4n:nth-child(2) > .css-901oao:nth-child(2) > .css-901oao", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Follows you')]", "xpath:innerText"]
+      ],
+      "value": "followsYou"
+    }, {
+      "id": "c5d4997b-7988-4101-9dec-947d87d2f2fb",
+      "comment": "checks if person follows",
+      "command": "executeScript",
+      "target": "return ${followsYou} !== \"Follows you\"",
+      "targets": [],
+      "value": "doesntFollowYou"
+    }, {
+      "id": "1c2011ef-6d46-498e-865a-e7a57a8807c1",
+      "comment": "executes if person doesn't follow",
+      "command": "if",
+      "target": "${follow} ===\"Follow\" && ${doesntFollowYou}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f5a3aae-18fd-4883-92d0-f4d580f712a7",
+      "comment": "Clicks the follow button",
+      "command": "click",
+      "target": "css=.css-1dbjc4n:nth-child(1) > .css-18t94o4 > .css-901oao > .css-901oao > .css-901oao",
+      "targets": [
+        ["css=.css-1dbjc4n:nth-child(2) > .css-1dbjc4n > .css-18t94o4 > .css-901oao > .css-901oao > .css-901oao", "css:finder"],
+        ["xpath=//div[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div/div/div[2]/div[2]/div/div/div/span/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92bb377b-9f7a-40af-972c-1f0006855318",
+      "comment": "Scrolls down the page",
+      "command": "runScript",
+      "target": "window.scrollTo(0,700)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a62988b-580c-4d7b-990c-7f14ff450ef7",
+      "comment": "Stores top 2 like button in array",
+      "command": "executeScript",
+      "target": "return [1,4]",
+      "targets": [],
+      "value": "likeButtons"
+    }, {
+      "id": "38b2648e-5556-460c-8ff0-4a8d4e4f0d20",
+      "comment": "Starts Looping through Like Buttons",
+      "command": "forEach",
+      "target": "likeButtons",
+      "targets": [],
+      "value": "likeButton"
+    }, {
+      "id": "59392b79-e7fb-46d2-ab01-8b6123cff348",
+      "comment": "Create Random Wait Time",
+      "command": "executeScript",
+      "target": "return Math.ceil((Math.random()*100)+1000)",
+      "targets": [],
+      "value": "randomWaitTime"
+    }, {
+      "id": "fe900d2c-cd8b-41f9-9ca8-bf43b7102e7f",
+      "comment": "Pause For Random Wait Time",
+      "command": "pause",
+      "target": "${randomWaitTime}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b73039e-b16e-41a8-95d8-01d844cea792",
+      "comment": "clicks the like buttons",
+      "command": "executeScript",
+      "target": "document.querySelector(`div[aria-label~=\"Timeline:\"] div div:nth-child(${likeButton}) [data-testid=like]`).click()",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "116cad5c-27f4-4944-b5bb-dfa41969bbe3",
+      "comment": "End Like loop",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf17e277-5cfc-4402-a0e6-643ac751355c",
+      "comment": "End follow loop",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fe2dfbd-86c7-468d-93d8-0f66ac86e504",
+      "comment": "Closes Program",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7fa6d448-850a-4914-a3e7-96bc269d5f0b",
+    "name": "Download AI Pictures",
+    "commands": [{
+      "id": "3429bb80-e317-4a69-b739-eb209fa186d9",
+      "comment": "",
+      "command": "open",
+      "target": "https://dream.ai/create",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6acf6843-ff19-4a43-b9b1-5b2a72295c14",
+      "comment": "Input ${Prompts}",
+      "command": "executeScript",
+      "target": "return [\"Mark Benioff\"].map(value => ({ value, sort: Math.random() }))     .sort((a, b) => a.sort - b.sort)     .map(({ value }) => value)",
+      "targets": [],
+      "value": "prompts"
+    }, {
+      "id": "fe582b34-cc0d-443c-9e9f-48773999ec28",
+      "comment": "Decides which styles to choose for the picture",
+      "command": "executeScript",
+      "target": "return [\"3\",\"3\",\"3\",\"3\",\"3\"]",
+      "targets": [],
+      "value": "cycles"
+    }, {
+      "id": "fec39f74-b53f-4321-94db-eac233d9ad74",
+      "comment": "Clicks on the chosen style",
+      "command": "click",
+      "target": "css=.Layout__Col-sc-qun2v8-2:nth-child(5) img",
+      "targets": [
+        ["css=.Layout__Col-sc-qun2v8-2:nth-child(32) img", "css:finder"],
+        ["xpath=(//img[@alt='image thumbnail'])[32]", "xpath:img"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div[2]/div/div[2]/div[32]/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0984078e-ec35-4168-adb3-bbb0abd7337d",
+      "comment": "Loops through ${prompts}",
+      "command": "forEach",
+      "target": "prompts",
+      "targets": [],
+      "value": "prompt"
+    }, {
+      "id": "59b61b6e-8047-4d04-b9bc-495c1e6674eb",
+      "comment": "Focus on text input area",
+      "command": "click",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ee66040-0aad-4f39-853f-1eef270baf58",
+      "comment": "Type in ${prompt}",
+      "command": "type",
+      "target": "css=.TextInput__Input-sc-1qnfwgf-1",
+      "targets": [
+        ["css=.TextInput__Input-sc-1qnfwgf-1", "css:finder"],
+        ["xpath=//input[@value='jimmy']", "xpath:attributes"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${prompt} and symmetrical eyes and face, Symmetrical, Portrait Masterpiece, 8K, HD, cinematic lighting, maximalist detail"
+    }, {
+      "id": "6c75d090-d40b-4e8a-809d-0feb2bacc65c",
+      "comment": "Loop through cycles",
+      "command": "forEach",
+      "target": "cycles",
+      "targets": [],
+      "value": "cycle"
+    }, {
+      "id": "8e3b4359-503d-4ac0-9e32-1360eab86dd3",
+      "comment": "wait",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bce37411-32ae-4c6f-ad96-a8678192f3ee",
+      "comment": "click on create image",
+      "command": "click",
+      "target": "css=.CreateButton__StyledCreateButton-sc-1yr4ch-0",
+      "targets": [
+        ["css=.CreateButton__StyledCreateButton-sc-1yr4ch-0", "css:finder"],
+        ["xpath=//div[@id='blur-overlay']/div/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bfcbc13-2468-4d14-b20b-6e89b204b204",
+      "comment": "long wait to generate image",
+      "command": "pause",
+      "target": "30000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43aa625b-e73b-4a39-8b7a-f70ffa535f48",
+      "comment": "Verify if image is created",
+      "command": "executeScript",
+      "target": "return document.querySelector(\".Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path\")",
+      "targets": [],
+      "value": "firstImage"
+    }, {
+      "id": "308444e6-0093-419b-a89b-e1ba6fd69953",
+      "comment": "If image was created",
+      "command": "if",
+      "target": "${firstImage}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9f8a6c5-89a1-44de-aaef-3aed00482d80",
+      "comment": "download image",
+      "command": "click",
+      "target": "css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path",
+      "targets": [
+        ["css=.Common__BaseGridItem-sc-1dxkxby-2:nth-child(1) .SelectableItem__DownloadButton-sc-6c0djm-6 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "06333771-fa83-49c9-b489-9761adf4ca4c",
+      "comment": "end prompt cycle",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "169ed647-a90e-4b1a-a5d5-e3807bb9af33",
+      "comment": "start next prompt loop",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d27c260-2507-4ecb-95c2-3460affee9f4",
+      "comment": "finish image generation",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dfbe606e-0f43-4e0b-96e6-8f753babedf5",
+    "name": "Linkedin Post Generator",
+    "commands": [{
+      "id": "4a26b0c3-354d-41f3-b029-c70be08d236f",
+      "comment": "",
+      "command": "open",
+      "target": "https://shawncharles.com/tweet",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad4aec8c-25ce-4718-8a24-6d40038ca158",
+      "comment": "Input prompt into text area",
+      "command": "type",
+      "target": "id=prompt-textarea",
+      "targets": [
+        ["id=prompt-textarea", "id"],
+        ["css=#prompt-textarea", "css:finder"],
+        ["xpath=//textarea[@id='prompt-textarea']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div/div/main/div/div[2]/form/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Salesforce"
+    }, {
+      "id": "f625f274-1fc7-4ab9-a949-064480eb7ff8",
+      "comment": "click on send",
+      "command": "click",
+      "target": "css=.dark\\3Atext-black",
+      "targets": [
+        ["css=.dark\\3Atext-black", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a89a938f-6fce-4bd0-9d45-b61ee7988702",
+      "comment": "wait for page to load",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83d9d6cb-ffce-4d6c-97d8-ba7af17d9eda",
+      "comment": "Save generated post",
+      "command": "executeScript",
+      "target": "return document.querySelector(\"p\").innerHTML",
+      "targets": [],
+      "value": "post"
+    }, {
+      "id": "00503818-cc48-490d-9818-bf265cfa5de8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.linkedin.com/feed/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "251adde1-5e9f-4500-a983-c5998f6a5d8d",
+      "comment": "wait for page load",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2daf5605-fac3-4de0-b4df-9f5587d00dc3",
+      "comment": "click on post button",
+      "command": "click",
+      "target": "css=.artdeco-button__text > .display-flex",
+      "targets": [
+        ["css=.artdeco-button__text > .display-flex", "css:finder"],
+        ["xpath=//button[@id='ember25']/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24b85bcb-65fb-471d-bb4b-7d3fa9e49ac7",
+      "comment": "wait for page to load",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9144cd1-4721-471e-9836-c394c61e9f5d",
+      "comment": "put editor into focus",
+      "command": "click",
+      "target": "css=.share-creation-state__text-editor p",
+      "targets": [
+        ["css=.share-creation-state__text-editor p", "css:finder"],
+        ["xpath=//div[@id='ember267']/div/div[2]/div/div/div/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a242425-6514-4d76-a884-3d6d96769de8",
+      "comment": "insert post into text area",
+      "command": "editContent",
+      "target": "css=.share-creation-state__text-editor .ql-editor",
+      "targets": [
+        ["css=.share-creation-state__text-editor .ql-editor", "css:finder"],
+        ["xpath=//div[@id='ember267']/div/div[2]/div/div/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "<p data-artdeco-is-focused=\"true\">${post}</p>"
+    }, {
+      "id": "dd361543-6bf8-4806-87bd-0dcd4689cd60",
+      "comment": "wait for page load",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e421e68-6ab1-497a-9962-082e5a20e0ec",
+      "comment": "click on send post button",
+      "command": "executeScript",
+      "target": "document.querySelector(\"div.share-box_actions button\").click()",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "efd6a700-84b1-4911-be00-0952d8fbb225",
+    "name": "BasquiatSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["84d11acf-1875-4d55-838f-543771537cfe"]
+  }, {
+    "id": "b0bbdc4a-d6bd-426e-8d0c-b8594416fbea",
+    "name": "Twitter",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["84d11acf-1875-4d55-838f-543771537cfe"]
+  }, {
+    "id": "ff1ae017-f2a1-4c1b-acd2-4ca1b2d04ad3",
+    "name": "Images",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "52e1ff5b-cbc7-401f-bb51-b9ff0a5da8d7",
+    "name": "Retry",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "010b989b-e349-4b61-93ce-5636d6dcc0fc",
+    "name": "ChatGPT BlogPosts",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }, {
+    "id": "f18e10c7-0f7f-483f-a1e0-c12689e03e58",
+    "name": "Job Search",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.linkedin.com/search/results/people/?geoUrn=%5B%22103644278%22%2C%2290000007%22%2C%22101098412%22%5D&keywords=software%20engineer&network=%5B%22S%22%2C%22O%22%5D&origin=FACETED_SEARCH&sid=rLE", "https://twitter.com/search?q=%23100DaysOfCode&src=typed_query&f=live", "https://bot-basquiat.herokuapp.com/", "https://dream.ai/", "https://chat.openai.com/"],
+  "plugins": []
+}
