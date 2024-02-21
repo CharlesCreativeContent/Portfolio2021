@@ -1217,7 +1217,7 @@ input[type="radio"] + label:before {
   border: 0;
   display: inline-block;
   position: relative; }
-  .image img {
+  .image img, iframe.image {
     border-radius: 0.375em;
     display: block; }
   .image.left, .image.right {
