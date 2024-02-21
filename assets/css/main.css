@@ -1220,6 +1220,9 @@ input[type="radio"] + label:before {
   .image img, iframe.image {
     border-radius: 0.375em;
     display: block; }
+iframe{
+	width:"100%";
+}
   .image.left, .image.right {
     max-width: 40%; }
     .image.left img, .image.right img {
