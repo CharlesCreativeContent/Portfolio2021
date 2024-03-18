@@ -23,6 +23,7 @@
 		<!-- FontAwesome FILES -->
 		<script src="https://kit.fontawesome.com/170c91c28b.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Yantramanav:400,500,700,900" rel="stylesheet">
 		
 <!-- FAVICON FILES -->
 <link href="images/icons/fav/favicon.ico" rel="shortcut icon">
@@ -151,6 +152,39 @@
 									</ul>
 								</header>
 
+
+                                
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Huntathon Sale</h1>
+                                            <!-- Display the countdown timer in an element -->
+                                            <p id="demo" style="background-image: -moz-linear-gradient(top,red 0%,#f2ecea 100%);
+                                            background-image: -webkit-linear-gradient(top,red 0%,#f2ecea 100%);
+                                            background-image: -o-linear-gradient(top,red 0%,#f2ecea 100%);
+                                            background-image: -ms-linear-gradient(top,red 0%,#f2ecea 100%);
+                                            background-image: linear-gradient(top,red 0%,#f2ecea 100%);
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                            position:relative;font-size:1.2em;font-family: 'Yantramanav', sans-serif;font-weight:900;text-align: center;">
+                                            </p>
+										</header>
+										<ul class="actions">
+											<li><a target="_blank" href="nopay.html" class="button big">Profile Reviews</a></li>
+										</ul>
+										<a target="_blank" href="/sandwich" class="button big">1-on-1 with a Developer</a>
+										<a target="_blank" href="/sandwich" class="button big">Year of Tech Help</a>
+										<a target="_blank" href="/sandwich" class="button big">Other ways to Pay</a>
+									</div>
+									<span class="image object">
+										<img src="https://shawncharles.com/images/newLogo.png" alt="The Hunt Company Logo" />
+									</span>
+								</section>
+
+
+
 							<!-- Section -->
 							<section>
 								<div class="posts">
@@ -168,7 +202,7 @@
 									<article>
 										<h3><strong>1-on-1 with a <b class="greenMember">Developer</b> - </strong><b class="greenMember">$19 <s>$59</s></b></h3>
 										<a target="_blank" href="https://book.stripe.com/9AQ8z5c7faGbdwccNm" class="image"><img src="https://github.com/CharlesCreativeContent/myImages/blob/main/images/1on1.png?raw=true" alt="" /></a>
-										<p><strong>Grab a 1-on-1 with a developer.</strong> Where personalized guidance turns your challenges into breakthroughs.</p>
+										<p><strong>Only 7 Spots Available!</strong> Grab a 1-on-1 with a developer. Where personalized guidance turns your challenges into breakthroughs.</p>
 										<ul class="actions">
 											<li><a target="_blank" href="https://book.stripe.com/9AQ8z5c7faGbdwccNm" class="button">Book</a></li>
 										</ul>
@@ -189,12 +223,7 @@
 									<p><strong>Don't like Stripe?</strong>  Here are some alternative ways to pay.</p>
 									<ul class="actions">
 										<li><a target="_blank" href="https://shawncharles.com/cashapp" class="button">Cashapp</a></li>
-										<li><a target="_blank" href="https://shawncharles.com/cashapp" class="button">Venmo</a></li>
-                                        <br>
-                                        <p></p>
-                                        <br>
-										<li><a target="_blank" href="https://shawncharles.com/cashapp" class="button">Paypal</a></li>
-										<li><a target="_blank" href="https://shawncharles.com/cashapp" class="button">Send Crypto</a></li>
+										<li><a target="_blank" href="https://shawncharles.com/pay" class="button">Other Payments</a></li>
 									</ul>
 								</article>
 								</div>
@@ -291,6 +320,37 @@
 
 				change()
 				change()
+
+
+
+                // Set the date we're counting down to
+                var countDownDate = new Date("May 5, 2025 12:00:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Display the result in the element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                // If the count down is finished, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+                }, 1000);
 
 			</script>
 	</body>
