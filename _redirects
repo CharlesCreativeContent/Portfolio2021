@@ -110,8 +110,10 @@
 /Anime/* https://wcostream.tv/:splat
 /anime/* https://wcostream.tv/:splat
 /blog/* https://bootcamp2faang.herokuapp.com/:splat
-/movies https://images.squarespace-cdn.com/content/v1/5bdb27ee9772ae1cc7955a0a/1551380747835-EI2FP4GB8PCIESBV0AH7/UnderConstruction.png
-/Movies https://shawn-shoppies.netlify.app/
+/tv https://himovies.to/
+/tv/* https://himovies.to/search/:splat
+/movies https://himovies.to/
+/movies/* https://himovies.to/search/:splat
 /codewars https://github.com/CharlesCreativeContent/Codewars
 /Codewars https://www.codewars.com/users/ShawnCharles.Com
 /mentorship https://adplist.org
