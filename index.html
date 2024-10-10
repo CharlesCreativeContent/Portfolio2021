@@ -111,7 +111,7 @@
 	<body id="container" class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper" style="overflow-x:hidden;">
+			<div id="wrapper" style="overflow:hidden;">
 
 				<!-- Main -->
 					<div id="main">
@@ -147,10 +147,7 @@
 										<img src="images/headshot.jpg" alt="" />
 									</span>
 								</section>
-				
-
-							
-								<section>
+				<section>
 									<header  id="ai" class="major">
 										<h2> Some Non-Proprietary Tech Projects</h2>
 									</header>
@@ -588,7 +585,6 @@
 								</article>
 										</div>
 						</section>
-						
 
 
 						</div>
@@ -612,16 +608,35 @@
 							<!-- Section -->
 								<section>
 									<header class="major">
-										<h2>Get in touch</h2>
+										<h2>Upcoming Events</h2>
 									</header>
-									<p>Reach out and let's start a conversation!</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a name="Email" target="_blank" href="mailto:shawncharles@protonmail.com">ShawnCharles@ProtonMail.com</a></li>
-										<li class="icon brands fa-twitter"><a name="Twitter"  target="_blank" href="https://twitter.com/shawnbasquiat" >ShawnCharles.com/Twitter</a></li>
-										<li class="icon brands fa-linkedin"><a name="Linked-In" target="_blank" href="https://linkedin.com/in/shawnxcharles">ShawnCharles.com/LinkedIn</a></li>
-										<li class="icon brands fa-github"><a name="Github" target="_blank" href="https://github.com/CharlesCreativeContent">ShawnCharles.com/Github</a></li>
-								  </ul>
+									<iframe
+										id="calendar",
+										src="https://lu.ma/embed/calendar/cal-eqy40utcmuY1RUB/events?compact=true&lt=light"
+										width="100%"
+										height="200"
+										frameborder="0"
+										style="border: 1px solid #bfcbda88; border-radius: 4px;"
+										allowfullscreen=""
+										aria-hidden="false"
+										tabindex="0"
+									></iframe>
 								</section>
+
+
+								<!-- Section -->
+									<section>
+										<header class="major">
+											<h2>Get in touch</h2>
+										</header>
+										<p>Reach out and let's start a conversation!</p>
+										<ul class="contact">
+											<li class="icon solid fa-envelope"><a name="Email" target="_blank" href="mailto:shawncharles@protonmail.com">ShawnCharles@ProtonMail.com</a></li>
+											<li class="icon brands fa-twitter"><a name="Twitter"  target="_blank" href="https://twitter.com/shawnbasquiat" >ShawnCharles.com/Twitter</a></li>
+											<li class="icon brands fa-linkedin"><a name="Linked-In" target="_blank" href="https://linkedin.com/in/shawnxcharles">ShawnCharles.com/LinkedIn</a></li>
+											<li class="icon brands fa-github"><a name="Github" target="_blank" href="https://github.com/CharlesCreativeContent">ShawnCharles.com/Github</a></li>
+									  </ul>
+									</section>
 
 							<!-- Footer -->
 								<footer id="footer">
@@ -652,6 +667,35 @@
 
 			</script>
 			<script src="https://cdn.jsdelivr.net/npm/@statsig/js-client@1/build/statsig-js-client+session-replay+web-analytics.min.js?apikey=client-q8d6lMrERwtgCrtrL1G60lqb3gfTzmip55gm5RwvibA"></script>
+			<script>
+			let pip = document.createElement("script");
+			pip.addEventListener("load", async function (event) {
+
+				let pageName = window.location.toString()
+				let email = pageName.slice(pageName.lastIndexOf("=")+1)
+				let cl = "client-7h"
+				let ient = "wMuA2yBFbRC85Jvzty972FGaCisSnOZKpn7GDBeSr"
+				await statsig.initialize(cl+ient);
+				await statsig.updateUser({email}); 
+				let defaultPage = pageName === "https://shawncharles.com"
+				console.log("pageName: ", pageName)
+				console.log("email: ", email)
+
+				const availableData = statsig.getConfig("portfolio_company");
+				let topText = availableData.get("default")
+
+				if(topText!=="default"){
+					topText = availableData.get("data")
+					console.log("topText: ", topText)
+				}
+			})
+				// Loading the SDK
+				pip.src = "https://cdn.jsdelivr.net/npm/statsig-js@4.16.0/build/statsig-prod-web-sdk.min.js";
+				pip.async = true;
+				document.getElementsByTagName("body")[0].parentNode.appendChild(pip);
+
+				
+			</script>
 
 	</body>
 	<!--Editorial by HTML5 UP-->
