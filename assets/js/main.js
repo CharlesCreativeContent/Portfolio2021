@@ -73,14 +73,17 @@
 		var $sidebar = $('#sidebar'),
 			$sidebar_inner = $sidebar.children('.inner');
 
-		// Inactive by default on <= large.
-			breakpoints.on('<=large', function() {
-				$sidebar.addClass('inactive');
-			});
+		// Inactive by default
+			$sidebar.addClass('inactive');
 
-			breakpoints.on('>large', function() {
-				$sidebar.removeClass('inactive');
-			});
+		// Inactive by default on <= large.
+			// breakpoints.on('<=large', function() {
+			// 	$sidebar.addClass('inactive');
+			// });
+
+			// breakpoints.on('>large', function() {
+			// 	$sidebar.removeClass('inactive');
+			// });
 
 		// Hack: Workaround for Chrome/Android scrollbar position bug.
 			if (browser.os == 'android'
@@ -272,11 +275,11 @@ let leaves = {};
     TweenLite.set("#container",{perspective:600})
     function R(min,max) {return min+Math.random()*(max-min)};
     var container = document.getElementById("container"),	w = window.outerWidth , h = window.outerHeight;
-    function animm(elm){   
-   TweenMax.to(elm,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
-   TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
-   TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
- };
+//     function animm(elm){   
+//    TweenMax.to(elm,R(6,15),{y:h+100,ease:Linear.easeNone,repeat:-1,delay:-15});
+//    TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+//    TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+//  };
     let total, pageContent
     //This Loads the seasons to make the right environment
     switch(currentSeason){
@@ -289,30 +292,35 @@ TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
 total = 100;
         })(); break;
         case "Autumn" : (()=>{
-total = 50;
+total = 75;
 pageContent = document.getElementById("wrapper")
-		
 
-leaves["fall"] = ()=>{
+//Delete when leaves activated
+TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
+total = 100;
+
+
+//Uncomment when leaves activated
+// leaves["fall"] = ()=>{
         
 
- function LeavesAnimm(elm){   
-   TweenMax.to(elm,R(5,40),{y:h*3,ease:Linear.easeNone,repeat:-1,delay:-15});
-   TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
-   TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
- };
- for (i=0; i<total; i++){ 
-   var Div = document.createElement('div');
-   TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w),y:R(-200,0),z:R(-200,200)});
-   container.insertBefore(Div,pageContent);
-   LeavesAnimm(Div);
- }
-    }
+//  function LeavesAnimm(elm){   
+//    TweenMax.to(elm,R(6,40),{y:h*3,ease:Linear.easeNone,repeat:-1,delay:-15});
+//    TweenMax.to(elm,R(4,8),{x:'+=100',rotationZ:R(0,180),repeat:-1,yoyo:true,ease:Sine.easeInOut});
+//    TweenMax.to(elm,R(2,8),{rotationX:R(0,360),rotationY:R(0,360),repeat:-1,yoyo:true,ease:Sine.easeInOut,delay:-5});
+//  };
+//  for (i=0; i<total; i++){ 
+//    var Div = document.createElement('div');
+//    TweenLite.set(Div,{attr:{class:'dot'},x:R(0,w-200),y:R(-200,0),z:R(-200,100)});
+//    container.insertBefore(Div,pageContent);
+//    LeavesAnimm(Div);
+//  }
+//     }
 
    
-leaves["stop"] =  ()=>{
-	document.querySelectorAll(".dot").forEach(x=>x.parentElement.removeChild(x))
-    }
+// leaves["stop"] =  ()=>{
+// 	document.querySelectorAll(".dot").forEach(x=>x.parentElement.removeChild(x))
+//     }
         })(); break;
  case "Spring" : (()=>{
 TweenLite.set("img",{xPercent:"-50%",yPercent:"-50%"})
@@ -333,22 +341,30 @@ let change = ()=> {
 	    switch(currentSeason){
         case "Winter" : snowStorm.toggleSnow(); break;
         case "Summer" : snowStorm.toggleSnow(); break;
-        case "Autumn" : leaves.stop(); break;
+        case "Autumn" : snowStorm.toggleSnow(); break;
+        // case "Autumn" : leaves.stop(); break;
         case "Spring" : snowStorm.toggleSnow(); break;
     }
 		
 	    document.querySelector("[onclick='change()']").classList = "icon fa-moon change"
+		//calendar light mode
+		document.querySelector("#calendar").src = "https://lu.ma/embed/calendar/cal-eqy40utcmuY1RUB/events?compact=true&lt=light"
+
+		
 
 
 	}else{
 	    switch(currentSeason){
         case "Winter" : snowStorm.toggleSnow(); break;
         case "Summer" : snowStorm.toggleSnow(); break;
-        case "Autumn" : leaves.fall(); break;
+        case "Autumn" : snowStorm.toggleSnow(); break;
+        // case "Autumn" : leaves.fall(); break;
         case "Spring" : snowStorm.toggleSnow(); break;
     }
 	    
 	    document.querySelector("[onclick='change()']").classList = "icon fa-sun"
+		//calendar dark mode
+	    document.querySelector("#calendar").src = "https://lu.ma/embed/calendar/cal-eqy40utcmuY1RUB/events?compact=true&lt=dark"
 
 
 	}
