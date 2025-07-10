@@ -155,7 +155,7 @@
 /anime https://wcostream.tv
 /Anime https://anime-sc.herokuapp.com/
 /Anime/* https://wcostream.tv/:splat
-/anime/* https://wcostream.tv/:splatx
+/anime/* https://wcostream.tv/:splat
 /tv https://himovies.sx/
 /tv/* https://himovies.sx/search/:splat
 /movies https://himovies.sx/
@@ -579,6 +579,7 @@
 /e-commerce https://www.udemy.com/course/wordpressforecommerce/learn/lecture/11406886#overview
 /E-Commerce https://www.udemy.com/course/wordpressforecommerce/learn/lecture/11406886#overview
 /images https://github.com/CharlesCreativeContent/myImages/upload/main/images
+/images/* https://shawnimages.netlify.app/images/:splat
 /ai https://linktr.ee/aibasquiat
 /Ai https://linktr.ee/aibasquiat
 /start https://linktr.ee/pathtojobs
