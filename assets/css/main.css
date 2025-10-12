@@ -2321,8 +2321,9 @@ a.button.change {
 iframe{
 	aspect-ratio:16/9;
 }
+
 @media screen and (min-width: 957px) {
 .extraButtons {
-	display: block;
+	display: block !important;
 }	
 }
