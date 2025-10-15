@@ -751,40 +751,13 @@
 				change()
 
 			</script>
-			<script src="https://cdn.jsdelivr.net/npm/@statsig/js-client@1/build/statsig-js-client+session-replay+web-analytics.min.js?apikey=client-q8d6lMrERwtgCrtrL1G60lqb3gfTzmip55gm5RwvibA"></script>
-			<script>
-			let pip = document.createElement("script");
-			pip.addEventListener("load", async function (event) {
-
-				let pageName = window.location.toString()
-				let email = pageName.slice(pageName.lastIndexOf("=")+1)
-				let cl = "client-7h"
-				let ient = "wMuA2yBFbRC85Jvzty972FGaCisSnOZKpn7GDBeSr"
-				await statsig.initialize(cl+ient);
-				await statsig.updateUser({email}); 
-				let defaultPage = pageName === "https://shawncharles.com"
-				console.log("pageName: ", pageName)
-				console.log("email: ", email)
-
-				const availableData = statsig.getConfig("portfolio_company");
-				let topText = availableData.get("default")
-
-				if(topText!=="default"){
-					topText = availableData.get("data")
-					console.log("topText: ", topText)
-				}
-			})
-				// Loading the SDK
-				pip.src = "https://cdn.jsdelivr.net/npm/statsig-js@4.16.0/build/statsig-prod-web-sdk.min.js";
-				pip.async = true;
-				document.getElementsByTagName("body")[0].parentNode.appendChild(pip);
-
-				
-			</script>
+			<script type="text/javascript" src="contentData.js"></script>
+			<script type="text/javascript" src="search.js"></script>
 
 	</body>
 	<!--Editorial by HTML5 UP-->
 </html>
+
 
 
 
