@@ -11,7 +11,8 @@ const contentData = {
     keywords: "JavaScript Express.js Runware SDK",
     description:
       "Generates Pokémon-inspired images and an idle-animation video for a Pokédex entry using Runware (image gen) and Google Veo3 (video).",
-    image: "https://shawncharles.com/images/image.jpg",
+    image: "https://github.com/CharlesCreativeContent/runware-pokemon-generator/raw/main/public/runware.gif?raw=true",
+    url: "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
     button: {
       "Code Repo": "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
       "Watch Video": "https://youtu.be/oQU5E0bBPYQ",
