@@ -27,7 +27,7 @@ function haveCommonElement(arr1, arr2) {
 }
 
 function renderContent (query,contentList){
-  document.getElementById("searchTitle").innerHTML = query
+  document.getElementById("searchTitle").innerHTML = query.join(" ")
 
   contentList.forEach(content=>{
     let {button, description,image,keywords,subTitle,title,type,url} = content
