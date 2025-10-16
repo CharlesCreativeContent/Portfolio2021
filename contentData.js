@@ -19,7 +19,39 @@ const contentData = {
     },
   },
 
-  
+  "Runware Pokémon Generator1": {
+    title: "Runware Pokémon Generator: AI Image and Video Generation",
+    // Choose ONE type string; `project` | `video` was pseudo-syntax
+    type: "project",
+    subTitle: "JavaScript, Express.js, Runware SDK",
+    keywords: "JavaScript Express.js Runware SDK",
+    description:
+      "Generates Pokémon-inspired images and an idle-animation video for a Pokédex entry using Runware (image gen) and Google Veo3 (video).",
+    image: "https://github.com/CharlesCreativeContent/runware-pokemon-generator/raw/main/public/runware.gif?raw=true",
+    url: "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
+    button: {
+      "Code Repo": "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
+      "Watch Video": "https://youtu.be/oQU5E0bBPYQ",
+    },
+  },
+
+  "Runware Pokémon Generator2": {
+    title: "Runware Pokémon Generator: AI Image and Video Generation",
+    // Choose ONE type string; `project` | `video` was pseudo-syntax
+    type: "project",
+    subTitle: "JavaScript, Express.js, Runware SDK",
+    keywords: "JavaScript Express.js Runware SDK",
+    description:
+      "Generates Pokémon-inspired images and an idle-animation video for a Pokédex entry using Runware (image gen) and Google Veo3 (video).",
+    image: "https://github.com/CharlesCreativeContent/runware-pokemon-generator/raw/main/public/runware.gif?raw=true",
+    url: "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
+    button: {
+      "Code Repo": "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
+      "Watch Video": "https://youtu.be/oQU5E0bBPYQ",
+    },
+  },
+
+
 
   // --- Add more entries below in the same shape ---
   // "Another Project Title": {
