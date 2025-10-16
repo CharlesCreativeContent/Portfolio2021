@@ -11,9 +11,9 @@ function onLoadSearch (){
 }
 
 function search(query){
-  let keywords = Object.values(window.contentData)
-  let searchList = keywords.filter(article=>haveCommonElement(article.keywords.toLowerCase().split(" "),query))
-  return searchList
+  let allContent = Object.values(window.contentData)
+  let searchList = allContent.filter(article=>haveCommonElement(article.keywords.toLowerCase().split(" "),query))
+  return query[0]==="allstar52"? allContent : searchList
 }
 
 function haveCommonElement(arr1, arr2) {
@@ -31,15 +31,15 @@ function renderContent (query,contentList){
 
   contentList.forEach(content=>{
     let {button, description,image,keywords,subTitle,title,type,url} = content
+    let imageElement = renderVideo(type,image,title, url)
+    console.log(imageElement)
     let buttonList = Object.entries(button).reduce((a,b)=>{
       let buttons = `<li><a target="_blank" href="${b[1]}" class="button">${b[0]}</a></li>`
       return a+buttons
     },"")
     document.getElementById("searchArticles").innerHTML += `
   <article>
-  <a target="_blank" href="${url}" class="image">
-  <img src="${image}" />
-  </a>
+  ${imageElement}
   <h3>${title}</h3>
   <p><strong>${subTitle}</strong> – ${description}</p>
   <ul class="actions">
@@ -62,5 +62,16 @@ function renderEmptySearch(){
   </article>
   `
 }
+
+function renderVideo(type,mediaURL,mediaName,url){
+  return type==="video" ? `<iframe width="100%" aspect-ratio="16/9"
+src="${mediaURL}" title="${mediaName}"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+`:`
+<a target="_blank" href="${url}" class="image">
+<img src="${mediaURL}" alt="${mediaName}"/>
+</a>
+`}
 
 window.addEventListener('load', onLoadSearch);
