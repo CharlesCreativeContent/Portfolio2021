@@ -2,7 +2,9 @@
 function onLoadSearch (){
   let pageName = window.location.toString()
   if(pageName.includes("=")){
-  let query = pageName.slice(pageName.lastIndexOf("=")+1,pageName.length).toLowerCase().split("+")
+    
+  document.getElementById("searchSection").scrollIntoView({ behavior: "smooth",block: "start"})
+  let query = pageName.slice(pageName.lastIndexOf("=")+1,pageName.indexOf("#")).toLowerCase().split("+")
   let contentData = search(query)
   console.log("final: ", contentData)
   renderContent(query, contentData)
@@ -26,14 +28,10 @@ function haveCommonElement(arr1, arr2) {
 }
 
 function renderContent (query,contentList){
-  console.log("query: ",query)
-  console.log("contentList: ",contentList)
-  document.getElementById("searchSection").style.display = "block"
   document.getElementById("searchTitle").innerHTML = query
 
   contentList.forEach(content=>{
     let {button, description,image,keywords,subTitle,title,type,url} = content
-    console.log("Here: ",Object.entries(button))
     let buttonList = Object.entries(button).reduce((a,b)=>{
       let buttons = `<li><a target="_blank" href="${b[1]}" class="button">${b[0]}</a></li>`
       return a+buttons
@@ -53,8 +51,17 @@ function renderContent (query,contentList){
   })
   
   
-  if(contentList.length===0) document.getElementById("searchArticles").innerHTML = "Sorry we didn't find any content for your search"
+  if(contentList.length===0) renderEmptySearch()
+  document.getElementById("searchSection").style.display = "block"
+  document.getElementById("searchSection").scrollIntoView({ behavior: "smooth",block: "start"})
+}
 
+function renderEmptySearch(){
+  document.getElementById("searchArticles").innerHTML = `
+  <article>
+  <h3>Sorry, Found 0 results for your search!</h3>
+  </article>
+  `
 }
 
 window.addEventListener('load', onLoadSearch);
