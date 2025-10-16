@@ -14,6 +14,7 @@
 /vlmrun https://app.vlm.run/
 /project/inngest https://pokedex-inngest-deepgram.vercel.app/
 /canvas https://app.dev.thesys.dev/home
+/search/* https://shawncharles.com/?query=:splat
 /blog/inngest https://medium.com/@ShawnBasquiat/building-an-ai-powered-pok%C3%A9dex-with-inngest-deepgram-and-openai-281b5a42489d
 /github/inngest https://github.com/CharlesCreativeContent/pokedex-inngest-deepgram
 /slides https://www.canva.com/design/DAGqLyvx73s/DAs6T3F5TCZQ72X0hsPltA/watch?utm_content=DAGqLyvx73s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h53dd0b21ac
