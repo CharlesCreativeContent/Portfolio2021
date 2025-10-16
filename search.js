@@ -2,9 +2,8 @@
 function onLoadSearch (){
   let pageName = window.location.toString()
   if(pageName.includes("=")){
-    
   document.getElementById("searchSection").scrollIntoView({ behavior: "smooth",block: "start"})
-  let query = pageName.slice(pageName.lastIndexOf("=")+1,pageName.indexOf("#")).toLowerCase().split("+")
+  let query = pageName.slice(pageName.lastIndexOf("=")+1).toLowerCase().split("+")
   let contentData = search(query)
   console.log("final: ", contentData)
   renderContent(query, contentData)
