@@ -4,10 +4,13 @@ function onLoadSearch (){
   if(pageName.includes("=")){
   document.getElementById("searchSection").scrollIntoView({ behavior: "smooth",block: "start"})
   let query = pageName.slice(pageName.lastIndexOf("=")+1).toLowerCase().split("+")
+  startSearchFor(query)
+  }
+}
+function startSearchFor (query) {
   let contentData = search(query)
   console.log("final: ", contentData)
   renderContent(query, contentData)
-  }
 }
 
 function search(query){
@@ -75,3 +78,4 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 `}
 
 window.addEventListener('load', onLoadSearch);
+
