@@ -161,7 +161,7 @@ const contentData = {
       "image": "https://www.youtube.com/embed/oZP61tui0O0?si=iceF8ZUfRvwzqOIa&amp;start=3235",
       "url": "https://medium.com/@ShawnBasquiat/building-a-coin-gecko-ai-dashboard-using-thesys-generative-ui-1c77820f4d36",
       "button": {
-        "Watch Video": "https://www.youtube.com/@ShawnBasquiat",
+        "Watch Video": "https://www.youtube.com/embed/oZP61tui0O0?si=iceF8ZUfRvwzqOIa&amp;start=3235",
         "Code Repo": "https://github.com/CharlesCreativeContent/CoinGecko-Thesys-MCP"
       }
     },
@@ -172,9 +172,9 @@ const contentData = {
       "keywords": "The Hunt Career Job Search Tech Industry",
       "description": "Comprehensive guide offering strategies, tips, and insights for navigating the competitive tech industry job market.",
       "image": "https://github.com/CharlesCreativeContent/Portfolio2021/blob/main/images/Dark%20Blue%20and%20Yellow%20Modern%20Business%20Strategy%20Live%20Webinar%20Instagram%20Post.gif?raw=true",
-      "url": "https://shawncharles.com/aboutme",
+      "url": "https://x.com/ShawnBasquiat/status/1553472592220246016?s=20",
       "button": {
-        "Join": "https://shawncharles.com/aboutme"
+        "Join": "https://x.com/ShawnBasquiat/status/1553472592220246016?s=20"
       }
     },
     "Daily.dev: Being a Dev in 2024 (3.4K Attendees)":{
@@ -184,9 +184,9 @@ const contentData = {
       "keywords": "daily.dev Developer Trends Communities",
       "description": "Explores the evolving landscape of software development—latest technologies, industry trends, and the skills required to succeed.",
       "image": "https://github.com/CharlesCreativeContent/myImages/raw/main/images/spaces/francesco-being-a-dev-in-2024.jpeg?raw=true",
-      "url": "https://daily.dev/",
+      "url": "https://x.com/ossia/status/1732429481489387806?s=20",
       "button": {
-        "Join": "https://daily.dev/"
+        "Join": "https://x.com/ossia/status/1732429481489387806?s=20"
       }
     },
 
@@ -198,9 +198,9 @@ const contentData = {
       "keywords": "Flowise no-code drag-and-drop visual-builder AI agents chatbot assistants agentic-workflows chatflows agentflows LangChain.js LLM orchestration pipelines nodes canvas prompt-chaining tool-calling function-calling web-search API-calls REST webhooks data-connectors loaders RAG retrieval-augmented-generation embeddings vector-database Pinecone Chroma Weaviate FAISS Milvus Supabase Postgres knowledge-base document-ingestion PDFs CSVs websites sitemaps scraping memory conversation-memory short-term-memory long-term-memory context window summarization grounding fallback-handlers evaluation monitoring logging analytics rate-limiting auth authentication JWT RBAC multi-tenant environment-variables secrets management versioning export import JSON schema OpenAPI swagger chat-widget embed iframe branding theming UI components self-hosted open-source Docker Docker-Compose Kubernetes Helm Vercel Render Railway Fly.io AWS GCP Azure serverless Node.js TypeScript JavaScript npm pnpm yarn OpenAI GPT-4o GPT-4.1 function-calling Anthropic Claude 3.5 Sonnet Google Gemini 1.5 Pro Ollama local-models Hugging Face Transformers llama.cpp text-generation image-generation speech-to-text text-to-speech retrieval tools connectors vector-store caching batching streaming SSE token-usage cost-controls observability testing fixtures CI/CD",
       "description": "An AI assistant using Flowise’s open-source, no-code canvas. Visually compose an agent by snapping together LLMs, memory modules, tool nodes (web search, custom API calls, function tools), and data connectors for RAG over docs.",
       "image": "https://cdn-images-1.medium.com/max/2560/1*jDFWC5DdMExS0knG7zatjg.png",
-      "url": "https://daily.dev/",
+      "url": "https://medium.com/@ShawnBasquiat/drag-drop-deploy-build-an-ai-assistant-with-flowise-a5f71e19531b",
       "button": {
-        "Read": "https://daily.dev/"
+        "Read": "https://medium.com/@ShawnBasquiat/drag-drop-deploy-build-an-ai-assistant-with-flowise-a5f71e19531b"
       }
     },
 
@@ -212,9 +212,9 @@ const contentData = {
       "keywords": "Flowise, no-code, drag-and-drop, RAG, retrieval-augmented generation, knowledge retrieval, document ingestion, document loaders, data connectors, PDFs, URLs, Notion, Google Drive, CSV, web pages, text files, chunking, text splitter, chunk overlap, embeddings, embedding models, OpenAI embeddings, Cohere embeddings, Instructor embeddings, sentence-transformers, vector database, vector store, FAISS, Chroma, Pinecone, Qdrant, Weaviate, Milvus, hybrid search, semantic search, keyword search, BM25, dense retrieval, sparse retrieval, retriever, top-k, max marginal relevance, MMR, re-ranking, reranker, bge-reranker, Cohere Rerank, context window, context assembly, prompt template, system prompt, LLM, GPT, OpenAI, Anthropic, Azure OpenAI, Cohere, rate limiting, streaming, memory, conversation history, tool calling, evaluation, RAG evaluation, latency, cost control, caching, guardrails, hallucination reduction, citations, source attribution, metadata filters, namespaces, multi-tenant, scalability, orchestration, pipeline, nodes, edges, graph, parameter tuning, temperature, top_p, max_tokens, test datasets, benchmarks, LangChain compatible, API server, chat UI, production-ready, deployment, Docker, environment variables, secrets management, logging, observability, error handling",
       "description": "Build your first RAG pipeline in Flowise—ingest docs, chunk and embed them into a vector database, connect a retriever (with optional re-ranking) to an LLM via prompt templates, and chat with grounded answers and citations—no code required.",
       "image": "https://cdn-images-1.medium.com/max/2560/1*Ot4SmbXKQjNXKcxOoBrz6A.png",
-      "url": "https://daily.dev/",
+      "url": "https://medium.com/@ShawnBasquiat/your-first-rag-in-flowise-no-code-0d246bf2a060",
       "button": {
-        "Read": "https://daily.dev/"
+        "Read": "https://medium.com/@ShawnBasquiat/your-first-rag-in-flowise-no-code-0d246bf2a060"
       }
     },
 
@@ -226,9 +226,9 @@ const contentData = {
       "keywords": "Flowise Observability Tracing Telemetry OpenTelemetry OTel Traces Spans Metrics Logs Distributed Tracing Jaeger Grafana Tempo Loki Prometheus Datadog New Relic Honeycomb Elastic APM Sentry Dashboards Alerting SLI SLO Error Budgets Latency p50 p95 p99 Throughput Cost Monitoring Token Usage Token Spend Prompt Tokens Completion Tokens Rate Limits Retries Exponential Backoff Circuit Breaker Concurrency Queues DLQ Webhooks Audit Logging PII Redaction Secrets Management Environment Variables Config Runtime Agents Agentic Workflows Tools Tool Calls Function Calling LLMOps RAG Vector Store Pinecone Weaviate Chroma Milvus FAISS Embeddings Chunking Retriever Evaluator Evals Regression Tests Unit Tests Smoke Tests Load Testing Soak Testing Tracing Context Trace ID Span ID Correlation ID Request ID Sampling Head Based Sampling Tail Based Sampling Batching Exporters OTLP gRPC HTTP JSON Logging Structured Logging Kibana Kubernetes K8s Helm Docker Node.js TypeScript LangChain LlamaIndex Vercel Cloud Serverless Edge Compliance SOC2 HIPAA GDPR Access Controls RBAC Policies Content Safety Moderation Guardrails Prompt Templates Observability Pipeline Debugging Root Cause Analysis Incident Response On Call Runbooks Cost Anomalies Drift Detection Token Budgets",
       "description": "End-to-end observability for Flowise agents: capture trustworthy traces for every node and tool call, export OTel data to Jaeger/Grafana/Datadog, correlate logs and metrics, track latency and token cost, build dashboards and alerts, and add safe redaction for sensitive inputs/outputs.",
       "image": "https://cdn-images-1.medium.com/max/2560/1*ywyxodWqqEFBlzD9QDbH3w.png",
-      "url": "https://daily.dev/",
+      "url": "https://medium.com/@ShawnBasquiat/observability-in-flowise-traces-you-can-trust-b5d5997e6026",
       "button": {
-        "Read": "https://daily.dev/"
+        "Read": "https://medium.com/@ShawnBasquiat/observability-in-flowise-traces-you-can-trust-b5d5997e6026"
       }
     },
 
@@ -294,4 +294,5 @@ const contentData = {
 
 
 window.contentData = contentData;
+
 
