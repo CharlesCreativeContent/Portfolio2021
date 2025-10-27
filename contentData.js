@@ -209,7 +209,7 @@ const contentData = {
       "title": "Your First RAG in Flowise (No-Code)",
       "type": "blog",
       "subTitle": "Flowise, No-Code RAG, Embeddings & Vector DBs",
-      "keywords": "Flowise, no-code, drag-and-drop, RAG, retrieval-augmented generation, knowledge retrieval, document ingestion, document loaders, data connectors, PDFs, URLs, Notion, Google Drive, CSV, web pages, text files, chunking, text splitter, chunk overlap, embeddings, embedding models, OpenAI embeddings, Cohere embeddings, Instructor embeddings, sentence-transformers, vector database, vector store, FAISS, Chroma, Pinecone, Qdrant, Weaviate, Milvus, hybrid search, semantic search, keyword search, BM25, dense retrieval, sparse retrieval, retriever, top-k, max marginal relevance, MMR, re-ranking, reranker, bge-reranker, Cohere Rerank, context window, context assembly, prompt template, system prompt, LLM, GPT, OpenAI, Anthropic, Azure OpenAI, Cohere, rate limiting, streaming, memory, conversation history, tool calling, evaluation, RAG evaluation, latency, cost control, caching, guardrails, hallucination reduction, citations, source attribution, metadata filters, namespaces, multi-tenant, scalability, orchestration, pipeline, nodes, edges, graph, parameter tuning, temperature, top_p, max_tokens, test datasets, benchmarks, LangChain compatible, API server, chat UI, production-ready, deployment, Docker, environment variables, secrets management, logging, observability, error handling",
+      "keywords": "Flowise no-code drag-and-drop RAG retrieval-augmented generation knowledge retrieval document ingestion document loaders data connectors PDFs URLs Notion Google Drive CSV web pages text files chunking text splitter chunk overlap embeddings embedding models OpenAI embeddings Cohere embeddings Instructor embeddings sentence-transformers vector database vector store FAISS Chroma Pinecone Qdrant Weaviate Milvus hybrid search semantic search keyword search BM25 dense retrieval sparse retrieval retriever LLM OpenAI Anthropic Azure OpenAI orchestration",
       "description": "Build your first RAG pipeline in Flowise—ingest docs, chunk and embed them into a vector database, connect a retriever (with optional re-ranking) to an LLM via prompt templates, and chat with grounded answers and citations—no code required.",
       "image": "https://cdn-images-1.medium.com/max/2560/1*Ot4SmbXKQjNXKcxOoBrz6A.png",
       "url": "https://medium.com/@ShawnBasquiat/your-first-rag-in-flowise-no-code-0d246bf2a060",
@@ -294,6 +294,7 @@ const contentData = {
 
 
 window.contentData = contentData;
+
 
 
 
