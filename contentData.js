@@ -191,20 +191,6 @@ const contentData = {
     },
 
   
-    "Drag. Drop. Deploy: Build an AI Assistant with Flowise":{
-      "title": "Drag. Drop. Deploy: Build an AI Assistant with Flowise",
-      "type": "blog",
-      "subTitle": "Flowise, LangChain.js, Node.js/TypeScript, Docker, Pinecone/Chroma, OpenAI/Anthropic/Gemini",
-      "keywords": "Flowise no-code drag-and-drop visual-builder AI agents chatbot assistants agentic-workflows chatflows agentflows LangChain.js LLM orchestration pipelines nodes canvas prompt-chaining tool-calling function-calling web-search API-calls REST webhooks data-connectors loaders RAG retrieval-augmented-generation embeddings vector-database Pinecone Chroma Weaviate FAISS Milvus Supabase Postgres knowledge-base document-ingestion PDFs CSVs websites sitemaps scraping memory conversation-memory short-term-memory long-term-memory context window summarization grounding fallback-handlers evaluation monitoring logging analytics rate-limiting auth authentication JWT RBAC multi-tenant environment-variables secrets management versioning export import JSON schema OpenAPI swagger chat-widget embed iframe branding theming UI components self-hosted open-source Docker Docker-Compose Kubernetes Helm Vercel Render Railway Fly.io AWS GCP Azure serverless Node.js TypeScript JavaScript npm pnpm yarn OpenAI GPT-4o GPT-4.1 function-calling Anthropic Claude 3.5 Sonnet Google Gemini 1.5 Pro Ollama local-models Hugging Face Transformers llama.cpp text-generation image-generation speech-to-text text-to-speech retrieval tools connectors vector-store caching batching streaming SSE token-usage cost-controls observability testing fixtures CI/CD",
-      "description": "An AI assistant using Flowise’s open-source, no-code canvas. Visually compose an agent by snapping together LLMs, memory modules, tool nodes (web search, custom API calls, function tools), and data connectors for RAG over docs.",
-      "image": "https://cdn-images-1.medium.com/max/2560/1*jDFWC5DdMExS0knG7zatjg.png",
-      "url": "https://medium.com/@ShawnBasquiat/drag-drop-deploy-build-an-ai-assistant-with-flowise-a5f71e19531b",
-      "button": {
-        "Read": "https://medium.com/@ShawnBasquiat/drag-drop-deploy-build-an-ai-assistant-with-flowise-a5f71e19531b"
-      }
-    },
-
-  
     "Your First RAG in Flowise (No-Code)":{
       "title": "Your First RAG in Flowise (No-Code)",
       "type": "blog",
@@ -215,6 +201,20 @@ const contentData = {
       "url": "https://medium.com/@ShawnBasquiat/your-first-rag-in-flowise-no-code-0d246bf2a060",
       "button": {
         "Read": "https://medium.com/@ShawnBasquiat/your-first-rag-in-flowise-no-code-0d246bf2a060"
+      }
+    },
+
+  
+    "Drag. Drop. Deploy: Build an AI Assistant with Flowise":{
+      "title": "Drag. Drop. Deploy: Build an AI Assistant with Flowise",
+      "type": "blog",
+      "subTitle": "Flowise, LangChain.js, Node.js/TypeScript, Docker, Pinecone/Chroma, OpenAI/Anthropic/Gemini",
+      "keywords": "Flowise no-code drag-and-drop visual-builder AI agents chatbot assistants agentic-workflows chatflows agentflows LangChain.js LLM orchestration pipelines nodes canvas prompt-chaining tool-calling function-calling web-search API-calls REST webhooks data-connectors loaders RAG retrieval-augmented-generation embeddings vector-database Pinecone Chroma Weaviate FAISS Milvus Supabase Postgres knowledge-base document-ingestion PDFs CSVs websites sitemaps scraping memory conversation-memory short-term-memory long-term-memory context window summarization grounding fallback-handlers evaluation monitoring logging analytics rate-limiting auth authentication JWT RBAC multi-tenant environment-variables secrets management versioning export import JSON schema OpenAPI swagger chat-widget embed iframe branding theming UI components self-hosted open-source Docker Docker-Compose Kubernetes Helm Vercel Render Railway Fly.io AWS GCP Azure serverless Node.js TypeScript JavaScript npm pnpm yarn OpenAI GPT-4o GPT-4.1 function-calling Anthropic Claude 3.5 Sonnet Google Gemini 1.5 Pro Ollama local-models Hugging Face Transformers llama.cpp text-generation image-generation speech-to-text text-to-speech retrieval tools connectors vector-store caching batching streaming SSE token-usage cost-controls observability testing fixtures CI/CD",
+      "description": "An AI assistant using Flowise’s open-source, no-code canvas. Visually compose an agent by snapping together LLMs, memory modules, tool nodes (web search, custom API calls, function tools), and data connectors for RAG over docs.",
+      "image": "https://cdn-images-1.medium.com/max/2560/1*jDFWC5DdMExS0knG7zatjg.png",
+      "url": "https://medium.com/@ShawnBasquiat/drag-drop-deploy-build-an-ai-assistant-with-flowise-a5f71e19531b",
+      "button": {
+        "Read": "https://medium.com/@ShawnBasquiat/drag-drop-deploy-build-an-ai-assistant-with-flowise-a5f71e19531b"
       }
     },
 
@@ -294,6 +294,7 @@ const contentData = {
 
 
 window.contentData = contentData;
+
 
 
 
