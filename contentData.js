@@ -8,9 +8,9 @@ const contentData = {
     // Choose ONE type string; `project` | `video` was pseudo-syntax
     type: "video",
     subTitle: "JavaScript, Express.js, Runware SDK",
-    keywords: "JavaScript Express.js Runware SDK",
+    keywords: "JavaScript Express.js Runware SDK Google Veo3 Veo 3 Text-to-Image Text-to-Video Generative AI Diffusion Models Idle Animation Pokedex Pokemon-inspired Style Transfer Node.js REST API Webhooks FFmpeg MP4 WebM Queue Workers BullMQ Redis Job Orchestration Rate Limiting dotenv Axios Fetch Multer File Uploads Cloud Deployment Docker CI/CD",
     description:
-      "Generates Pokémon-inspired images and an idle-animation video for a Pokédex entry using Runware (image gen) and Google Veo3 (video).",
+      "Catch ’em all—with code. Spin up an Express.js API using the Runware SDK to craft Pokémon-inspired sprites, then pipe frames into Google Veo3 for a smooth idle-animation fit for your Pokédex.",
     image: "https://www.youtube.com/embed/oQU5E0bBPYQ?si=rQvqDHQLhuS40uWw",
     url: "https://github.com/CharlesCreativeContent/runware-pokemon-generator",
     button: {
@@ -23,9 +23,9 @@ const contentData = {
       "title": "Text-2-Video with BentoML",
       "type": "project",
       "subTitle": "Python, BentoML, XTTS, VLLM, SDXL-Turbo",
-      "keywords": "Python BentoML XTTS VLLM SDXL-Turbo Text-to-Video",
+      "keywords": "Python BentoML Text-to-Video Open Source Pipeline API SDXL-Turbo VLLM XTTS TTS Inference Server GPU CUDA PyTorch FastAPI gRPC REST Async Batch Inference Worker Queues Celery Redis Kafka Triton Server TensorRT Docker Compose Kubernetes Helm Autoscaling Model Registry Observability Prometheus Grafana OpenTelemetry Canary Deployments",
       "image": "https://github.com/CharlesCreativeContent/myImages/blob/main/images/Happy_New_Year_Card.png?raw=true",
-      "description": "Text-to-video pipeline and API using only open-source models, containerized for deployment on any cloud platform.",
+      "description": "Ship a text-to-video service that’s 100% open source. We’ll wire BentoML, VLLM, SDXL-Turbo, and XTTS into a containerized pipeline you can drop on any cloud—prompt in, narrated clips out.",
       "url": "https://github.com/CharlesCreativeContent/BentoText2Video",
       "button": {
         "Code Repo": "https://github.com/CharlesCreativeContent/BentoText2Video"
@@ -36,9 +36,9 @@ const contentData = {
       "title": "GenUI with C1 API: How to Build with Generative UI",
       "type": "video",
       "subTitle": "Generative UI, React, APIs",
-      "keywords": "Generative UI C1 React APIs Thesys",
+      "keywords": "Generative UI C1 API Thesys React TypeScript Next.js Tailwind CSS Schema-driven UI Dynamic Components JSON Schema Actions Tooling Server Components Client Components Hooks State Management Zustand TanStack Query Form Builders Tables Dashboards Event Streams WebSockets UX DX",
       "image": "https://www.youtube.com/embed/videoseries?si=le3cFJuQ-_NVNSPj&list=PLTX9b_8iXKiT1TO1skP7zymXCOsYJ7690",
-      "description": "Learn how to build intelligent user interfaces using the C1 Generative UI API. Walkthrough of creating a GenUI app from scratch, enabling dynamic UI generation powered by modern backend logic.",
+      "description": "Turn walls of text into living interfaces. Using the C1 Generative UI API in React, we’ll generate components on the fly so your app adapts to every prompt and action.",
       "url": "https://docs.thesys.dev/",
       "button": {
         "Watch Series": "https://www.youtube.com/@ThesysDev/videos"
@@ -49,8 +49,8 @@ const contentData = {
       "type": "video",
       "image": "https://www.youtube.com/embed/LwKPnH0198E?si=rQvqDHQLhuS40uWw",
       "subTitle": "Python, JavaScript, OpenAI, Toolhouse SDK",
-      "keywords": "Python JavaScript OpenAI Toolhouse SDK RAG Agents",
-      "description": "RAG pipeline that integrates tools like web scrapers, memory, and time management to solve communication challenges in health clinics.",
+      "keywords": "Python JavaScript OpenAI Toolhouse SDK Agents RAG Function Calling Tool Use Retrieval Vector Database Embeddings Structured Outputs Pydantic Web Scraping Browser Automation Playwright Puppeteer Summarization Scheduling Email SMS Notifications Clinic Workflows Appointments Triage Memory Knowledge Base Edge Functions",
+      "description": "An agent that actually gets clinic work done. Combine Toolhouse, RAG, memory, and schedulers to triage messages, fetch the right data, and take the next best action—automatically.",
       "url": "https://github.com/CharlesCreativeContent/toolhouse-examples",
       "button": {
         "Code Repo": "https://github.com/CharlesCreativeContent/toolhouse-examples",
@@ -64,8 +64,8 @@ const contentData = {
       "type": "video",
       "image": "https://www.youtube.com/embed/1dHhMwfqb9w?si=gYtnb6NQXfXoEuc_",
       "subTitle": "JavaScript, Bootstrap, Sass, Node.js & Express.js, jQuery",
-      "keywords": "JavaScript Bootstrap Sass Node Express jQuery Elastic Path API Postman",
-      "description": "Elastic Path’s API and Postman collection to create a functional e-commerce site with cart and checkout.",
+      "keywords": "JavaScript Bootstrap Sass Node.js Express.js Travel App Fullstack CRUD Itinerary Planner Auth JWT Sessions REST API Responsive UI Forms Validation Maps Geocoding Third-Party APIs Email Notifications Templating EJS Handlebars Database ORM",
+      "description": "From zero to checkout in one sitting. Use Elastic Path’s composable APIs (plus Node.js & Express) to stand up catalog, cart, and payment flows—no heavyweight platform required.",
       "url": "https://github.com/CharlesCreativeContent/elastic-path-demo",
       "button": {
         "Code Repo": "https://github.com/CharlesCreativeContent/elastic-path-demo",
@@ -79,8 +79,8 @@ const contentData = {
       "type": "video",
       "image": "https://www.youtube.com/embed/roHgcmC_oXg?si=gYtnb6NQXfXoEuc_",
       "subTitle": "JavaScript, Bootstrap, Sass, Node.js, & Express.js",
-      "keywords": "JavaScript Bootstrap Sass Node Express Travel App",
-      "description": "Platform to help build momentous milestones along with your friends and family. Demo account: demo@demo.com / password: demo.",
+      "keywords": "JavaScript Bootstrap Sass Node.js Express.js Travel App Fullstack CRUD Itinerary Planner Auth REST API Responsive UI Forms Validation Maps Geocoding Third-Party APIs Email Notifications Templating EJS Handlebars Database ORM",
+      "description": "Plan the trip, share the hype. Explore auth, collaborative planning, and itinerary sharing in a clean full-stack build—log in with the demo account and start dreaming.",
       "url": "https://github.com/CharlesCreativeContent/Demo-Day",
       "button": {
         "Code Repo": "https://github.com/CharlesCreativeContent/Demo-Day",
@@ -92,8 +92,8 @@ const contentData = {
       "type": "talk",
       "image": "https://github.com/CharlesCreativeContent/myImages/blob/main/images/Scaling%20AI%20Model%20Deployment%20(1).png?raw=true",
       "subTitle": "Python & BentoML",
-      "keywords": "BentoML MLOps Deployment Scaling",
-      "description": "A DataForAI presentation on challenges that arise after deploying models and how to take them to production.",
+      "keywords": "BentoML MLOps Deployment Scaling Production Inference Autoscaling CI/CD Canary Rollouts Blue-Green Observability Monitoring Logging Tracing Metrics Prometheus Grafana OpenTelemetry Cost Optimization GPUs A/B Testing Model Registry Feature Store Data Drift Concept Drift SLO SLA Reliability",
+      "description": "Your model is live—now what? We’ll unpack autoscaling, cold starts, observability, and BentoML patterns that keep latency low when traffic spikes.",
       "url": "https://www.canva.com/design/DAGG2_I0Ad8/Im-89seUQuXj6_ylwbALvg/watch",
       "button": {
         "Watch Video": "https://www.canva.com/design/DAGG2_I0Ad8/Im-89seUQuXj6_ylwbALvg/watch"
@@ -105,8 +105,8 @@ const contentData = {
       "type": "video",
       "image": "https://www.youtube.com/embed/68Li7ukgDKg?si=iceF8ZUfRvwzqOIa&amp;start=3235",
       "subTitle": "Community taught with @LeonNoel",
-      "keywords": "Freelancing 100Devs Career",
-      "description": "Class fifteen of a 30-week software engineering bootcamp offered on Twitch to help folks launch a new career in software engineering.",
+      "keywords": "Freelancing 100Devs Career Portfolio Resume Outreach Cold Email Contracts Invoices Pricing Rates Negotiation Client Acquisition Discovery Calls Scope Creep Proposals Upwork Fiverr LinkedIn GitHub Networking Time Management",
+      "description": "Ready for your first paid gig? Learn the positioning, outreach, and delivery playbook to land clients while sharpening your dev chops.",
       "url": "https://www.youtube.com/watch?v=68Li7ukgDKg&t=53m53s",
       "button": {
         "Watch Video": "https://www.youtube.com/watch?v=68Li7ukgDKg&t=53m53s"
@@ -118,8 +118,8 @@ const contentData = {
       "title": "Thesys: Generative UI API for Enhanced AI User Experience",
       "type": "video",
       "subTitle": "Generative UI, Thesys C1",
-      "keywords": "Thesys Generative UI C1 API UX",
-      "description": "A walkthrough of Thesys’s Generative UI API—turning text-heavy AI outputs into interactive, actionable interfaces.",
+      "keywords": "Thesys Generative UI C1 API UX UI Components Actions Data Binding Schema-driven React Next.js TypeScript Tailwind CSS Forms Tables Dashboards Agentic Workflows No-Code Low-Code Developer Experience",
+      "description": "Stop dumping JSON into chat windows. Thesys turns AI output into interactive controls, charts, and forms—so users can see, tweak, and act in one flow.",
       "image": "https://www.youtube.com/embed/0E9byceH6HM?start=9",
       "url": "https://www.youtube.com/watch?v=a_ftzwSoNN4",
       "button": {
@@ -130,8 +130,8 @@ const contentData = {
       "title": "Pieces — How Developers Use AI in Their Workflow (1,000+ Attendees)",
       "type": "event",
       "subTitle": "AI Assistants, Developer Productivity",
-      "keywords": "Pieces Copilot Developer Workflow AI",
-      "description": "Discover real-world AI integrations that help developers code faster, smarter, and more efficiently.",
+      "keywords": "Pieces Copilot Developer Workflow AI Productivity Context Management Snippets Code Search Knowledge Base Extensions VS Code JetBrains Browser Plugins Prompt Engineering Pair Programming Privacy Local-first Offline-first",
+      "description": "Peek into how 1,000+ devs really use AI. We’ll map the tools, prompts, and habits that stick—and how to weave them into your daily stack.",
       "image": "https://github.com/CharlesCreativeContent/myImages/blob/main/images/GXxCJH8XgAAYjLf.jpg?raw=true",
       "url": "https://pieces.app/",
       "button": {
@@ -143,7 +143,7 @@ const contentData = {
       "title": "Go Beyond Chat: Visualize and Act on Your Data with Xano and Thesys",
       "type": "video",
       "subTitle": "Generative UI, Xano, Thesys C1",
-      "keywords": "Xano Thesys C1 Generative UI Data Actions",
+      "keywords": "Xano Thesys C1 Generative UI Data Actions No-Code Backend REST API GraphQL OAuth Auth Data Visualization Charts Tables Filters Workflows Automation Webhooks React Next.js TypeScript",
       "description": "Live session by Xano + Thesys — a practical look at using Generative UI to query data and take action from within the interface.",
       "image": "https://www.youtube.com/embed/FsnqOqxQDyU?si=iceF8ZUfRvwzqOIa&amp;start=3235",
       "url": "https://www.xano.com/events/go-beyond-chat-visualize-and-act-on-your-data-with-thesys",
@@ -156,7 +156,7 @@ const contentData = {
       "title": "Build CoinGecko Analytics Agents powered by Thesys Generative UI",
       "type": "video",
       "subTitle": "CoinGecko MCP, Thesys Generative UI",
-      "keywords": "CoinGecko MCP Thesys C1 Analytics Agents",
+      "keywords": "CoinGecko MCP Thesys C1 Analytics Agents Market Data Crypto Prices Charts Candlesticks Dashboards Alerts React Hooks Streaming WebSockets Rate Limits Caching Query Builders",
       "description": "Workshop on integrating the CoinGecko MCP to turn natural-language questions into interactive, real-time analytics with Thesys Generative UI components.",
       "image": "https://www.youtube.com/embed/oZP61tui0O0?si=iceF8ZUfRvwzqOIa&amp;start=3235",
       "url": "https://medium.com/@ShawnBasquiat/building-a-coin-gecko-ai-dashboard-using-thesys-generative-ui-1c77820f4d36",
@@ -169,7 +169,7 @@ const contentData = {
       "title": "The Hunt 🎤🔥 (≈20,000 Attendees)",
       "type": "event",
       "subTitle": "Career Strategies, Tech Job Market",
-      "keywords": "The Hunt Career Job Search Tech Industry",
+      "keywords": "The Hunt Career Job Search Tech Industry Resume ATS Cover Letter Portfolio Interview Behavioral Technical Whiteboard Networking LinkedIn Personal Branding Salary Negotiation Offer Evaluation Job Boards Referrals",
       "description": "Comprehensive guide offering strategies, tips, and insights for navigating the competitive tech industry job market.",
       "image": "https://github.com/CharlesCreativeContent/Portfolio2021/blob/main/images/Dark%20Blue%20and%20Yellow%20Modern%20Business%20Strategy%20Live%20Webinar%20Instagram%20Post.gif?raw=true",
       "url": "https://x.com/ShawnBasquiat/status/1553472592220246016?s=20",
@@ -181,7 +181,7 @@ const contentData = {
       "title": "Daily.dev: Being a Dev in 2024 (3.4K Attendees)",
       "type": "event",
       "subTitle": "Developer Trends, Communities",
-      "keywords": "daily.dev Developer Trends Communities",
+      "keywords": "daily.dev Developer Trends Communities Open Source OSS Web Development JavaScript TypeScript React AI Tools LLMs DevRel DX Content Curation Newsletters Meetups Career Growth",
       "description": "Explores the evolving landscape of software development—latest technologies, industry trends, and the skills required to succeed.",
       "image": "https://github.com/CharlesCreativeContent/myImages/raw/main/images/spaces/francesco-being-a-dev-in-2024.jpeg?raw=true",
       "url": "https://x.com/ossia/status/1732429481489387806?s=20",
@@ -294,6 +294,7 @@ const contentData = {
 
 
 window.contentData = contentData;
+
 
 
 
