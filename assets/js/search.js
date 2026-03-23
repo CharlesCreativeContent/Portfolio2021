@@ -28,7 +28,8 @@ function haveCommonElement(arr1, arr2) {
 function renderContent (query,contentList){
   console.log("query: ",query)
   console.log("contentList: ",contentList)
-  document.getElementById("searchSection").style.display = "block"
+  document.getElementById("searchSection").id = ""
+  document.getElementById("relevantBlogs").id = "relevant"
   document.getElementById("searchTitle").innerHTML = query
 
   contentList.forEach(content=>{

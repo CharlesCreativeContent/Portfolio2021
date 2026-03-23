@@ -2327,3 +2327,303 @@ iframe{
 	display: block !important;
 }	
 }
+
+#searchSection {
+  display: none !important;
+}
+
+#relevant {
+  display: none !important;
+}
+
+/* Dashboard charts */
+.dashboard-chart {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.dashboard-chart .chart-frame {
+  fill: none;
+  stroke: #e5e5e5;
+}
+
+.dashboard-chart .chart-grid {
+  stroke: #f0f0f0;
+}
+
+.dashboard-chart .chart-line {
+  fill: none;
+  stroke: green;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.dashboard-chart .chart-point {
+  fill: green;
+}
+
+.dashboard-chart .chart-label {
+  fill: #999;
+  font-size: 12px;
+}
+
+.dashboard-chart .chart-bar {
+  fill: green;
+}
+
+.dashboard-chart .donut-base {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 26;
+}
+
+.dashboard-chart .donut-segment {
+  fill: none;
+  stroke-width: 26;
+}
+
+.dashboard-chart .donut-segment.segment-primary {
+  stroke: green;
+}
+
+.dashboard-chart .donut-segment.segment-secondary {
+  stroke: #00a302;
+}
+
+.dashboard-chart .donut-segment.segment-tertiary {
+  stroke: #00de25;
+}
+
+.dashboard-subhead {
+  color: #9fa3a6;
+  margin: 0 0 2em 0;
+}
+
+.dashboard-kpis .dashboard-card {
+  height: 100%;
+  padding: 1.5em;
+}
+
+.kpi-label {
+  color: #9fa3a6;
+  font-size: 0.8em;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+}
+
+.kpi-value {
+  color: #3d4449;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0 0 0.25em 0;
+}
+
+.kpi-change {
+  font-size: 0.9em;
+  margin: 0 0 0.75em 0;
+}
+
+.kpi-change.positive {
+  color: #00a302;
+}
+
+.kpi-change.negative {
+  color: #f56a6a;
+}
+
+.dashboard-sparkline {
+  max-width: 140px;
+}
+
+.dashboard-sparkline .spark-line {
+  fill: none;
+  stroke: green;
+  stroke-width: 2;
+}
+
+.dashboard-sparkline .spark-point {
+  fill: green;
+}
+
+.dashboard-sparkline.negative .spark-line {
+  stroke: #f56a6a;
+}
+
+.dashboard-sparkline.negative .spark-point {
+  fill: #f56a6a;
+}
+
+.dashboard-section-title {
+  margin-top: 0;
+}
+
+.dashboard-chart .chart-area {
+  fill: rgba(0, 163, 2, 0.18);
+}
+
+.dashboard-chart .chart-line-secondary {
+  fill: none;
+  stroke: #9fa3a6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.dashboard-chart .chart-bar-secondary {
+  fill: #cfd3d6;
+}
+
+.dashboard-chart .chart-legend text {
+  fill: #7f888f;
+  font-size: 12px;
+}
+
+.dashboard-chart .legend-swatch.primary {
+  fill: green;
+}
+
+.dashboard-chart .legend-swatch.secondary {
+  fill: #9fa3a6;
+}
+
+.dashboard-center {
+  text-align: center;
+}
+
+.dashboard-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 0.75em;
+}
+
+.dashboard-legend .legend-item {
+  align-items: center;
+  color: #7f888f;
+  display: flex;
+  font-size: 0.85em;
+  gap: 0.4em;
+}
+
+.dashboard-legend .legend-swatch {
+  background: #9fa3a6;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.dashboard-legend .legend-swatch.primary {
+  background: green;
+}
+
+.dashboard-legend .legend-swatch.secondary {
+  background: #cfd3d6;
+}
+
+.dashboard-chart .donut-value {
+  fill: #3d4449;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.dashboard-chart .donut-label {
+  fill: #7f888f;
+  font-size: 0.9em;
+}
+
+.dashboard-chart .balance-bar {
+  fill: #f0f0f0;
+}
+
+.dashboard-chart .balance-segment.assets {
+  fill: green;
+}
+
+.dashboard-chart .balance-segment.liabilities {
+  fill: #00a302;
+}
+
+.dashboard-chart .balance-segment.equity {
+  fill: #00de25;
+}
+
+.dashboard-chart .balance-label {
+  fill: #7f888f;
+  font-size: 12px;
+}
+
+.dashboard-progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85em;
+}
+
+.progress-row {
+  align-items: center;
+  display: flex;
+  gap: 1em;
+}
+
+.progress-label {
+  color: #3d4449;
+  flex: 0 0 160px;
+  font-size: 0.9em;
+}
+
+.progress-bar {
+  background: #f0f0f0;
+  border-radius: 999px;
+  flex: 1;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: green;
+  border-radius: 999px;
+  display: block;
+  height: 100%;
+}
+
+.progress-fill.progress-62 {
+  width: 62%;
+}
+
+.progress-fill.progress-41 {
+  width: 41%;
+}
+
+.progress-fill.progress-34 {
+  width: 34%;
+}
+
+.progress-fill.progress-27 {
+  width: 27%;
+}
+
+.progress-value {
+  color: #7f888f;
+  flex: 0 0 60px;
+  font-size: 0.85em;
+  text-align: right;
+}
+
+@media screen and (max-width: 736px) {
+  .progress-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .progress-label,
+  .progress-value {
+    flex: none;
+  }
+
+  .progress-value {
+    text-align: left;
+  }
+}
