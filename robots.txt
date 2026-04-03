@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Exclude dev/template pages
+Disallow: /blog/elements.html
+Disallow: /blog/blog_template.html
+Disallow: /blog/dashboards.html
+Disallow: /blog/inference.html
+Disallow: /projects.html
+Disallow: /aboutme.html
+Disallow: /shop1.html
+Disallow: /value.html
+Disallow: /volunteer.html
+Disallow: /projects.html
+Disallow: /huntathon.html
+Disallow: /extravalue.html
+Disallow: /elements.html
+Disallow: /projects.html
+
+
+Sitemap: https://shawncharles.com/sitemap.xml
