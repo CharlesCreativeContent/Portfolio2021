@@ -1,0 +1,32 @@
+name: Google Indexing API
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - sitemap.xml        # Only runs when the sitemap changes (i.e. a new post was added)
+  schedule:
+    - cron: '0 10 * * 1'  # Every Monday at 10am UTC as a fallback
+  workflow_dispatch:       # Manual trigger from GitHub Actions tab
+
+jobs:
+  submit-to-google:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install google-auth requests
+
+      - name: Submit blog URLs to Google Indexing API
+        env:
+          GOOGLE_INDEXING_SA_KEY: ${{ secrets.GOOGLE_INDEXING_SA_KEY }}
+        run: python .github/scripts/submit_urls.py
