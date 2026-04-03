@@ -94,9 +94,9 @@ const blogData = {
       "keywords": "Flowise Replicate AI agents workflow automation LLM agent orchestration no-code AI visual builder AI workflow RAG machine learning API integration LeonardoAI minimax speech generation image generation chat flows LLM Chain Chat Prompt Template workflow iteration observable workflows repeatable workflows GPU-free deployment model catalog on-demand models visual canvas drag-and-drop agent builder practical AI framework automated workflows HTTP requests workflow orchestration chat agent multi-step workflows",
       "description": "Learn how to build AI agent workflows using Flowise and Replicate. Cut iteration cycles by 25%+ by making every step repeatable and observable. A practical framework to go from idea to working agent to reliable workflow in minutes.",
       "image": "https://cdn-images-1.medium.com/max/2400/1*cPwIuhArZKdP_q5Xbdzj6A.png",
-      "url": "https://shawncharles.com/blog/2026/flowise-replicate-agent.html",
+      "url": "https://shawncharles.com/blog/flowise/flowise-replicate-agent.html",
       "button": {
-        "Read": "https://shawncharles.com/blog/2026/flowise-replicate-agent.html"
+        "Read": "https://shawncharles.com/blog/flowise/flowise-replicate-agent.html"
       }
     },
 
