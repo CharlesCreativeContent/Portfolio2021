@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+
+		<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX5VN393TN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZX5VN393TN');
+</script>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="robots" content="index, follow" />
+<title>Claude API Tool Use: The Complete 2025 Developer Guide - Shawn Charles</title>
+<meta name="author" content="Shawn Charles">
+<meta name="description" content="Master Claude API tool use in 2025—parallel calling, Tool Search, Programmatic Tool Calling, Agent SDK, and MCP integration with real code examples.">
+<meta name="keywords" content="Claude, API, tool, use, Claude, tool, use, 2025, Claude, function, calling, programmatic, tool, calling, tool, search, Claude, agent, SDK, MCP, integration, parallel, tool, calling, Claude, agentic, loop">
+<link rel="stylesheet" href="../../assets/css/main.css" />
+<link rel="canonical" href="https://shawncharles.com/blog/claude-api/claude-api-tool-use-the-complete-2025-developer-guide.html" />
+<!-- FontAwesome FILES -->
+<script src="https://kit.fontawesome.com/170c91c28b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- FAVICON FILES -->
+<link href="../../images/icons/fav/favicon.ico" rel="shortcut icon">
+<link href="../../images/icons/fav/favicon-16x16.png" rel="shortcut icon" sizes="16x16">
+<link href="../../images/icons/fav/favicon-32x32.png" rel="shortcut icon" sizes="32x32">
+<link href="../../images/icons/fav/apple-touch-icon-192x192.png" rel="apple-touch-icon" sizes="192x192">
+<link href="../../images/icons/fav/apple-touch-icon-512x512.png" rel="apple-touch-icon" sizes="512x512">
+<link href="../../images/icons/fav/apple-touch-icon.png" rel="apple-touch-icon">
+
+<!-- OPEN GRAPH CARD -->
+<meta property="og:url" content="https://shawncharles.com/blog/claude-api/claude-api-tool-use-the-complete-2025-developer-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Claude API Tool Use: The Complete 2025 Developer Guide">
+<meta property="og:description" content="Master Claude API tool use in 2025—parallel calling, Tool Search, Programmatic Tool Calling, Agent SDK, and MCP integration with real code examples.">
+<meta property="og:image" content="https://github.com/CharlesCreativeContent/myImages/blob/main/images/claude-api-tool-use-the-complete-2025-de-1775336466.jpeg?raw=true">
+<meta property="article:published_time" content="2026-04-04">
+<meta property="article:author" content="https://shawncharles.com">
+
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ShawnBasquiat">
+<meta name="twitter:creator" content="@ShawnBasquiat">
+<meta name="twitter:title" content="Claude API Tool Use: The Complete 2025 Developer Guide">
+<meta name="twitter:description" content="Master Claude API tool use in 2025—parallel calling, Tool Search, Programmatic Tool Calling, Agent SDK, and MCP integration with real code examples.">
+<meta name="twitter:image" content="https://github.com/CharlesCreativeContent/myImages/blob/main/images/claude-api-tool-use-the-complete-2025-de-1775336466.jpeg?raw=true">
+
+<!-- Linkedin Card -->
+
+<!-- JSON-LD Article Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Claude API Tool Use: The Complete 2025 Developer Guide",
+  "description": "Master Claude API tool use in 2025—parallel calling, Tool Search, Programmatic Tool Calling, Agent SDK, and MCP integration with real code examples.",
+  "image": "https://github.com/CharlesCreativeContent/myImages/blob/main/images/claude-api-tool-use-the-complete-2025-de-1775336466.jpeg?raw=true",
+  "datePublished": "2026-04-04",
+  "dateModified": "2026-04-04",
+  "author": {
+    "@type": "Person",
+    "name": "Shawn Charles",
+    "url": "https://shawncharles.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CharlesCreativeContent",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://shawncharles.com/images/Headshot2.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://shawncharles.com/blog/claude-api/claude-api-tool-use-the-complete-2025-developer-guide.html"
+  }
+}
+</script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../../index.html" class="logo">Changing the World <strong>1 line of Code</strong> at a time</a>
+									<ul class="icons">
+									<li><a name="Toggle Night Mode" title="Toggle Night Mode" onclick="change()" class="icon fa-moon"><span class="label">Night-Mode</span></a></li>
+									<li><a name="Email Shawn" title="Email Shawn" href="mailto:shawncharles@protonmail.com" class="icon fa-envelope"><span class="label">Email Shawn</span></a></li>
+										<li><a title="Follow on Twitter" target="_blank" href="https://twitter.com/shawnbasquiat" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a title="Connect on Linked-In" target="_blank" href="https://linkedin.com/in/shawnxcharles" class="icon brands fa-linkedin"><span class="label">Linked-In</span></a></li>
+										<li><a title=" Watch on Youtube" target="_blank" href="https://youtube.com/@shawnbasquiat" class="icon brands fa-youtube"><span class="label">Youtube</span></a></li>
+										<li><a title="Star on Github" target="_blank" href="https://github.com/CharlesCreativeContent" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a title="Follow on TikTok" target="_blank" href="https://tiktok.com/@ShawnBasquiat" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+										<li><a title="Read Blog on Medium" target="_blank" href="https://medium.com/@ShawnBasquiat" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+										<li><a name="Calendar" title="See Event Calendar" href="https://lu.ma/thehunt" class="icon fa-calendar"><span class="label">Event Calendar</span></a></li>
+										<li><a title="Social Links" target="_blank" href="https://shawncharles.com/links" class="icon fa-star"><span class="label">Social Links</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+
+									
+									<header class="main">
+										<h1>Claude API Tool Use: The Complete 2025 Developer Guide</h1>
+									</header>
+
+									<span class="blog_image image main"><img src="https://github.com/CharlesCreativeContent/myImages/blob/main/images/claude-api-tool-use-the-complete-2025-de-1775336466.jpeg?raw=true" alt="Claude API Tool Use: The Complete 2025 Developer Guide" /></span>
+
+
+<h1>Claude API Tool Use: The Complete 2025 Developer Guide</h1>
+
+<p><em>Published: April 4, 2026</em></p>
+
+<hr />
+
+<h2>What Is Claude API Tool Use and Why It Matters in 2025</h2>
+
+<p>If you have ever watched an LLM confidently hallucinate a database result it could have just <em>looked up</em>, you already understand why <strong>Claude API tool use</strong> is one of the most important capabilities in modern AI development. Tool use gives Claude the ability to call developer-defined or Anthropic-provided functions—querying APIs, executing code, browsing the web, and even controlling desktop GUIs—all coordinated through a structured agentic loop that keeps the model grounded in real data.</p>
+
+<p>By late 2025, Anthropic had transformed this from a basic function-calling mechanism into a full agentic platform. The release of <a href="https://www.anthropic.com/engineering/advanced-tool-use" target="_blank" rel="noopener">three advanced tool use beta features</a>—Programmatic Tool Calling, Tool Search, and Tool Use Examples—alongside the Claude Agent SDK, Agent Skills, and native parallel tool calling in Claude 4+ models, means developers can now build production-grade autonomous agents that handle complex, multi-step workflows with measurably fewer tokens and API round-trips.</p>
+
+<p>This guide covers everything you need to know: the core agentic loop, the two-category tool split, every major advanced pattern released through 2025, and the best practices Anthropic recommends for shipping reliable agents.</p>
+
+<p>Refer to the <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview" target="_blank" rel="noopener">official Claude API tool use overview</a> alongside this guide for the canonical reference.</p>
+
+<hr />
+
+<h2>How Claude API Tool Use Works: The Agentic Loop Explained</h2>
+
+<h3>The Four-Step Tool Use Lifecycle</h3>
+
+<p>At its core, Claude API tool use follows a predictable four-step cycle:</p>
+
+<ol>
+<li><strong>Define</strong> — You supply tool schemas alongside the messages array in your API request.</li>
+<li><strong>Signal</strong> — Claude returns a <code>stop<em>reason</code> of <code>"tool</em>use"</code> along with one or more <code>tool_use</code> content blocks, each containing a unique <code>id</code>, <code>name</code>, and structured <code>input</code> conforming to the tool's JSON schema.</li>
+<li><strong>Execute</strong> — Your application runs the tool and captures the result.</li>
+<li><strong>Return</strong> — You send the result back in a <code>tool_result</code> content block keyed to the original <code>id</code>, and the conversation continues.</li>
+</ol>
+
+<p>Here is the minimal pattern in Python:</p>
+
+<pre><code class="language-python">
+import anthropic
+
+client = anthropic.Anthropic()
+
+tools = [
+    {
+        "name": "get_weather",
+        "description": "Returns current weather for a given city.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "city": {"type": "string", "description": "City name"}
+            },
+            "required": ["city"]
+        }
+    }
+]
+
+response = client.messages.create(
+    model="claude-opus-4-6",
+    max_tokens=1024,
+    tools=tools,
+    messages=[{"role": "user", "content": "What's the weather in Tokyo?"}]
+)
+
+# Claude signals it wants to call a tool
+if response.stop_reason == "tool_use":
+    tool_use_block = next(b for b in response.content if b.type == "tool_use")
+    tool_result = fetch_weather(tool_use_block.input["city"])  # your function
+
+    # Send the result back
+    followup = client.messages.create(
+        model="claude-opus-4-6",
+        max_tokens=1024,
+        tools=tools,
+        messages=[
+            {"role": "user", "content": "What's the weather in Tokyo?"},
+            {"role": "assistant", "content": response.content},
+            {
+                "role": "user",
+                "content": [{
+                    "type": "tool_result",
+                    "tool_use_id": tool_use_block.id,
+                    "content": tool_result
+                }]
+            }
+        ]
+    )
+</code></pre>
+
+<h3>Client Tools vs. Server Tools: Key Differences</h3>
+
+<p>Anthropic splits tools into two categories with a crucial operational difference:</p>
+
+<p>| Category | Examples | Executed By | |---|---|---| | <strong>Client tools</strong> | Custom functions, <code>bash</code>, <code>text_editor</code> | Your application | | <strong>Server tools</strong> | <code>web<em>search</code>, <code>code</em>execution</code>, <code>web<em>fetch</code>, <code>tool</em>search</code> | Anthropic's infrastructure |</p>
+
+<p>Server tools are zero-overhead for you as a developer—Claude calls them and the results arrive without any execution handling on your side. Client tools require you to implement the execution logic, but give you full control over what runs in your environment.</p>
+
+<p>For a complete breakdown of both categories, the <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/implement-tool-use" target="_blank" rel="noopener">implementation guide on the Claude developer platform</a> covers every edge case including parallel calls, error shapes, and naming conventions.</p>
+
+<h3>Strict Schema Validation and Why It Matters</h3>
+
+<p>For production agents, invalid tool inputs are silent killers. Anthropic's <code>strict: true</code> flag (enabled via the <code>structured-outputs-2025-11-13</code> beta header) provides <strong>guaranteed schema conformance</strong>—Claude's tool call inputs will always match your schema exactly. Add it to any tool definition where a malformed parameter would cause a downstream failure:</p>
+
+<pre><code class="language-python">
+{
+    "name": "github_create_issue",
+    "description": "Creates a GitHub issue in a repository.",
+    "strict": True,
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "repo": {"type": "string"},
+            "title": {"type": "string"},
+            "body": {"type": "string"}
+        },
+        "required": ["repo", "title", "body"],
+        "additionalProperties": False
+    }
+}
+</code></pre>
+
+<hr />
+
+<h2>Advanced Claude API Tool Use Features in 2025</h2>
+
+<h3>Programmatic Tool Calling: Multi-Tool Orchestration in One Pass</h3>
+
+<p>The biggest efficiency leap in 2025's tool use update is <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling" target="_blank" rel="noopener">Programmatic Tool Calling (PTC)</a>. Instead of executing one tool per API round-trip, Claude writes Python code that orchestrates multiple tools in a <strong>single inference pass</strong>.</p>
+
+<p>The numbers are significant: on complex research tasks, Anthropic measured average token usage dropping from <strong>43,588 tokens to 27,297 tokens</strong>—a <strong>37% reduction</strong>. A 20-tool workflow that previously required 20 separate API calls can complete in one code execution block.</p>
+
+<p>Enable PTC with the <code>interleaved-thinking-2025-05-14</code> beta header and a <code>computer<em>use</em>sandbox</code> tool in your request. Claude will return a <code>code</code> content block containing Python that calls your tools programmatically:</p>
+
+<pre><code class="language-python">
+# Claude generates something like this in a single response:
+results = []
+for repo in ["api-service", "frontend", "data-pipeline"]:
+    prs = github_list_prs(repo=repo, state="open")
+    for pr in prs:
+        if pr["review_requested"]:
+            results.append(slack_send_message(
+                channel="#eng-review",
+                text=f"PR needs review: {pr['url']}"
+            ))
+</code></pre>
+
+<h3>Tool Search: Dynamically Discovering Tools from Large Libraries</h3>
+
+<p>Large MCP server setups present a brutal context problem: tool definitions alone can consume <strong>50,000–134,000 tokens</strong> before a single user message is processed. Tool Search solves this by letting Claude discover tools on-demand using BM25 natural language queries or regex patterns.</p>
+
+<p>Configure deferred loading in your tool definitions:</p>
+
+<pre><code class="language-python">
+{
+    "name": "tool_search",
+    "type": "tool_search",
+    "tools": [
+        {"name": "salesforce_get_contact", "defer_loading": True, "description": "..."},
+        {"name": "salesforce_update_deal", "defer_loading": True, "description": "..."},
+        # ... thousands more
+    ]
+}
+</code></pre>
+
+<p>Claude will issue a <code>tool_search</code> call—<code>{"query": "salesforce contact lookup", "mode": "bm25"}</code>—before using any deferred tool, loading only what it needs. This is the key to scaling Claude API tool use to enterprise-scale MCP deployments. Full configuration details live in the <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool" target="_blank" rel="noopener">Tool Search documentation</a>.</p>
+
+<h3>Tool Use Examples: Guided Reasoning for Complex Workflows</h3>
+
+<p>The third November 2025 beta feature addresses a subtler problem: Claude selecting the <em>right</em> parameters when a tool has many options. Tool Use Examples attach concrete usage patterns directly to a tool schema:</p>
+
+<pre><code class="language-python">
+{
+    "name": "database_query",
+    "description": "Executes a SQL query against the analytics database.",
+    "examples": [
+        {
+            "input": {"query": "SELECT COUNT(*) FROM users WHERE created_at &gt; '2025-01-01'"},
+            "description": "Count new users since a date"
+        },
+        {
+            "input": {"query": "SELECT product_id, SUM(revenue) FROM orders GROUP BY product_id ORDER BY 2 DESC LIMIT 10"},
+            "description": "Top 10 products by revenue"
+        }
+    ],
+    "input_schema": { ... }
+}
+</code></pre>
+
+<p>This is especially powerful for domain-specific query languages or tools with non-obvious parameter formats.</p>
+
+<h3>Parallel Tool Calling: Concurrent Execution for Faster Agents</h3>
+
+<p>Claude 4+ models natively support parallel tool use with built-in token-efficient handling. When Claude identifies multiple independent calls, it returns <strong>several <code>tool_use</code> blocks in a single response</strong>. You must execute all of them and return all results together in one user message:</p>
+
+<pre><code class="language-python">
+# Claude returns multiple tool_use blocks in one response
+tool_calls = [b for b in response.content if b.type == "tool_use"]
+
+# Execute all calls concurrently
+import asyncio
+results = await asyncio.gather(*[execute_tool(tc) for tc in tool_calls])
+
+# Return ALL results in one message
+tool_results = [
+    {"type": "tool_result", "tool_use_id": tc.id, "content": result}
+    for tc, result in zip(tool_calls, results)
+]
+</code></pre>
+
+<p>Returning results one at a time when Claude issued them in parallel is a common mistake that breaks the conversation structure and wastes tokens.</p>
+
+<hr />
+
+<h2>Claude Agent SDK, Agent Skills, and Computer Use Tool</h2>
+
+<h3>Claude Agent SDK: The @tool Decorator and In-Process MCP Servers</h3>
+
+<p>The <a href="https://platform.claude.com/docs/en/agent-sdk/overview" target="_blank" rel="noopener">Claude Agent SDK</a> (formerly the Claude Code SDK) provides a high-level abstraction over the entire tool use loop. Built-in tools include <code>Read</code>, <code>Write</code>, <code>Edit</code>, <code>Bash</code>, and <code>WebSearch</code>. For custom tools, the <code>@tool</code> decorator creates in-process MCP servers without any external server setup:</p>
+
+<pre><code class="language-python">
+from claude_agent_sdk import tool, Agent
+
+@tool
+def query_internal_api(endpoint: str, params: dict) -&gt; dict:
+    """Queries the internal analytics API. Use for revenue and user metrics."""
+    return requests.get(f"https://api.internal/{endpoint}", params=params).json()
+
+agent = Agent(
+    model="claude-opus-4-6",
+    tools=[query_internal_api],
+    allowed_tools=["Bash", "WebSearch", "query_internal_api"]
+)
+
+result = await agent.run("Summarize last quarter's revenue by product line.")
+</code></pre>
+
+<p>The SDK also handles <strong>automatic context compaction</strong> for long-running tasks—critical for agents that accumulate hundreds of tool results across many turns.</p>
+
+<h3>Agent Skills: Pre-Built Office and PDF Capabilities</h3>
+
+<p>Launched in October 2025, <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview" target="_blank" rel="noopener">Agent Skills</a> are modular capability packages that Claude loads dynamically. Without writing a single line of tool wiring, you can enable Claude to produce:</p>
+
+<ul>
+<li><strong>PowerPoint</strong> (<code>.pptx</code>) presentations</li>
+<li><strong>Excel</strong> (<code>.xlsx</code>) workbooks with formulas and charts</li>
+<li><strong>Word</strong> (<code>.docx</code>) documents with formatting</li>
+<li><strong>PDF</strong> files with custom layouts</li>
+</ul>
+
+<p>Skills are loaded from a <code>SKILL.md</code> manifest and execute inside the code execution container, making them safe and reproducible.</p>
+
+<h3>Computer Use Tool: Desktop Automation with Claude</h3>
+
+<p>The computer use tool (beta, header: <code>computer-use-2025-11-24</code>) enables Claude to interact with desktop GUI environments via screenshot capture and mouse/keyboard control. Available on Claude Opus 4.6 and Sonnet 4.6, it holds state-of-the-art results on WebArena browser navigation benchmarks.</p>
+
+<p>It is a schema-less Anthropic-defined tool—you declare it but don't handle execution yourself:</p>
+
+<pre><code class="language-python">
+tools = [{"type": "computer_use_20251124", "name": "computer", "display_width_px": 1280, "display_height_px": 800}]
+</code></pre>
+
+<p>The <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool" target="_blank" rel="noopener">computer use tool documentation</a> covers available actions (<code>screenshot</code>, <code>left_click</code>, <code>type</code>, <code>scroll</code>, <code>zoom</code>) and the security isolation requirements for any production deployment.</p>
+
+<h3>Production Error Handling: Circuit Breakers and Retry Patterns</h3>
+
+<p>When a tool call fails, always return a structured error with <code>is_error: true</code> rather than raising an exception that breaks the loop:</p>
+
+<pre><code class="language-python">
+try:
+    result = execute_tool(tool_name, tool_input)
+    content = json.dumps(result)
+    is_error = False
+except Exception as e:
+    content = f"Tool execution failed: {str(e)}. Check parameters and retry."
+    is_error = True
+
+tool_result = {
+    "type": "tool_result",
+    "tool_use_id": tool_use_id,
+    "content": content,
+    "is_error": is_error
+}
+</code></pre>
+
+<p>For high-availability production systems, the <a href="https://collabnix.com/claude-api-integration-guide-2025-complete-developer-tutorial-with-code-examples/" target="_blank" rel="noopener">Collabnix Claude API integration guide</a> provides battle-tested patterns for circuit breakers and Prometheus metrics instrumentation around tool execution.</p>
+
+<hr />
+
+<h2>Claude API Tool Use Best Practices for Production Systems</h2>
+
+<h3>Start Simple: Anthropic's Design Principle for Agentic Systems</h3>
+
+<p>Anthropic's <a href="https://www.anthropic.com/research/building-effective-agents" target="_blank" rel="noopener">Building Effective Agents research</a> is direct: start with the simplest pattern that works and add complexity only when you can measure the benefit. Most production use cases don't need Programmatic Tool Calling on day one—a clean single-tool loop with good error handling will outperform an over-engineered framework.</p>
+
+<h3>Tool Naming Conventions and Description Engineering</h3>
+
+<p>Meaningful namespacing prevents Claude from guessing which tool to call:</p>
+
+<ul>
+<li>✅ <code>github<em>list</em>prs</code>, <code>slack<em>send</em>message</code>, <code>postgres<em>run</em>query</code></li>
+<li>❌ <code>list_items</code>, <code>send</code>, <code>query</code></li>
+</ul>
+
+<p>Tool descriptions should read like documentation written for a careful engineer: explain what the tool does, what it <em>doesn't</em> do, when to use it versus an alternative, and what format the output takes. This is the highest-leverage prompt engineering you can do for agentic reliability.</p>
+
+<h3>Context Management at Scale with MCP and Tool Search</h3>
+
+<p>For any deployment integrating more than 20 tools, the math on context consumption is unforgiving. Adopt these practices from the start:</p>
+
+<ol>
+<li><strong>Mark rarely-used tools with <code>defer_loading: true</code></strong> and enable Tool Search.</li>
+<li><strong>Enable automatic tool call clearing</strong> (<code>context-management-2025-06-27</code> beta header) for long multi-turn sessions—Claude will automatically drop old tool results as token limits approach.</li>
+<li><strong>Return only high-signal information</strong> in tool responses. Strip pagination metadata, drop null fields, and summarize large payloads before returning them.</li>
+</ol>
+
+<h3>AWS Bedrock Tool Use: Automatic Tool Call Clearing and Streaming</h3>
+
+<p>Claude tool use on <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters-anthropic-claude-messages-tool-use.html" target="_blank" rel="noopener">AWS Bedrock</a> supports the same feature set including automatic tool call clearing, fine-grained tool streaming, and computer use—with model-specific availability. If you're running Claude in a Bedrock-hosted environment, the tool streaming API lets you process tool call inputs token-by-token, enabling faster UI responses for long-input tools.</p>
+
+<hr />
+
+<h2>Frequently Asked Questions About Claude API Tool Use</h2>
+
+<h3>What is the difference between tool use and function calling in Claude's API?</h3>
+
+<p>They are the same capability under different names. Anthropic uses "tool use" in its official documentation; "function calling" is the terminology popularized by OpenAI's API. The mechanics are equivalent: you define a schema, the model signals a call, your code executes it, and the result returns to the conversation.</p>
+
+<h3>How many tools can I pass to Claude at once in 2025?</h3>
+
+<p>There is no hard-coded limit, but context window consumption scales with the number and complexity of tool definitions. In practice, large MCP setups without Tool Search can burn 50,000–134,000 tokens in definitions alone. Use Tool Search with <code>defer_loading: true</code> for libraries exceeding 20–30 tools, and adopt the <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool" target="_blank" rel="noopener">Tool Search documentation</a> patterns for dynamic discovery.</p>
+
+<h3>Does Claude API tool use work on AWS Bedrock?</h3>
+
+<p>Yes. AWS Bedrock supports the full Claude tool use feature set including client tools, server tools, parallel tool calling, computer use, automatic tool call clearing (beta), and fine-grained streaming for tool inputs. Check the Bedrock documentation for per-model feature availability.</p>
+
+<h3>What is Programmatic Tool Calling and how does it differ from standard tool use?</h3>
+
+<p>Standard tool use executes one tool call per API round-trip. <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling" target="_blank" rel="noopener">Programmatic Tool Calling</a> lets Claude write Python code that orchestrates multiple tools in a single inference pass, reducing token usage by an average of 37% on complex tasks and eliminating redundant API calls entirely. It is best suited for research workflows, data aggregation tasks, and any scenario requiring conditional multi-tool logic.</p>
+
+<h3>How do I handle tool errors and prevent infinite agentic loops?</h3>
+
+<p>Always return <code>is_error: true</code> with an informative message rather than raising exceptions. Set a maximum iteration count in your agentic loop (typically 10–20 steps) and break on repeated identical tool calls. Use <code>strict: true</code> on critical tool schemas to eliminate malformed-input errors at the source. For long-running sessions, enable automatic tool call clearing to prevent context overflow from causing unexpected loop behavior.</p>
+
+<hr />
+
+<h2>Start Building with Claude API Tool Use Today</h2>
+
+<p><strong>Claude API tool use</strong> in 2025 is no longer just function calling—it's a complete agentic infrastructure with parallel execution, dynamic tool discovery, one-pass multi-tool orchestration, and modular skill packages that handle real office workflows out of the box.</p>
+
+<h3>Your Next Steps as a Claude Tool Use Developer</h3>
+
+<ol>
+<li><strong>Start with the <a href="https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview" target="_blank" rel="noopener">official tool use overview</a></strong> to understand the client/server tool split and the full agentic loop model.</li>
+<li><strong>Implement the basic four-step lifecycle</strong> with one or two client tools before reaching for the Agent SDK.</li>
+<li><strong>Read <a href="https://www.anthropic.com/research/building-effective-agents" target="_blank" rel="noopener">Building Effective Agents</a></strong> before designing your system architecture—Anthropic's simplicity-first principle will save you significant refactoring time.</li>
+<li><strong>Add Programmatic Tool Calling and Tool Search</strong> once your baseline agent is working and you can measure the token and latency improvements in your specific workload.</li>
+<li><strong>Enable strict schema validation</strong> on every tool that touches a production system.</li>
+</ol>
+
+<p>The gap between a toy demo and a production Claude agent comes down to three things: understanding the agentic loop deeply, engineering your tool descriptions carefully, and managing context aggressively. This guide gives you the foundation for all three.</p>
+
+<hr class="major" />
+
+									<!-- Author Bio -->
+									<h3 id="author">About the Author</h3>
+									<div class="box" style="min-height: 180px; overflow: hidden;">
+										<span class="image left" style="width: 150px; height: 150px; max-width: 150px;"><img src="../../images/headCircle1.png" alt="Shawn Charles - Software Engineer" style="width: 150px; height: 150px; object-fit: cover;"/></span>
+										<p><strong>Shawn Charles</strong> started building ML Infrastructure at Audible, with over a decade of software engineering and marketing experience. Currently, building open-source AI communities since 2021.</p>
+										<ul class="icons">
+											<li><a target="_blank" href="https://linkedin.com/in/shawnxcharles" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											<li><a target="_blank" href="https://twitter.com/shawnbasquiat" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a target="_blank" href="https://youtube.com/@shawnbasquiat" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+											<li><a target="_blank" href="https://tiktok.com/@ShawnBasquiat" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
+										</ul>
+									</div>
+
+									<!-- Elements -->
+									
+
+								</section>
+
+								
+
+
+
+
+							
+
+								<section id="searchSection">
+								<header class="major">
+									<h2 >Search results for - "<strong id="searchTitle">{title}</strong>"</h2>
+								</header>
+								<div id="searchArticles" class="posts">
+
+									
+
+								</div>
+								</section>
+
+								<section id="relevantBlogs">
+									<header class="major">
+										<h2 id="elements">Related Blogs</h2>
+									</header>
+									<div id="relevantArticles" class="posts">
+							
+										
+							
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="get" action="">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Upcoming Events</h2>
+									</header>
+									<iframe
+										id="calendar",
+										src="https://lu.ma/embed/calendar/cal-eqy40utcmuY1RUB/events?compact=true&lt=light"
+										width="100%"
+										height="200"
+										frameborder="0"
+										style="border: 1px solid #bfcbda88; border-radius: 4px;"
+										allowfullscreen=""
+										aria-hidden="false"
+										tabindex="0"
+									></iframe>
+								</section>
+
+
+								<!-- Section -->
+									<section>
+										<header class="major">
+											<h2>Get in touch</h2>
+										</header>
+										<p>Reach out and let's start a conversation!</p>
+										<ul class="contact">
+											<li class="icon solid fa-envelope"><a name="Email" target="_blank" href="mailto:shawncharles@protonmail.com">ShawnCharles@ProtonMail.com</a></li>
+											<li class="icon brands fa-twitter"><a name="Twitter"  target="_blank" href="https://twitter.com/shawnbasquiat" >ShawnCharles.com/Twitter</a></li>
+											<li class="icon brands fa-linkedin"><a name="Linked-In" target="_blank" href="https://linkedin.com/in/shawnxcharles">ShawnCharles.com/LinkedIn</a></li>
+											<li class="icon brands fa-github"><a name="Github" target="_blank" href="https://github.com/CharlesCreativeContent">ShawnCharles.com/Github</a></li>
+									  </ul>
+									</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright"><em>&copy; CharlesCreativeContent</em>. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../../assets/js/jquery.min.js"></script>
+			<script src="../../assets/js/browser.min.js"></script>
+			<script src="../../assets/js/breakpoints.min.js"></script>
+			<script src="../../assets/js/util.js"></script>
+			<script src="../../assets/js/main.js"></script>
+			
+			<script type="text/javascript" src="../../contentData.js"></script>
+			<script type="text/javascript" src="../../blogData.js"></script>
+			<script src="../../assets/js/search.js"></script>
+			<script src="../../assets/js/relatedBlogs.js"></script>
+
+
+	</body>
+</html>

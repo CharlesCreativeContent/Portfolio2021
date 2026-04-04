@@ -130,7 +130,20 @@ const blogData = {
     },
 
 
-  // --- Add more entries below in the same shape ---
+      "Claude API Tool Use: The Complete 2025 Developer Guide": {
+      "title": "Claude API Tool Use: The Complete 2025 Developer Guide",
+      "type": "blog",
+      "subTitle": "Anthropic Claude API \u00b7 Tool Use \u00b7 MCP \u00b7 Agent SDK \u00b7 Python",
+      "keywords": "Claude API tool use Claude tool use 2025 Claude function calling programmatic tool calling tool search Claude agent SDK MCP integration parallel tool calling Claude agentic loop",
+      "description": "Master Claude API tool use in 2025\u2014parallel calling, Tool Search, Programmatic Tool Calling, Agent SDK, and MCP integration with real code examples.",
+      "image": "https://github.com/CharlesCreativeContent/myImages/blob/main/images/claude-api-tool-use-the-complete-2025-de-1775336466.jpeg?raw=true",
+      "url": "https://shawncharles.com/blog/claude-api/claude-api-tool-use-the-complete-2025-developer-guide.html",
+      "button": {
+            "Read": "https://shawncharles.com/blog/claude-api/claude-api-tool-use-the-complete-2025-developer-guide.html"
+      }
+},
+
+    // --- Add more entries below in the same shape ---
   // "Another Project Title": {
   //   title: "Another Project Title",
   //   type: "video", // or "project"
