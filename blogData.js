@@ -87,6 +87,20 @@ const blogData = {
     },
 
 
+    "How to Build AI Agents with Flowise":{
+      "title": "How to Build AI Agents with Flowise",
+      "type": "blog",
+      "subTitle": "Flowise, LangChain, ChatOpenAI, No-Code AI",
+      "keywords": "Flowise AI agents LLM low-code AI LangChain ChatOpenAI no-code AI chatflow LlamaIndex open-source AI drag-and-drop AI AI deployment agent builder visual builder workflow automation",
+      "description": "Learn how to build production-ready AI agents with Flowise, the open-source low-code tool. Set up your first LLM-powered chatflow in minutes.",
+      "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200",
+      "url": "https://shawncharles.com/blog/flowise/how-to-build-ai-agents-with-flowise.html",
+      "button": {
+        "Read": "https://shawncharles.com/blog/flowise/how-to-build-ai-agents-with-flowise.html"
+      }
+    },
+
+
     "The Fastest Path to a Useful Agent - AI workflows with Flowise and Replicate":{
       "title": "The Fastest Path to a Useful Agent - AI workflows with Flowise and Replicate",
       "type": "blog",
@@ -100,6 +114,20 @@ const blogData = {
       }
     },
 
+
+
+    "How to Build AI Agents with Flowise | Low-Code LLM": {
+      "title": "How to Build AI Agents with Flowise | Low-Code LLM",
+      "type": "blog",
+      "subTitle": "Flowise, AI agents, LLM, low-code AI",
+      "keywords": "Flowise AI agents LLM low-code AI LangChain ChatOpenAI chatflow open-source AI drag-and-drop AI LlamaIndex AI development npm",
+      "description": "Learn how to build production-ready AI agents with Flowise, the open-source low-code tool. Set up your first LLM-powered chatflow in minutes \u2014 no backend code required.",
+      "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1200",
+      "url": "https://shawncharles.com/blog/flowise/how-to-build-ai-agents-with-flowise.html",
+      "button": {
+        "Read": "https://shawncharles.com/blog/flowise/how-to-build-ai-agents-with-flowise.html"
+      }
+    },
 
 
   // --- Add more entries below in the same shape ---
