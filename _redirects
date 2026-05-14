@@ -14,6 +14,8 @@
 /gif https://sc-gif-maker.netlify.app
 /txt/flowise/replicate2 https://raw.githubusercontent.com/CharlesCreativeContent/myImages/refs/heads/main/txt/replicatePrompt.txt
 /txt/flowise/replicate https://raw.githubusercontent.com/CharlesCreativeContent/myImages/refs/heads/main/txt/replicatePrompt2.txt
+/json/flowise/replicate https://raw.githubusercontent.com/CharlesCreativeContent/myImages/refs/heads/main/txt/generate_a_picture-CustomTool.json
+/json/flowise/replicate2 https://raw.githubusercontent.com/CharlesCreativeContent/myImages/refs/heads/main/txt/add_me_to_picture-CustomTool.json
 /conspiracy https://youtube.com/playlist?list=PLTX9b_8iXKiTxo6mXRKapNLJ0vMGpCdvC&si=l6B2CrrscM-Ueig9
 /facebook https://facebook.com/@shawnxcharles
 /newrepo https://github.com/new
