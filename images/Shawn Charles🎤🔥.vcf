@@ -3,14 +3,14 @@ VERSION:3.0
 PRODID:-//Apple Inc.//iPhone OS 26.5.2//EN
 N:Charles🎤🔥;Shawn;;;
 FN:Shawn Charles🎤🔥
-ORG:Workday;
 EMAIL;type=INTERNET;type=WORK;type=pref:shawncharles@protonmail.com
 TEL;type=OTHER;type=VOICE;type=pref:(203) 507-3146
-X-SOCIALPROFILE;type=WhatsApp;x-user=shawnbasquiat:x-apple:shawnbasquiat
-X-SOCIALPROFILE;type=GitHub;x-user=CharlesCreativeContent:x-apple:CharlesCreativeContent
-X-SOCIALPROFILE;type=YouTube;x-user=shawnbasquiat:x-apple:shawnbasquiat
-X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/shawnxcharles
-X-SOCIALPROFILE;type=twitter:http://twitter.com/shawnbasquiat
+X-SOCIALPROFILE;type=WhatsApp;x-user="https://ShawnCharles.Com/whatsapp":x-apple:https%3A//ShawnCharles.Com/whatsapp
+X-SOCIALPROFILE;type=GitHub;x-user="https://ShawnCharles.Com/github":x-apple:https%3A//ShawnCharles.Com/github
+X-SOCIALPROFILE;type=YouTube;x-user="https://ShawnCharles.Com/youtube":x-apple:https%3A//ShawnCharles.Com/youtube
+X-SOCIALPROFILE;type=linkedin:http://www.linkedin.com/in/https%3A//ShawnCharles.Com/linkedin
+X-SOCIALPROFILE;type=twitter:http://twitter.com/https%3A//ShawnCharles.Com/twitter
+X-SOCIALPROFILE;type=Instagram;x-user="https://ShawnCharles.Com/instagram":x-apple:shawnbasquiat
 item1.URL;type=pref:http://shawncharles.com
 item1.X-ABLabel:_$!<HomePage>!$_
 PHOTO;ENCODING=b:AAAAJGZ0eXBoZWljAAAAAG1pZjFNaVBybWlhZk1pSEJoZWljAAABhG1ldG
